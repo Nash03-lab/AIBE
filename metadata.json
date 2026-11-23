@@ -1,0 +1,6 @@
+{
+  "name": "Nash Law — AIBE Exam & Mistake Rectification",
+  "description": "All India Bar Examination practice portal by Nash Law featuring official AIBE-XIX, XX & XXI question papers, post-exam mistake rectification guides, and a PIN-protected examiner leaderboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
