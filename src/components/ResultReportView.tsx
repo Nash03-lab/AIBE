@@ -8,6 +8,7 @@ import {
   Check,
   CheckCircle2,
   Clock,
+  FileDown,
   Info,
   Quote,
   RefreshCw,
@@ -20,6 +21,7 @@ import {
 import type { ExamResultReport, QuestionReviewItem } from '../../shared/types';
 import { RESULT_COMEBACK_QUOTES, RESULT_PASS_QUOTES } from '../data/quotes';
 import { formatDurationVerbose, formatSubmittedAt } from '../utils/format';
+import { downloadExamProgressPdf } from '../utils/pdfReport';
 import { OrnamentalDivider } from './OrnamentalDivider';
 
 interface ResultReportViewProps {
@@ -286,32 +288,54 @@ export function ResultReportView({
                 </span>{' '}
                 · Submitted {formatSubmittedAt(report.submittedAt)}
               </p>
+              {report.candidateDetails && (
+                <p className="mt-1 text-xs text-amber-200/90">
+                  {[
+                    report.candidateDetails.email,
+                    report.candidateDetails.phone,
+                    report.candidateDetails.stateOrBarCouncil,
+                  ]
+                    .filter(Boolean)
+                    .join(' · ')}
+                </p>
+              )}
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-5">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <AccuracyRingGauge
               percent={report.accuracyPercent}
               qualified={report.qualifiedGeneral}
             />
 
-            <button
-              type="button"
-              onClick={onBackAction}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-amber-300/60 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white backdrop-blur-xs transition-colors hover:bg-white/20"
-            >
-              {isExaminerInspect ? (
-                <>
-                  <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-                  Back to Leaderboard
-                </>
-              ) : (
-                <>
-                  <RotateCcw className="h-4 w-4" aria-hidden="true" />
-                  Take Another Exam
-                </>
-              )}
-            </button>
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+              <button
+                type="button"
+                onClick={() => downloadExamProgressPdf(report)}
+                className="inline-flex cursor-pointer items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 px-4 py-2.5 text-sm font-bold text-slate-950 shadow-sm transition-all hover:brightness-105"
+              >
+                <FileDown className="h-4 w-4" aria-hidden="true" />
+                Download PDF Progress
+              </button>
+
+              <button
+                type="button"
+                onClick={onBackAction}
+                className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-amber-300/60 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white backdrop-blur-xs transition-colors hover:bg-white/20"
+              >
+                {isExaminerInspect ? (
+                  <>
+                    <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                    Back to Leaderboard
+                  </>
+                ) : (
+                  <>
+                    <RotateCcw className="h-4 w-4" aria-hidden="true" />
+                    Take Another Exam
+                  </>
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </section>

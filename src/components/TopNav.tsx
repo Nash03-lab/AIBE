@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { Lock, Scale, ShieldCheck } from 'lucide-react';
+import { Crown, Lock, Scale, ShieldCheck } from 'lucide-react';
 
-export type ActiveRoute = 'lobby' | 'exam' | 'result' | 'leaderboard';
+export type ActiveRoute = 'lobby' | 'aibe22' | 'exam' | 'result' | 'leaderboard';
 
 interface TopNavProps {
   activeRoute: ActiveRoute;
   isExaminerUnlocked: boolean;
   onNavigateLobby: () => void;
+  onOpenAibe22: () => void;
   onOpenLeaderboard: () => void;
   onStartPrimaryExam?: () => void;
   canStartExam: boolean;
@@ -16,6 +17,7 @@ export function TopNav({
   activeRoute,
   isExaminerUnlocked,
   onNavigateLobby,
+  onOpenAibe22,
   onOpenLeaderboard,
   onStartPrimaryExam,
   canStartExam,
@@ -30,7 +32,7 @@ export function TopNav({
         className="h-1 w-full bg-gradient-to-r from-blue-800 via-teal-600 to-amber-500"
         aria-hidden="true"
       />
-      <div className="mx-auto flex h-15 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-15 max-w-7xl items-center justify-between gap-4 px-4 sm:gap-6 sm:px-6 lg:px-8">
         {/* Left Zone: Single-line Brand Wordmark */}
         <button
           type="button"
@@ -60,7 +62,7 @@ export function TopNav({
 
         {/* Center Zone: Single-line Nav Links */}
         {!isExamActive && (
-          <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-5 md:flex" aria-label="Primary">
             <button
               type="button"
               onClick={onNavigateLobby}
@@ -106,28 +108,45 @@ export function TopNav({
           </nav>
         )}
 
-        {/* Right Zone: Single Primary Action */}
-        <div className="flex shrink-0 items-center gap-3">
+        {/* Right Zone: Dedicated Golden AIBE XXII Mock Icon + Primary Action */}
+        <div className="flex shrink-0 items-center gap-2.5 sm:gap-3">
           {!isExamActive ? (
             <>
               <button
                 type="button"
+                onClick={onOpenAibe22}
+                title="Open AIBE XXII Mock Test (Golden Edition)"
+                className={`inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-xl border px-3 py-1.5 text-xs font-bold whitespace-nowrap shadow-sm transition-all ${
+                  activeRoute === 'aibe22'
+                    ? 'border-amber-600 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 ring-2 ring-amber-400/50'
+                    : 'border-amber-400 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 text-amber-950 hover:brightness-105'
+                }`}
+              >
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-amber-950 text-yellow-300 shadow-2xs">
+                  <Crown className="h-3.5 w-3.5" aria-hidden="true" />
+                </span>
+                <span>AIBE XXII mock test</span>
+              </button>
+
+              <button
+                type="button"
                 onClick={onOpenLeaderboard}
-                className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-lg border border-amber-300/80 bg-amber-50/70 px-3 py-2 text-xs font-semibold whitespace-nowrap text-amber-950 transition-colors hover:bg-amber-100 md:hidden"
+                className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-lg border border-amber-300/80 bg-amber-50/70 px-2.5 py-2 text-xs font-semibold whitespace-nowrap text-amber-950 transition-colors hover:bg-amber-100 md:hidden"
               >
                 {isExaminerUnlocked ? (
                   <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" aria-hidden="true" />
                 ) : (
                   <Lock className="h-3.5 w-3.5 text-amber-600" aria-hidden="true" />
                 )}
-                Leaderboard
+                <span className="hidden sm:inline">Leaderboard</span>
               </button>
+
               {onStartPrimaryExam && (
                 <button
                   type="button"
                   onClick={onStartPrimaryExam}
                   disabled={!canStartExam}
-                  className="shrink-0 cursor-pointer rounded-lg bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 px-4 py-2 text-sm font-semibold whitespace-nowrap text-white shadow-xs transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:from-slate-300 disabled:to-slate-300 disabled:text-slate-600"
+                  className="hidden shrink-0 cursor-pointer rounded-lg bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 px-4 py-2 text-sm font-semibold whitespace-nowrap text-white shadow-xs transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:from-slate-300 disabled:to-slate-300 disabled:text-slate-600 sm:inline-flex"
                 >
                   Begin Exam
                 </button>

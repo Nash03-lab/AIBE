@@ -1,19 +1,22 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   Award,
   BookOpen,
+  CalendarClock,
   CheckCircle2,
   Clock,
+  Crown,
   FileCheck2,
   Lock,
   Quote,
   RefreshCw,
   Scale,
   ShieldAlert,
+  Sparkles,
   UserCheck,
 } from 'lucide-react';
-import type { ExamId, ExamSummary } from '../../shared/types';
+import type { Aibe22ScheduleInfo, ExamId, ExamSummary } from '../../shared/types';
 import { LOBBY_QUOTES } from '../data/quotes';
 import { OrnamentalDivider } from './OrnamentalDivider';
 
@@ -24,9 +27,11 @@ interface ExamLobbyProps {
   candidateName: string;
   startingExam: boolean;
   startError: string | null;
+  aibe22Schedule: Aibe22ScheduleInfo | null;
   onSelectExam: (id: ExamId) => void;
   onChangeName: (name: string) => void;
   onStartExam: () => void;
+  onOpenAibe22: () => void;
 }
 
 const PAPER_PALETTES: Record<
@@ -119,20 +124,54 @@ export function ExamLobby({
   candidateName,
   startingExam,
   startError,
+  aibe22Schedule,
   onSelectExam,
   onChangeName,
   onStartExam,
+  onOpenAibe22,
 }: ExamLobbyProps) {
   const nameInputRef = useRef<HTMLInputElement>(null);
   const [heroImgError, setHeroImgError] = useState(false);
   const [crestImgError, setCrestImgError] = useState(false);
   const [studyImgError, setStudyImgError] = useState(false);
   const [quoteIdx, setQuoteIdx] = useState(0);
+  const [nowMs, setNowMs] = useState(() => Date.now());
+
+  useEffect(() => {
+    const id = window.setInterval(() => setNowMs(Date.now()), 1000);
+    return () => window.clearInterval(id);
+  }, []);
 
   const selectedExam = exams.find((e) => e.id === selectedExamId) ?? exams[0];
   const trimmedName = candidateName.trim();
   const isNameValid = trimmedName.length >= 2;
   const activeQuote = LOBBY_QUOTES[quoteIdx % LOBBY_QUOTES.length];
+
+  const aibe22Status = !aibe22Schedule
+    ? { label: 'Starts Tomorrow · 11:30 AM – 3:00 PM', clock: '' }
+    : nowMs < aibe22Schedule.startTimestampMs
+      ? (() => {
+          const sec = Math.max(0, Math.floor((aibe22Schedule.startTimestampMs - nowMs) / 1000));
+          const h = Math.floor(sec / 3600);
+          const m = Math.floor((sec % 3600) / 60);
+          const s = sec % 60;
+          return {
+            label: 'Starts Tomorrow 11:30 AM · Closes 3:00 PM',
+            clock: `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`,
+          };
+        })()
+      : nowMs < aibe22Schedule.endTimestampMs
+        ? (() => {
+            const sec = Math.max(0, Math.floor((aibe22Schedule.endTimestampMs - nowMs) / 1000));
+            const h = Math.floor(sec / 3600);
+            const m = Math.floor((sec % 3600) / 60);
+            const s = sec % 60;
+            return {
+              label: 'LIVE NOW · Closes 3:00 PM',
+              clock: `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s left`,
+            };
+          })()
+        : { label: 'Exam Window Closed at 3:00 PM', clock: 'Closed' };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -148,6 +187,63 @@ export function ExamLobby({
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
+      {/* Separate Golden-Themed Icon Showcase: AIBE XXII mock test */}
+      <section className="mb-7">
+        <button
+          type="button"
+          onClick={onOpenAibe22}
+          className="group relative flex w-full cursor-pointer flex-col items-start justify-between gap-5 overflow-hidden rounded-2xl border-2 border-amber-400 bg-gradient-to-r from-amber-950 via-yellow-950 to-slate-950 p-5 text-left text-white shadow-lg transition-all hover:-translate-y-0.5 hover:border-yellow-300 hover:shadow-xl sm:flex-row sm:items-center sm:px-7 sm:py-6"
+        >
+          <div
+            className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-200"
+            aria-hidden="true"
+          />
+          <div className="flex items-center gap-4 sm:gap-5">
+            {/* Golden Medallion Icon */}
+            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300 via-amber-400 to-amber-600 text-amber-950 shadow-md transition-transform group-hover:scale-105">
+              <Crown className="h-8 w-8" aria-hidden="true" />
+            </span>
+
+            <div>
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-yellow-300 uppercase">
+                <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                <span>Golden Edition · Scheduled Live Mock Portal</span>
+              </div>
+              <h2 className="mt-0.5 font-serif text-2xl font-bold text-amber-100 sm:text-3xl">
+                AIBE XXII mock test
+              </h2>
+              <p className="mt-1 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-amber-100/90 sm:text-sm">
+                <span className="inline-flex items-center gap-1 font-semibold text-yellow-200">
+                  <CalendarClock className="h-3.5 w-3.5" aria-hidden="true" />
+                  {aibe22Status.label}
+                </span>
+                <span aria-hidden="true">·</span>
+                <span>AIBE-XXI (Set Code-A) Paper</span>
+                <span aria-hidden="true">·</span>
+                <span>Instant PDF Progress Download</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex shrink-0 items-center gap-3 self-end sm:self-center">
+            {aibe22Status.clock && (
+              <div className="rounded-xl border border-amber-300/45 bg-black/40 px-3.5 py-2 text-right">
+                <div className="text-[10px] font-semibold tracking-wider text-amber-300 uppercase">
+                  Timer
+                </div>
+                <div className="font-mono text-sm font-bold text-yellow-200 tabular-nums">
+                  {aibe22Status.clock}
+                </div>
+              </div>
+            )}
+            <span className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 via-amber-400 to-amber-500 px-4 py-2.5 text-xs font-extrabold text-slate-950 shadow-sm transition-all group-hover:brightness-105 sm:text-sm">
+              Enter Mock Portal
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </span>
+          </div>
+        </button>
+      </section>
+
       {/* Grand Illustrated Hero Showcase + Candidate Check-In Split */}
       <section className="grid grid-cols-1 gap-7 lg:grid-cols-12 lg:items-stretch">
         {/* Left: Colorful Illustrated Judicial Pavilion Banner */}

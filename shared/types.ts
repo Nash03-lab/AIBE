@@ -1,6 +1,24 @@
 export type ExamId = 'aibe-21' | 'aibe-20' | 'aibe-19';
 
+export type ExamMode = 'standard' | 'aibe-22-mock';
+
 export type OptionLetter = 'A' | 'B' | 'C' | 'D';
+
+export interface CandidateDetails {
+  fullName: string;
+  email?: string;
+  phone?: string;
+  stateOrBarCouncil?: string;
+}
+
+export interface Aibe22ScheduleInfo {
+  examDateYmd: string;
+  utcOffsetMinutes: number;
+  startTimestampMs: number;
+  endTimestampMs: number;
+  startTimeLabel: string;
+  endTimeLabel: string;
+}
 
 export interface QuestionOption {
   label: OptionLetter;
@@ -25,7 +43,7 @@ export interface ExamQuestion {
 }
 
 export interface ExamPaper {
-  id: 'aibe-21' | 'aibe-20' | 'aibe-19';
+  id: ExamId;
   title: string;
   shortTitle: string;
   setCode: string;
@@ -35,7 +53,7 @@ export interface ExamPaper {
 }
 
 export interface ExamSummary {
-  id: 'aibe-21' | 'aibe-20' | 'aibe-19';
+  id: ExamId;
   title: string;
   shortTitle: string;
   setCode: string;
@@ -56,12 +74,14 @@ export interface PublicQuestion {
 }
 
 export interface PublicExamPaper {
-  id: 'aibe-21' | 'aibe-20' | 'aibe-19';
+  id: ExamId;
   title: string;
   shortTitle: string;
   setCode: string;
   examMeta: string;
   durationMinutes: number;
+  mockMode?: ExamMode;
+  windowClosesAtMs?: number;
   questions: PublicQuestion[];
 }
 
@@ -90,7 +110,9 @@ export interface SubjectBreakdown {
 export interface ExamResultReport {
   submissionId: string;
   candidateName: string;
-  examId: 'aibe-21' | 'aibe-20' | 'aibe-19';
+  candidateDetails?: CandidateDetails;
+  examId: ExamId;
+  mockMode?: ExamMode;
   examTitle: string;
   score: number;
   maxScore: number;
@@ -110,7 +132,9 @@ export interface LeaderboardEntry {
   id: string;
   rank: number;
   candidateName: string;
-  examId: 'aibe-21' | 'aibe-20' | 'aibe-19';
+  candidateDetails?: CandidateDetails;
+  examId: ExamId;
+  mockMode?: ExamMode;
   examTitle: string;
   score: number;
   maxScore: number;

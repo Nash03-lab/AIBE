@@ -155,13 +155,15 @@ export function ExaminerPinModal({ onClose, onUnlockSuccess }: ExaminerPinModalP
   );
 }
 
+export type LeaderboardFilter = 'all' | ExamId | 'aibe-22-mock';
+
 interface ExaminerLeaderboardViewProps {
   token: string;
   entries: LeaderboardEntry[];
   loading: boolean;
   error: string | null;
-  examFilter: 'all' | ExamId;
-  onChangeExamFilter: (filter: 'all' | ExamId) => void;
+  examFilter: LeaderboardFilter;
+  onChangeExamFilter: (filter: LeaderboardFilter) => void;
   onRefresh: () => void;
   onLock: () => void;
   onSessionExpired: () => void;
@@ -464,6 +466,7 @@ export function ExaminerLeaderboardView({
           {(
             [
               { id: 'all', label: 'All Papers' },
+              { id: 'aibe-22-mock', label: 'AIBE-XXII Mock' },
               { id: 'aibe-21', label: 'AIBE-XXI' },
               { id: 'aibe-20', label: 'AIBE-XX' },
               { id: 'aibe-19', label: 'AIBE-XIX' },
@@ -547,7 +550,15 @@ export function ExaminerLeaderboardView({
                 {filteredEntries.map((entry) => (
                   <tr key={entry.id} className="hover:bg-blue-50/35">
                     <td className="px-4 py-3.5">{renderRankCell(entry.rank)}</td>
-                    <td className="px-4 py-3.5 font-bold text-slate-900">{entry.candidateName}</td>
+                    <td className="px-4 py-3.5">
+                      <div className="font-bold text-slate-900">{entry.candidateName}</div>
+                      {entry.candidateDetails?.email && (
+                        <div className="text-[11px] text-slate-500">
+                          {entry.candidateDetails.email}
+                          {entry.candidateDetails.phone ? ` · ${entry.candidateDetails.phone}` : ''}
+                        </div>
+                      )}
+                    </td>
                     <td className="px-4 py-3.5 text-xs font-semibold text-teal-800">
                       {entry.examTitle}
                     </td>

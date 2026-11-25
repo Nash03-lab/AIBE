@@ -44,36 +44,45 @@ export function ExamWorkspace({
 
   const startedAtRef = useRef<number>(Date.now());
   const autoSubmittedRef = useRef(false);
+  const effectiveDurationLimit = paper.windowClosesAtMs
+    ? Math.max(
+        1,
+        Math.min(
+          totalSecondsLimit,
+          Math.floor((paper.windowClosesAtMs - startedAtRef.current) / 1000),
+        ),
+      )
+    : totalSecondsLimit;
 
   const currentQuestion = paper.questions[currentIndex];
   const currentKey = String(currentQuestion.number);
   const selectedOption = answers[currentKey] ?? null;
   const isCurrentMarked = Boolean(marked[currentQuestion.number]);
 
-  const remainingSeconds = Math.max(0, totalSecondsLimit - elapsedSeconds);
+  const remainingSeconds = Math.max(0, effectiveDurationLimit - elapsedSeconds);
   const activeFocusQuote =
     EXAM_FOCUS_QUOTES[(Math.floor(currentIndex / 10) + quoteOffset) % EXAM_FOCUS_QUOTES.length];
 
   const triggerFinalSubmit = useCallback(() => {
     if (submitting) return;
     const actualElapsed = Math.min(
-      totalSecondsLimit,
+      effectiveDurationLimit,
       Math.max(1, Math.round((Date.now() - startedAtRef.current) / 1000)),
     );
     onSubmitExam(answers, actualElapsed);
-  }, [answers, onSubmitExam, submitting, totalSecondsLimit]);
+  }, [answers, effectiveDurationLimit, onSubmitExam, submitting]);
 
   useEffect(() => {
     const timer = window.setInterval(() => {
       const secs = Math.floor((Date.now() - startedAtRef.current) / 1000);
       setElapsedSeconds(secs);
-      if (secs >= totalSecondsLimit && !autoSubmittedRef.current) {
+      if (secs >= effectiveDurationLimit && !autoSubmittedRef.current) {
         autoSubmittedRef.current = true;
-        onSubmitExam(answers, totalSecondsLimit);
+        onSubmitExam(answers, effectiveDurationLimit);
       }
     }, 1000);
     return () => window.clearInterval(timer);
-  }, [answers, onSubmitExam, totalSecondsLimit]);
+  }, [answers, effectiveDurationLimit, onSubmitExam]);
 
   const handleSelectOption = useCallback(
     (option: OptionLetter) => {

@@ -5,7 +5,10 @@ import path from 'node:path';
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import type {
+  Aibe22ScheduleInfo,
+  CandidateDetails,
   ExamId,
+  ExamMode,
   ExamPaper,
   ExamResultReport,
   ExamSummary,
@@ -29,11 +32,14 @@ const TOKEN_TTL_MS = 12 * 60 * 60 * 1000;
 
 const DATA_DIR = path.resolve(process.cwd(), 'data');
 const SUBMISSIONS_FILE = path.join(DATA_DIR, 'submissions.json');
+const SCHEDULE_FILE = path.join(DATA_DIR, 'aibe22_schedule.json');
 
 interface StoredSubmission {
   submissionId: string;
   candidateName: string;
+  candidateDetails?: CandidateDetails;
   examId: ExamId;
+  mockMode?: ExamMode;
   durationSeconds: number;
   submittedAt: string;
   answers: Record<string, OptionLetter>;
@@ -86,6 +92,72 @@ function writeSubmissionsAtomic(items: StoredSubmission[]): Promise<void> {
     await fs.promises.rename(tmpFile, SUBMISSIONS_FILE);
   });
   return writeQueue;
+}
+
+function addDaysToYmd(ymd: string, days: number): string {
+  const [y, m, d] = ymd.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d + days));
+  return dt.toISOString().slice(0, 10);
+}
+
+function computeScheduleTimestamps(
+  examDateYmd: string,
+  utcOffsetMinutes: number,
+): Aibe22ScheduleInfo {
+  const [y, m, d] = examDateYmd.split('-').map(Number);
+  const startTimestampMs = Date.UTC(y, m - 1, d, 11, 30, 0) + utcOffsetMinutes * 60_000;
+  const endTimestampMs = Date.UTC(y, m - 1, d, 15, 0, 0) + utcOffsetMinutes * 60_000;
+  return {
+    examDateYmd,
+    utcOffsetMinutes,
+    startTimestampMs,
+    endTimestampMs,
+    startTimeLabel: '11:30 AM',
+    endTimeLabel: '3:00 PM',
+  };
+}
+
+function getOrCreateAibe22Schedule(clientTodayYmd?: string, clientTzOffset?: number): Aibe22ScheduleInfo {
+  ensureStorage();
+  if (fs.existsSync(SCHEDULE_FILE)) {
+    try {
+      const saved = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8')) as {
+        examDateYmd?: string;
+        utcOffsetMinutes?: number;
+      };
+      if (
+        typeof saved.examDateYmd === 'string' &&
+        /^\d{4}-\d{2}-\d{2}$/.test(saved.examDateYmd) &&
+        typeof saved.utcOffsetMinutes === 'number' &&
+        Number.isFinite(saved.utcOffsetMinutes)
+      ) {
+        return computeScheduleTimestamps(saved.examDateYmd, saved.utcOffsetMinutes);
+      }
+    } catch {
+      // recreate below
+    }
+  }
+
+  const validToday =
+    clientTodayYmd && /^\d{4}-\d{2}-\d{2}$/.test(clientTodayYmd)
+      ? clientTodayYmd
+      : new Date().toISOString().slice(0, 10);
+  const validOffset =
+    typeof clientTzOffset === 'number' &&
+    Number.isFinite(clientTzOffset) &&
+    clientTzOffset >= -840 &&
+    clientTzOffset <= 840
+      ? Math.round(clientTzOffset)
+      : new Date().getTimezoneOffset();
+
+  const examDateYmd = addDaysToYmd(validToday, 1);
+  const info = computeScheduleTimestamps(examDateYmd, validOffset);
+  fs.writeFileSync(
+    SCHEDULE_FILE,
+    JSON.stringify({ examDateYmd, utcOffsetMinutes: validOffset }, null, 2),
+    'utf8',
+  );
+  return info;
 }
 
 function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
@@ -174,11 +246,14 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     }),
   );
 
+  const isAibe22Mock = sub.mockMode === 'aibe-22-mock';
   return {
     submissionId: sub.submissionId,
     candidateName: sub.candidateName,
+    ...(sub.candidateDetails ? { candidateDetails: sub.candidateDetails } : {}),
     examId: sub.examId,
-    examTitle: paper.title,
+    mockMode: sub.mockMode ?? 'standard',
+    examTitle: isAibe22Mock ? 'AIBE XXII Mock Test (AIBE-XXI Set Code-A)' : paper.title,
     score: correctCount,
     maxScore,
     correctCount,
@@ -281,6 +356,13 @@ async function startServer(): Promise<void> {
   const app = express();
   app.use(express.json({ limit: '256kb' }));
 
+  app.get('/api/aibe22/schedule', (req, res) => {
+    const todayYmd = typeof req.query.todayYmd === 'string' ? req.query.todayYmd : undefined;
+    const rawOffset = typeof req.query.tzOffset === 'string' ? Number(req.query.tzOffset) : undefined;
+    const schedule = getOrCreateAibe22Schedule(todayYmd, rawOffset);
+    res.json({ schedule, serverNowMs: Date.now() });
+  });
+
   app.get('/api/exams', (_req, res) => {
     const summaries: ExamSummary[] = (Object.keys(EXAM_PAPERS) as ExamId[]).map((id) => {
       const paper = EXAM_PAPERS[id];
@@ -308,14 +390,60 @@ async function startServer(): Promise<void> {
       res.status(404).json({ error: 'Exam paper not found.' });
       return;
     }
+    const mode = req.query.mode === 'aibe-22-mock' ? 'aibe-22-mock' : 'standard';
+    if (mode === 'aibe-22-mock' && examId !== 'aibe-21') {
+      res.status(400).json({ error: 'AIBE XXII Mock Test uses the AIBE-XXI Set Code-A paper.' });
+      return;
+    }
+
     const paper = EXAM_PAPERS[examId];
+    let durationMinutes = paper.durationMinutes;
+    let windowClosesAtMs: number | undefined;
+
+    if (mode === 'aibe-22-mock') {
+      const authHeader = req.headers.authorization;
+      const bearerToken =
+        authHeader && authHeader.startsWith('Bearer ')
+          ? authHeader.slice('Bearer '.length).trim()
+          : '';
+      const isExaminerPreview = Boolean(bearerToken && verifyExaminerToken(bearerToken));
+
+      const schedule = getOrCreateAibe22Schedule();
+      const now = Date.now();
+      const isWindowOpen = now >= schedule.startTimestampMs && now < schedule.endTimestampMs;
+
+      if (!isWindowOpen && !isExaminerPreview) {
+        if (now < schedule.startTimestampMs) {
+          res.status(403).json({
+            error: `AIBE XXII Mock Test opens at ${schedule.startTimeLabel} on ${schedule.examDateYmd} and closes at ${schedule.endTimeLabel}.`,
+          });
+        } else {
+          res.status(403).json({
+            error: `The AIBE XXII Mock Test window closed at ${schedule.endTimeLabel}.`,
+          });
+        }
+        return;
+      }
+
+      if (isWindowOpen) {
+        const minsLeft = Math.max(1, Math.ceil((schedule.endTimestampMs - now) / 60_000));
+        durationMinutes = Math.min(210, minsLeft);
+        windowClosesAtMs = schedule.endTimestampMs;
+      }
+    }
+
     const publicPaper: PublicExamPaper = {
       id: paper.id,
-      title: paper.title,
-      shortTitle: paper.shortTitle,
+      title: mode === 'aibe-22-mock' ? 'AIBE XXII Mock Test (AIBE-XXI Set Code-A)' : paper.title,
+      shortTitle: mode === 'aibe-22-mock' ? 'AIBE XXII Mock' : paper.shortTitle,
       setCode: paper.setCode,
-      examMeta: paper.examMeta,
-      durationMinutes: paper.durationMinutes,
+      examMeta:
+        mode === 'aibe-22-mock'
+          ? 'AIBE XXII Scheduled Mock · 11:30 AM – 3:00 PM · AIBE-XXI Set Code-A (100 MCQs)'
+          : paper.examMeta,
+      durationMinutes,
+      mockMode: mode,
+      ...(windowClosesAtMs ? { windowClosesAtMs } : {}),
       questions: paper.questions.map((q) => ({
         number: q.number,
         subject: q.subject,
@@ -336,9 +464,13 @@ async function startServer(): Promise<void> {
 
     const body = req.body as {
       candidateName?: unknown;
+      candidateDetails?: unknown;
+      mockMode?: unknown;
       durationSeconds?: unknown;
       answers?: unknown;
     };
+
+    const mockMode: ExamMode = body?.mockMode === 'aibe-22-mock' ? 'aibe-22-mock' : 'standard';
 
     if (typeof body?.candidateName !== 'string') {
       res.status(400).json({ error: 'Candidate name is required.' });
@@ -348,6 +480,23 @@ async function startServer(): Promise<void> {
     if (candidateName.length < 2 || candidateName.length > 80) {
       res.status(400).json({ error: 'Candidate name must be between 2 and 80 characters.' });
       return;
+    }
+
+    let candidateDetails: CandidateDetails | undefined;
+    if (body?.candidateDetails && typeof body.candidateDetails === 'object') {
+      const rawDetails = body.candidateDetails as Record<string, unknown>;
+      const email = typeof rawDetails.email === 'string' ? rawDetails.email.trim().slice(0, 120) : '';
+      const phone = typeof rawDetails.phone === 'string' ? rawDetails.phone.trim().slice(0, 32) : '';
+      const stateOrBarCouncil =
+        typeof rawDetails.stateOrBarCouncil === 'string'
+          ? rawDetails.stateOrBarCouncil.trim().slice(0, 100)
+          : '';
+      candidateDetails = {
+        fullName: candidateName,
+        ...(email ? { email } : {}),
+        ...(phone ? { phone } : {}),
+        ...(stateOrBarCouncil ? { stateOrBarCouncil } : {}),
+      };
     }
 
     const rawDuration = Number(body.durationSeconds);
@@ -376,7 +525,9 @@ async function startServer(): Promise<void> {
     const submission: StoredSubmission = {
       submissionId: crypto.randomUUID(),
       candidateName,
+      ...(candidateDetails ? { candidateDetails } : {}),
       examId,
+      mockMode,
       durationSeconds,
       submittedAt: new Date().toISOString(),
       answers: sanitizedAnswers,
@@ -423,9 +574,11 @@ async function startServer(): Promise<void> {
     const examFilter = typeof req.query.examId === 'string' ? req.query.examId : 'all';
     const all = readSubmissions().filter((s) => isValidExamId(s.examId));
     const filtered =
-      examFilter !== 'all' && isValidExamId(examFilter)
-        ? all.filter((s) => s.examId === examFilter)
-        : all;
+      examFilter === 'aibe-22-mock'
+        ? all.filter((s) => s.mockMode === 'aibe-22-mock')
+        : examFilter !== 'all' && isValidExamId(examFilter)
+          ? all.filter((s) => s.examId === examFilter && s.mockMode !== 'aibe-22-mock')
+          : all;
 
     const evaluated = filtered.map((s) => evaluateSubmission(s));
     evaluated.sort((a, b) => {
@@ -439,7 +592,9 @@ async function startServer(): Promise<void> {
       id: r.submissionId,
       rank: index + 1,
       candidateName: r.candidateName,
+      ...(r.candidateDetails ? { candidateDetails: r.candidateDetails } : {}),
       examId: r.examId,
+      mockMode: r.mockMode,
       examTitle: r.examTitle,
       score: r.score,
       maxScore: r.maxScore,
