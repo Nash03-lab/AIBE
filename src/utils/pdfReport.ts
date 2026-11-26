@@ -246,6 +246,10 @@ export function downloadExamProgressPdf(report: ExamResultReport): void {
         toPdfSafeText(`Q${item.number}: ${item.question}`),
         contentWidth - 8,
       );
+      const whyLines = doc.splitTextToSize(
+        toPdfSafeText(`Why This Mistake Happens: ${item.rectification.whyMistakeHappens}`),
+        contentWidth - 8,
+      );
       const principleLines = doc.splitTextToSize(
         toPdfSafeText(`Legal Principle: ${item.rectification.principle}`),
         contentWidth - 8,
@@ -256,8 +260,13 @@ export function downloadExamProgressPdf(report: ExamResultReport): void {
       );
 
       const estHeight =
-        13 + qLines.length * 4 + principleLines.length * 3.8 + rectifyLines.length * 3.8 + 8;
-      ensureSpace(Math.min(estHeight, 70));
+        16 +
+        qLines.length * 4 +
+        whyLines.length * 3.8 +
+        principleLines.length * 3.8 +
+        rectifyLines.length * 3.8 +
+        8;
+      ensureSpace(Math.min(estHeight, pageHeight - 32));
 
       const isWrong = item.status === 'incorrect';
       doc.setFillColor(isWrong ? 255 : 255, isWrong ? 241 : 251, isWrong ? 242 : 235);
@@ -294,6 +303,10 @@ export function downloadExamProgressPdf(report: ExamResultReport): void {
 
       doc.setFont('helvetica', 'normal');
       doc.setFontSize(8);
+      doc.setTextColor(159, 18, 57);
+      doc.text(whyLines, marginX + 4, cy);
+      cy += whyLines.length * 3.8 + 1.2;
+
       doc.setTextColor(51, 65, 85);
       doc.text(principleLines, marginX + 4, cy);
       cy += principleLines.length * 3.8 + 1.5;
@@ -328,4 +341,280 @@ export function downloadExamProgressPdf(report: ExamResultReport): void {
     .replace(/^_|_$/g, '');
   const prefix = report.mockMode === 'aibe-22-mock' ? 'AIBE_XXII_Mock' : report.examId.toUpperCase();
   doc.save(`NashLaw_${prefix}_${slugName || 'candidate'}_Progress.pdf`);
+}
+
+export function downloadMistakesPdf(report: ExamResultReport): void {
+  const doc = new jsPDF({
+    orientation: 'portrait',
+    unit: 'mm',
+    format: 'a4',
+  });
+
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+  const marginX = 14;
+  const contentWidth = pageWidth - marginX * 2;
+  let y = 14;
+
+  const ensureSpace = (neededMm: number) => {
+    if (y + neededMm > pageHeight - 16) {
+      doc.addPage();
+      y = 16;
+    }
+  };
+
+  // Top Header Banner (Crimson / Slate & Gold)
+  doc.setFillColor(15, 23, 42);
+  doc.roundedRect(marginX, y, contentWidth, 26, 3, 3, 'F');
+  doc.setFillColor(225, 29, 72);
+  doc.rect(marginX, y, contentWidth, 2.2, 'F');
+
+  doc.setTextColor(253, 230, 138);
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(9);
+  doc.text('NASH LAW | EXAM MISTAKES & RECTIFICATION SHEET', marginX + 5, y + 8);
+
+  doc.setTextColor(255, 255, 255);
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(13.5);
+  doc.text(toPdfSafeText(report.examTitle), marginX + 5, y + 15.5);
+
+  doc.setTextColor(203, 213, 225);
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(8.5);
+  doc.text(
+    toPdfSafeText(
+      `Candidate: ${report.candidateName} | Submitted: ${formatSubmittedAt(report.submittedAt)}`,
+    ),
+    marginX + 5,
+    y + 21.5,
+  );
+
+  y += 31;
+
+  // 4-Box Summary Strip
+  const boxGap = 3;
+  const boxW = (contentWidth - boxGap * 3) / 4;
+  const summaryBoxes = [
+    {
+      label: 'SCORE',
+      value: `${report.score} / ${report.maxScore}`,
+      sub: `Accuracy: ${report.accuracyPercent}%`,
+      fill: [239, 246, 255] as const,
+      border: [147, 197, 253] as const,
+      accent: [30, 58, 138] as const,
+    },
+    {
+      label: 'INCORRECT MISTAKES',
+      value: String(report.incorrectCount),
+      sub: 'Wrong Choices',
+      fill: [255, 241, 242] as const,
+      border: [253, 164, 175] as const,
+      accent: [159, 18, 57] as const,
+    },
+    {
+      label: 'UNATTEMPTED',
+      value: String(report.unattemptedCount),
+      sub: 'Skipped Questions',
+      fill: [255, 251, 235] as const,
+      border: [253, 224, 71] as const,
+      accent: [146, 64, 14] as const,
+    },
+    {
+      label: 'COMPLETION TIME',
+      value: toPdfSafeText(formatDurationVerbose(report.durationSeconds)),
+      sub: report.qualifiedGeneral ? 'Status: Qualified' : 'Status: Needs Review',
+      fill: [248, 250, 252] as const,
+      border: [203, 213, 225] as const,
+      accent: [15, 23, 42] as const,
+    },
+  ];
+
+  summaryBoxes.forEach((box, idx) => {
+    const x = marginX + idx * (boxW + boxGap);
+    doc.setFillColor(box.fill[0], box.fill[1], box.fill[2]);
+    doc.setDrawColor(box.border[0], box.border[1], box.border[2]);
+    doc.roundedRect(x, y, boxW, 18, 2, 2, 'FD');
+
+    doc.setTextColor(71, 85, 105);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(7);
+    doc.text(box.label, x + 2.8, y + 4.8);
+
+    doc.setTextColor(box.accent[0], box.accent[1], box.accent[2]);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(10.5);
+    doc.text(box.value, x + 2.8, y + 11);
+
+    doc.setTextColor(71, 85, 105);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(7.5);
+    doc.text(box.sub, x + 2.8, y + 15.8);
+  });
+
+  y += 24;
+
+  const focusQuestions = report.review.filter(
+    (q) => q.status === 'incorrect' || q.status === 'unattempted',
+  );
+
+  doc.setTextColor(153, 27, 27);
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(11);
+  doc.text(
+    `Detailed Mistakes & Skipped Questions (${focusQuestions.length} Items)`,
+    marginX,
+    y,
+  );
+  y += 5;
+
+  if (focusQuestions.length === 0) {
+    doc.setFillColor(236, 253, 245);
+    doc.setDrawColor(110, 231, 183);
+    doc.roundedRect(marginX, y, contentWidth, 16, 2.5, 2.5, 'FD');
+    doc.setTextColor(6, 95, 70);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(10);
+    doc.text(
+      'Zero mistakes and zero skipped questions! Congratulations on a spotless attempt.',
+      marginX + 5,
+      y + 9.5,
+    );
+  } else {
+    focusQuestions.forEach((item) => {
+      const qLines = doc.splitTextToSize(
+        toPdfSafeText(`Q${item.number}: ${item.question}`),
+        contentWidth - 8,
+      );
+
+      const optionLinesList = item.options.map((opt) => {
+        const isCorrect = item.correctAnswers.includes(opt.label);
+        const isPicked = item.selectedOption === opt.label;
+        const tags: string[] = [];
+        if (isCorrect) tags.push('[Official Key]');
+        if (isPicked && !isCorrect) tags.push('[Your Pick]');
+        const suffix = tags.length > 0 ? `  ${tags.join(' ')}` : '';
+        return {
+          isCorrect,
+          isWrongPick: isPicked && !isCorrect,
+          lines: doc.splitTextToSize(
+            toPdfSafeText(`(${opt.label}) ${opt.text}${suffix}`),
+            contentWidth - 12,
+          ) as string[],
+        };
+      });
+
+      const principleLines = doc.splitTextToSize(
+        toPdfSafeText(`Legal Principle: ${item.rectification.principle}`),
+        contentWidth - 8,
+      );
+      const whyLines = doc.splitTextToSize(
+        toPdfSafeText(`Why This Mistake Happens: ${item.rectification.whyMistakeHappens}`),
+        contentWidth - 8,
+      );
+      const rectifyLines = doc.splitTextToSize(
+        toPdfSafeText(`How to Rectify: ${item.rectification.howToRectify}`),
+        contentWidth - 8,
+      );
+
+      const optionsHeight = optionLinesList.reduce((sum, o) => sum + o.lines.length * 3.6 + 0.8, 0);
+      const cardHeight =
+        16 +
+        qLines.length * 4 +
+        optionsHeight +
+        principleLines.length * 3.8 +
+        whyLines.length * 3.8 +
+        rectifyLines.length * 3.8 +
+        10;
+
+      ensureSpace(Math.min(cardHeight, pageHeight - 32));
+
+      const isWrong = item.status === 'incorrect';
+      doc.setFillColor(isWrong ? 255 : 255, isWrong ? 241 : 251, isWrong ? 242 : 235);
+      doc.setDrawColor(isWrong ? 253 : 253, isWrong ? 164 : 224, isWrong ? 175 : 71);
+      doc.roundedRect(marginX, y, contentWidth, cardHeight, 2, 2, 'FD');
+
+      let cy = y + 5.5;
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(8.5);
+      doc.setTextColor(isWrong ? 159 : 146, isWrong ? 18 : 64, isWrong ? 57 : 14);
+      const headerLabel = `Q${item.number} | ${item.subject} | ${item.statuteRef} | ${
+        isWrong ? 'INCORRECT' : 'UNATTEMPTED'
+      }`;
+      doc.text(toPdfSafeText(headerLabel).slice(0, 95), marginX + 4, cy);
+      cy += 4.8;
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(8.5);
+      doc.setTextColor(15, 23, 42);
+      doc.text(qLines, marginX + 4, cy);
+      cy += qLines.length * 4 + 1.5;
+
+      doc.setFont('helvetica', 'bold');
+      doc.setFontSize(8);
+      doc.setTextColor(30, 58, 138);
+      const selectedStr = item.selectedOption ? `(${item.selectedOption})` : 'Not Attempted';
+      const keyStr = item.correctAnswers.map((a) => `(${a})`).join(' or ');
+      doc.text(
+        `Your Answer: ${selectedStr}   |   Official Final Key: ${keyStr}`,
+        marginX + 4,
+        cy,
+      );
+      cy += 4.5;
+
+      optionLinesList.forEach((optEntry) => {
+        doc.setFont('helvetica', optEntry.isCorrect || optEntry.isWrongPick ? 'bold' : 'normal');
+        doc.setFontSize(7.8);
+        if (optEntry.isCorrect) {
+          doc.setTextColor(6, 95, 70);
+        } else if (optEntry.isWrongPick) {
+          doc.setTextColor(159, 18, 57);
+        } else {
+          doc.setTextColor(51, 65, 85);
+        }
+        doc.text(optEntry.lines, marginX + 6, cy);
+        cy += optEntry.lines.length * 3.6 + 0.8;
+      });
+
+      cy += 1.5;
+      doc.setFont('helvetica', 'normal');
+      doc.setFontSize(8);
+      doc.setTextColor(51, 65, 85);
+      doc.text(principleLines, marginX + 4, cy);
+      cy += principleLines.length * 3.8 + 1.2;
+
+      doc.setTextColor(159, 18, 57);
+      doc.text(whyLines, marginX + 4, cy);
+      cy += whyLines.length * 3.8 + 1.2;
+
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(6, 95, 70);
+      doc.text(rectifyLines, marginX + 4, cy);
+
+      y += cardHeight + 4;
+    });
+  }
+
+  // Page numbers footer
+  const totalPages = doc.getNumberOfPages();
+  for (let p = 1; p <= totalPages; p += 1) {
+    doc.setPage(p);
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(100, 116, 139);
+    doc.text(
+      `Nash Law Mistakes Sheet | ${toPdfSafeText(report.candidateName)} | Page ${p} of ${totalPages}`,
+      pageWidth / 2,
+      pageHeight - 8,
+      { align: 'center' },
+    );
+  }
+
+  const slugName = report.candidateName
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_|_$/g, '');
+  const prefix = report.mockMode === 'aibe-22-mock' ? 'AIBE_XXII_Mock' : report.examId.toUpperCase();
+  doc.save(`NashLaw_${prefix}_${slugName || 'candidate'}_Mistakes.pdf`);
 }

@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
 import type {
-  Aibe22ScheduleInfo,
   CandidateDetails,
   ExamId,
   ExamMode,
@@ -21,13 +20,6 @@ import {
 import { ResultReportView } from './components/ResultReportView';
 import { TopNav, type ActiveRoute } from './components/TopNav';
 
-function getLocalYmd(date: Date): string {
-  const y = date.getFullYear();
-  const m = String(date.getMonth() + 1).padStart(2, '0');
-  const d = String(date.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
-}
-
 export default function App() {
   const [route, setRoute] = useState<ActiveRoute>('lobby');
   const [exams, setExams] = useState<ExamSummary[]>([]);
@@ -35,9 +27,7 @@ export default function App() {
   const [selectedExamId, setSelectedExamId] = useState<ExamId>('aibe-21');
   const [candidateName, setCandidateName] = useState('');
 
-  // AIBE XXII scheduled golden mock test state
-  const [aibe22Schedule, setAibe22Schedule] = useState<Aibe22ScheduleInfo | null>(null);
-  const [loadingSchedule, setLoadingSchedule] = useState(true);
+  // AIBE XXII mock test state
   const [aibe22Details, setAibe22Details] = useState<CandidateDetails>({
     fullName: '',
     email: '',
@@ -80,32 +70,6 @@ export default function App() {
         }
       } finally {
         if (!cancelled) setLoadingExams(false);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      setLoadingSchedule(true);
-      try {
-        const now = new Date();
-        const todayYmd = getLocalYmd(now);
-        const tzOffset = now.getTimezoneOffset();
-        const res = await fetch(
-          `/api/aibe22/schedule?todayYmd=${encodeURIComponent(todayYmd)}&tzOffset=${encodeURIComponent(String(tzOffset))}`,
-        );
-        const data = (await res.json()) as { schedule?: Aibe22ScheduleInfo };
-        if (!cancelled && data.schedule) {
-          setAibe22Schedule(data.schedule);
-        }
-      } catch {
-        // Schedule banner degrades cleanly if offline
-      } finally {
-        if (!cancelled) setLoadingSchedule(false);
       }
     })();
     return () => {
@@ -173,42 +137,35 @@ export default function App() {
     }
   }, [candidateName, selectedExamId]);
 
-  const handleStartAibe22Exam = useCallback(
-    async (isExaminerPreview = false) => {
-      const cleanName = aibe22Details.fullName.trim().replace(/\s+/g, ' ');
-      if (cleanName.length < 2) {
-        setAibe22StartError('Please enter your Full Name before launching the mock test.');
+  const handleStartAibe22Exam = useCallback(async () => {
+    const cleanName = aibe22Details.fullName.trim().replace(/\s+/g, ' ');
+    if (cleanName.length < 2) {
+      setAibe22StartError('Please enter your Full Name before launching the mock test.');
+      return;
+    }
+    setStartingExam(true);
+    setAibe22StartError(null);
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/exams/aibe-21/paper?mode=aibe-22-mock');
+      const data = (await res.json()) as { paper?: PublicExamPaper; error?: string };
+      if (!res.ok || !data.paper) {
+        setAibe22StartError(data.error || 'Could not load AIBE XXII mock paper.');
         return;
       }
-      setStartingExam(true);
-      setAibe22StartError(null);
-      setSubmitError(null);
-      try {
-        const headers: Record<string, string> = {};
-        if (isExaminerPreview && examinerToken) {
-          headers.Authorization = `Bearer ${examinerToken}`;
-        }
-        const res = await fetch('/api/exams/aibe-21/paper?mode=aibe-22-mock', { headers });
-        const data = (await res.json()) as { paper?: PublicExamPaper; error?: string };
-        if (!res.ok || !data.paper) {
-          setAibe22StartError(data.error || 'Could not load AIBE XXII mock paper.');
-          return;
-        }
-        setAibe22Details((prev) => ({ ...prev, fullName: cleanName }));
-        setCandidateName(cleanName);
-        setActiveExamMode('aibe-22-mock');
-        setActivePaper(data.paper);
-        setLatestReport(null);
-        setRoute('exam');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } catch {
-        setAibe22StartError('Network error while launching AIBE XXII mock test.');
-      } finally {
-        setStartingExam(false);
-      }
-    },
-    [aibe22Details.fullName, examinerToken],
-  );
+      setAibe22Details((prev) => ({ ...prev, fullName: cleanName }));
+      setCandidateName(cleanName);
+      setActiveExamMode('aibe-22-mock');
+      setActivePaper(data.paper);
+      setLatestReport(null);
+      setRoute('exam');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch {
+      setAibe22StartError('Network error while launching AIBE XXII mock test.');
+    } finally {
+      setStartingExam(false);
+    }
+  }, [aibe22Details.fullName]);
 
   const handleSubmitExam = useCallback(
     async (answers: Record<string, OptionLetter>, durationSeconds: number) => {
@@ -227,6 +184,7 @@ export default function App() {
           body: JSON.stringify({
             candidateName: activeCandidateName,
             mockMode: isAibe22 ? 'aibe-22-mock' : 'standard',
+            ...(activePaper.deckToken ? { deckToken: activePaper.deckToken } : {}),
             ...(isAibe22 ? { candidateDetails: aibe22Details } : {}),
             durationSeconds,
             answers,
@@ -297,6 +255,21 @@ export default function App() {
       ? aibe22Details.fullName.trim() || candidateName
       : candidateName;
 
+  const jumpToLobbySection = useCallback(
+    (sectionId: 'mock-tests-section' | 'past-papers-section') => {
+      if (route === 'exam') return;
+      if (route !== 'lobby') {
+        setRoute('lobby');
+        setTimeout(() => {
+          document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        }, 80);
+      } else {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    [route],
+  );
+
   return (
     <div className="flex min-h-screen flex-col text-slate-900">
       <TopNav
@@ -305,6 +278,8 @@ export default function App() {
         onNavigateLobby={() => {
           if (route !== 'exam') setRoute('lobby');
         }}
+        onJumpToMockTests={() => jumpToLobbySection('mock-tests-section')}
+        onJumpToPastPapers={() => jumpToLobbySection('past-papers-section')}
         onOpenAibe22={handleOpenAibe22}
         onOpenLeaderboard={handleOpenLeaderboard}
         onStartPrimaryExam={route === 'lobby' ? handleStartExam : undefined}
@@ -320,7 +295,6 @@ export default function App() {
             candidateName={candidateName}
             startingExam={startingExam}
             startError={startError}
-            aibe22Schedule={aibe22Schedule}
             onSelectExam={(id) => {
               setSelectedExamId(id);
               setStartError(null);
@@ -336,8 +310,6 @@ export default function App() {
 
         {route === 'aibe22' && (
           <Aibe22MockPortal
-            schedule={aibe22Schedule}
-            loadingSchedule={loadingSchedule}
             candidateDetails={aibe22Details}
             onChangeDetails={(details) => {
               setAibe22Details(details);
@@ -347,11 +319,6 @@ export default function App() {
             startError={aibe22StartError}
             onStartAibe22Exam={handleStartAibe22Exam}
             onBackLobby={() => setRoute('lobby')}
-            examinerToken={examinerToken}
-            onRequestExaminerPin={() => {
-              setPinReturnTarget('aibe22');
-              setShowPinModal(true);
-            }}
           />
         )}
 

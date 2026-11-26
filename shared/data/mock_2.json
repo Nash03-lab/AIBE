@@ -1,0 +1,1911 @@
+{
+  "id": "mock-2",
+  "title": "Mock Test 2 — AIBE Sample Paper 6",
+  "shortTitle": "Mock Test 2",
+  "setCode": "Mock Test 2",
+  "category": "mock-test",
+  "examMeta": "Nash Law Mock Test 2 · Based on AIBE Sample Paper 6 (100 MCQs · 210 Min)",
+  "durationMinutes": 210,
+  "questions": [
+    {
+      "number": 1,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 359, 44th Amendment)",
+      "question": "During the Emergency the Supreme Court in ADM Jabalpur v. Shivkant Shukla (1976) held that the writ of habeas corpus was not maintainable while the right to move courts under Article 21 stood suspended. The constitutional amendment that subsequently ensured Articles 20 and 21 can never be suspended even during an Emergency is the:",
+      "options": [
+        { "label": "A", "text": "42nd Amendment" },
+        { "label": "B", "text": "44th Amendment" },
+        { "label": "C", "text": "38th Amendment" },
+        { "label": "D", "text": "24th Amendment" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The 44th Constitutional Amendment Act, 1978 amended Article 359 so that the President cannot suspend the right to move any court for enforcement of Articles 20 and 21 even during an Emergency.",
+        "whyMistakeHappens": "Confusing the 42nd Amendment (which expanded executive power) with the post-Emergency corrective 44th Amendment.",
+        "howToRectify": "Remember: 44th Amendment = corrective amendment making Articles 20 and 21 Emergency-proof."
+      }
+    },
+    {
+      "number": 2,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "The writ that lies to secure the release of a person who has been unlawfully detained, and which may be issued even against a private individual who keeps another in illegal custody, is the writ of:",
+      "options": [
+        { "label": "A", "text": "Mandamus" },
+        { "label": "B", "text": "Quo warranto" },
+        { "label": "C", "text": "Habeas corpus" },
+        { "label": "D", "text": "Certiorari" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Habeas corpus ('you may have the body') tests the legality of detention and is unique among writs because it lies against both the State and private individuals holding someone in unlawful custody.",
+        "whyMistakeHappens": "Confusing habeas corpus with mandamus (public duty) or certiorari (quashing orders).",
+        "howToRectify": "Link habeas corpus directly to personal liberty and illegal detention—State or private."
+      }
+    },
+    {
+      "number": 3,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "For the writ of mandamus to issue, the applicant must ordinarily establish a legal right and a corresponding public duty owed by the authority. Mandamus will generally NOT lie to:",
+      "options": [
+        { "label": "A", "text": "Compel a public authority to perform a statutory duty" },
+        { "label": "B", "text": "Enforce the performance of a purely discretionary or contractual obligation having no public-law element" },
+        { "label": "C", "text": "Direct a tribunal to exercise a jurisdiction it has wrongly refused" },
+        { "label": "D", "text": "Compel a statutory corporation to act in accordance with the governing statute" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Mandamus commands performance of a mandatory public or statutory duty; it does not lie to enforce purely contractual or discretionary obligations lacking a public-law duty.",
+        "whyMistakeHappens": "Missing 'NOT' in the stem leads candidates to choose valid public-law uses of mandamus.",
+        "howToRectify": "Apply the rule: No public duty, no mandamus—pure contract disputes go to civil court."
+      }
+    },
+    {
+      "number": 4,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "A writ that is issued to a person holding a public office, calling upon him to show by what authority he claims to hold that office, and which can be sought even by a stranger having no personal interest, is the writ of:",
+      "options": [
+        { "label": "A", "text": "Quo warranto" },
+        { "label": "B", "text": "Mandamus" },
+        { "label": "C", "text": "Prohibition" },
+        { "label": "D", "text": "Habeas corpus" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Quo warranto ('by what authority') questions the legal title of a holder of a substantive public office, and locus standi is relaxed so any stranger may apply.",
+        "whyMistakeHappens": "Mandamus enforces duties, whereas quo warranto challenges title to hold a public office.",
+        "howToRectify": "Match 'by what authority' directly to quo warranto and remember its relaxed standing."
+      }
+    },
+    {
+      "number": 5,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "Regarding the distinction between prohibition and certiorari, which statement is correct?",
+      "options": [
+        { "label": "A", "text": "Both are issued only after the proceedings before the inferior tribunal are concluded" },
+        { "label": "B", "text": "Prohibition is issued while the proceedings are pending to forbid the tribunal from continuing, whereas certiorari is issued to quash an order already passed" },
+        { "label": "C", "text": "Prohibition quashes a completed order while certiorari merely forbids future action" },
+        { "label": "D", "text": "Both lie exclusively against private individuals" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Prohibition is preventive and issues while proceedings are still pending; certiorari is corrective and issues to quash a concluded order.",
+        "whyMistakeHappens": "Reversing before-order vs. after-order operation in option (C).",
+        "howToRectify": "Mnemonic: Prohibition stops a pending proceeding; Certiorari quashes a completed order."
+      }
+    },
+    {
+      "number": 6,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 32, PIL)",
+      "question": "In S. P. Gupta v. Union of India (1981), popularly called the Judges’ Transfer case, the Supreme Court made a landmark contribution to public interest litigation principally by:",
+      "options": [
+        { "label": "A", "text": "Abolishing the requirement of a written petition altogether" },
+        { "label": "B", "text": "Holding that res judicata can never apply to constitutional matters" },
+        { "label": "C", "text": "Relaxing the rule of locus standi, permitting any public-spirited person to approach the Court on behalf of those unable to do so" },
+        { "label": "D", "text": "Making the doctrine of laches inapplicable to all writ petitions" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In S. P. Gupta v. Union of India (1981), the Supreme Court relaxed traditional locus standi, allowing public-spirited persons to approach the court for disadvantaged classes.",
+        "whyMistakeHappens": "Over-broad procedural claims distract from the core PIL breakthrough on standing.",
+        "howToRectify": "Associate S. P. Gupta directly with relaxation of locus standi in PIL."
+      }
+    },
+    {
+      "number": 7,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "The principle that the right to a speedy trial is implicit in the guarantee of life and personal liberty under Article 21, and that undertrial prisoners detained beyond the maximum sentence are entitled to release, was laid down in:",
+      "options": [
+        { "label": "A", "text": "Hussainara Khatoon v. State of Bihar" },
+        { "label": "B", "text": "Sunil Batra v. Delhi Administration" },
+        { "label": "C", "text": "Bandhua Mukti Morcha v. Union of India" },
+        { "label": "D", "text": "Sheela Barse v. State of Maharashtra" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Hussainara Khatoon v. State of Bihar (1979), the Supreme Court declared speedy trial and free legal aid for undertrials implicit in Article 21.",
+        "whyMistakeHappens": "All options are landmark Article 21 cases (Sunil Batra on prison conditions, Bandhua Mukti Morcha on bonded labour, Sheela Barse on women prisoners).",
+        "howToRectify": "Tag Hussainara Khatoon with Bihar undertrials and speedy trial."
+      }
+    },
+    {
+      "number": 8,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "In Olga Tellis v. Bombay Municipal Corporation (1985), the Supreme Court held that the right to life under Article 21:",
+      "options": [
+        { "label": "A", "text": "Confers an absolute right on pavement dwellers never to be evicted" },
+        { "label": "B", "text": "Includes a right to free housing to be provided by the State" },
+        { "label": "C", "text": "Includes a right to compensation for every eviction carried out" },
+        { "label": "D", "text": "Includes the right to livelihood, since deprivation of the means of livelihood would amount to deprivation of life" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Olga Tellis v. BMC (1985) held that Article 21 includes the right to livelihood, though eviction remains permissible following just and fair procedure.",
+        "whyMistakeHappens": "Overstating Olga Tellis as creating an absolute bar against eviction or free housing.",
+        "howToRectify": "Remember Olga Tellis = livelihood is part of life, subject to fair procedure."
+      }
+    },
+    {
+      "number": 9,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 23)",
+      "question": "Article 23 of the Constitution prohibits traffic in human beings and forced labour. In People’s Union for Democratic Rights v. Union of India (1982), the Supreme Court held that the expression “forced labour” in Article 23 includes:",
+      "options": [
+        { "label": "A", "text": "Only labour extracted by physical force" },
+        { "label": "B", "text": "Only bonded labour arising out of an antecedent debt" },
+        { "label": "C", "text": "Labour or service rendered for remuneration which is less than the statutory minimum wage" },
+        { "label": "D", "text": "Voluntary unpaid social service rendered out of free will" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In PUDR v. Union of India (1982, Asiad Workers case), economic compulsion paying below statutory minimum wage was held to constitute 'forced labour' under Article 23.",
+        "whyMistakeHappens": "Restricting 'force' only to physical coercion or bonded debt.",
+        "howToRectify": "Link PUDR (Asiad Workers) directly to sub-minimum-wage labour = forced labour under Art. 23."
+      }
+    },
+    {
+      "number": 10,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 24)",
+      "question": "Article 24 of the Constitution contains an absolute prohibition. It provides that no child below the age of fourteen years shall be employed to work in:",
+      "options": [
+        { "label": "A", "text": "Any factory, mine or other hazardous employment" },
+        { "label": "B", "text": "Any occupation whatsoever including domestic work" },
+        { "label": "C", "text": "Agriculture and family enterprises only" },
+        { "label": "D", "text": "Mines alone and not factories" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 24 strictly prohibits employing children below 14 years in any factory, mine, or other hazardous employment.",
+        "whyMistakeHappens": "Conflating statutory child-labour rules with the constitutional text of Article 24.",
+        "howToRectify": "Quote Art. 24 verbatim: 'factory, mine or any other hazardous employment'."
+      }
+    },
+    {
+      "number": 11,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 246)",
+      "question": "When a legislature, lacking competence to enact a law directly on a subject, attempts to achieve the same result indirectly by disguising the true nature of the legislation, the law may be struck down under the doctrine of:",
+      "options": [
+        { "label": "A", "text": "Pith and substance" },
+        { "label": "B", "text": "Colourable legislation" },
+        { "label": "C", "text": "Territorial nexus" },
+        { "label": "D", "text": "Repugnancy" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Colourable legislation invalidates laws where a legislature disguises lack of competence—'what cannot be done directly cannot be done indirectly'.",
+        "whyMistakeHappens": "Confusing colourable legislation (strikes down disguised incompetence) with pith and substance (saves incidental overlap).",
+        "howToRectify": "Disguised incompetence = Colourable legislation."
+      }
+    },
+    {
+      "number": 12,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 246, Schedule VII)",
+      "question": "Where a law enacted by a legislature falls in substance within its competence but incidentally trenches upon a field assigned to another legislature, the law is upheld by applying the doctrine of:",
+      "options": [
+        { "label": "A", "text": "Colourable legislation" },
+        { "label": "B", "text": "Eclipse" },
+        { "label": "C", "text": "Pith and substance" },
+        { "label": "D", "text": "Severability" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under pith and substance, courts look at the true nature of a statute; incidental encroachment on another legislative list does not invalidate it.",
+        "whyMistakeHappens": "Mixing up legislative-list doctrines with Art. 13 doctrines (eclipse, severability).",
+        "howToRectify": "Incidental trenching saved by true character = Pith and substance."
+      }
+    },
+    {
+      "number": 13,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 245)",
+      "question": "A State legislature may make a law with extra-territorial operation provided there exists a sufficient connection between the State and the object sought to be taxed or regulated. This proposition is the doctrine of:",
+      "options": [
+        { "label": "A", "text": "Occupied field" },
+        { "label": "B", "text": "Harmonious construction" },
+        { "label": "C", "text": "Implied powers" },
+        { "label": "D", "text": "Territorial nexus" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the doctrine of territorial nexus (State of Bombay v. R. M. D. Chamarbaugwala), a real and sufficient connection validates a State law's extra-territorial operation.",
+        "whyMistakeHappens": "Occupied field belongs to Art. 254 repugnancy, not extra-territorial tax/regulation reach.",
+        "howToRectify": "Sufficient connection + extra-territorial State reach = Territorial nexus."
+      }
+    },
+    {
+      "number": 14,
+      "subject": "Administrative Law",
+      "statuteRef": "Delegated Legislation",
+      "question": "A provision in a parent statute that authorises the executive to make rules which may amend or modify the parent Act itself, thereby conferring an unusually wide power of delegated legislation, is commonly described as a:",
+      "options": [
+        { "label": "A", "text": "Henry VIII clause" },
+        { "label": "B", "text": "Sunset clause" },
+        { "label": "C", "text": "Saving clause" },
+        { "label": "D", "text": "Non-obstante clause" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A Henry VIII clause empowers the executive to amend or modify the parent statute via delegated rules.",
+        "whyMistakeHappens": "Confusing it with sunset clauses (expiry dates) or non-obstante clauses ('notwithstanding...').",
+        "howToRectify": "Rules that can alter the parent Act = Henry VIII clause."
+      }
+    },
+    {
+      "number": 15,
+      "subject": "Administrative Law",
+      "statuteRef": "Delegated Legislation (Sub-delegation)",
+      "question": "Where a statute confers rule-making power on a delegate, that delegate cannot ordinarily transfer that power to a further authority unless the parent statute expressly or by necessary implication permits it. This limitation is expressed by the maxim:",
+      "options": [
+        { "label": "A", "text": "Delegatus non potest delegare" },
+        { "label": "B", "text": "Res ipsa loquitur" },
+        { "label": "C", "text": "Volenti non fit injuria" },
+        { "label": "D", "text": "Ubi jus ibi remedium" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Delegatus non potest delegare means a delegate cannot further sub-delegate statutory power unless authorised by the parent Act.",
+        "whyMistakeHappens": "Unrelated tort/remedy Latin maxims act as distractors.",
+        "howToRectify": "Root 'delegatus' immediately marks Delegatus non potest delegare."
+      }
+    },
+    {
+      "number": 16,
+      "subject": "Administrative Law",
+      "statuteRef": "Constitution of India (Judicial Review)",
+      "question": "Under the doctrine of proportionality, applied by courts while reviewing administrative or executive action restricting a right, the court principally examines whether:",
+      "options": [
+        { "label": "A", "text": "The decision-maker followed the correct procedure only" },
+        { "label": "B", "text": "The authority acted in good faith regardless of the means used" },
+        { "label": "C", "text": "The action was supported by an alternative statutory remedy" },
+        { "label": "D", "text": "The measure adopted is no more restrictive than necessary and the restriction is balanced against the object sought to be achieved" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Proportionality tests legitimate aim, suitability, necessity (least restrictive means), and balancing between right-restriction and public object.",
+        "whyMistakeHappens": "Reducing judicial review merely to procedural compliance or good faith.",
+        "howToRectify": "Look for 'no more restrictive than necessary' + 'balanced against the object'."
+      }
+    },
+    {
+      "number": 17,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "The writ of certiorari and the writ of prohibition are both issued to control inferior courts and tribunals. The principal ground common to both writs is that the inferior tribunal has acted:",
+      "options": [
+        { "label": "A", "text": "Only with a mala fide intention" },
+        { "label": "B", "text": "Without any delay in disposal" },
+        { "label": "C", "text": "With excess of jurisdiction or in violation of the principles of natural justice" },
+        { "label": "D", "text": "Strictly within the limits of its jurisdiction" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Both certiorari and prohibition check inferior tribunals for want/excess of jurisdiction or breach of natural justice, differing only in procedural stage.",
+        "whyMistakeHappens": "Assuming mala fides is the main prerequisite rather than jurisdictional error or natural justice.",
+        "howToRectify": "Shared ground of certiorari & prohibition = excess of jurisdiction + natural justice breach."
+      }
+    },
+    {
+      "number": 18,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "The progressive interpretation of Article 21 to include the right of a terminally ill person to die with dignity, recognising passive euthanasia and advance directives subject to safeguards, was authoritatively settled in:",
+      "options": [
+        { "label": "A", "text": "Gian Kaur v. State of Punjab" },
+        { "label": "B", "text": "Common Cause v. Union of India (2018)" },
+        { "label": "C", "text": "P. Rathinam v. Union of India" },
+        { "label": "D", "text": "Aruna Shanbaug v. Union of India (2011)" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Common Cause v. Union of India (2018), a Constitution Bench held that the right to die with dignity is part of Article 21 and recognised passive euthanasia and Living Wills (advance directives).",
+        "whyMistakeHappens": "Confusing Aruna Shanbaug (2011) with the authoritative 2018 Constitution Bench ruling in Common Cause.",
+        "howToRectify": "Look for 'advance directives' and '(2018)' -> Common Cause v. Union of India."
+      }
+    },
+    {
+      "number": 19,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "The recognition that the right to health and timely medical care is an integral facet of the right to life under Article 21, and that a government hospital cannot deny emergency treatment to an injured person, was emphasised by the Supreme Court in:",
+      "options": [
+        { "label": "A", "text": "Consumer Education & Research Centre v. Union of India" },
+        { "label": "B", "text": "Parmanand Katara v. Union of India" },
+        { "label": "C", "text": "State of Punjab v. Mohinder Singh Chawla" },
+        { "label": "D", "text": "Paschim Banga Khet Mazdoor Samity v. State of West Bengal" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Paschim Banga Khet Mazdoor Samity v. State of West Bengal (1996), failure of government hospitals to provide emergency care to an injured person was held to violate Article 21.",
+        "whyMistakeHappens": "Parmanand Katara dealt with doctors' duty to treat medico-legal victims, whereas Paschim Banga specifically concerned denial by government hospitals.",
+        "howToRectify": "Government hospital denying emergency medical care = Paschim Banga Khet Mazdoor Samity."
+      }
+    },
+    {
+      "number": 20,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 141)",
+      "question": "Five or more persons gather with the common object of forcibly resisting the execution of law. The minimum number of persons required to constitute an “unlawful assembly,” and the section that defines it, are:",
+      "options": [
+        { "label": "A", "text": "Five or more persons, s.141 IPC" },
+        { "label": "B", "text": "Three or more persons, s.141 IPC" },
+        { "label": "C", "text": "Two or more persons, s.34 IPC" },
+        { "label": "D", "text": "Seven or more persons, s.141 IPC" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 141 IPC defines an unlawful assembly as five or more persons sharing one of the five statutory unlawful objects.",
+        "whyMistakeHappens": "Confusing s.34 common intention (2+) with s.141 unlawful assembly (5+).",
+        "howToRectify": "Five for unlawful assembly (s.141); two for common intention (s.34)."
+      }
+    },
+    {
+      "number": 21,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 141 Explanation)",
+      "question": "An assembly of five lawfully gathered persons later forms the common object of attacking the village headman. The assembly that was lawful when it gathered may become an unlawful assembly. The provision recognising this is:",
+      "options": [
+        { "label": "A", "text": "Section 142 IPC (being a member of an unlawful assembly)" },
+        { "label": "B", "text": "Explanation to s.141 IPC" },
+        { "label": "C", "text": "Section 34 IPC" },
+        { "label": "D", "text": "Section 149 IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Explanation to Section 141 IPC states that an assembly which was not unlawful when it assembled may subsequently become an unlawful assembly.",
+        "whyMistakeHappens": "Selecting s.142 or s.149 instead of the specific Explanation to s.141.",
+        "howToRectify": "Lawful-then-unlawful assembly rule = Explanation to s.141 IPC."
+      }
+    },
+    {
+      "number": 22,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 149)",
+      "question": "During a riot, one member of an unlawful assembly commits an offence in prosecution of the common object of that assembly. Under s.149 IPC every other member who shares that common object is:",
+      "options": [
+        { "label": "A", "text": "Liable only if he personally caused the injury" },
+        { "label": "B", "text": "Liable only for being present at the scene" },
+        { "label": "C", "text": "Guilty of the same offence as if he alone had committed it" },
+        { "label": "D", "text": "Not liable unless a prior agreement is proved" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 149 IPC, every member of an unlawful assembly sharing its common object is vicariously guilty of the offence committed by any member in prosecution of that object.",
+        "whyMistakeHappens": "Importing s.34's prior agreement requirement or personal overt act requirement.",
+        "howToRectify": "Under s.149: Membership + common object = guilty of the same offence."
+      }
+    },
+    {
+      "number": 23,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Secs. 34 & 149)",
+      "question": "Which statement correctly distinguishes “common object” under s.149 IPC from “common intention” under s.34 IPC?",
+      "options": [
+        { "label": "A", "text": "Both require a prior meeting of minds and an equal number of participants" },
+        { "label": "B", "text": "Section 34 is itself a substantive offence, while s.149 merely creates a rule of evidence" },
+        { "label": "C", "text": "Section 34 requires a prior concert and shared intention among the participants and is only a rule of constructive liability, whereas s.149 needs no prior agreement and fastens liability on every member of an unlawful assembly of five or more who shares its common object" },
+        { "label": "D", "text": "Common object requires only two persons, common intention requires five" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 34 requires prior concert and is a rule of constructive liability (2+ persons), while s.149 creates a substantive vicarious offence for 5+ members sharing a common object without prior agreement.",
+        "whyMistakeHappens": "Option (B) reverses which provision creates a substantive offence.",
+        "howToRectify": "s.34 = prior concert (rule of liability); s.149 = 5+ members + common object (no prior meeting needed)."
+      }
+    },
+    {
+      "number": 24,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 146)",
+      "question": "When force or violence is used by an unlawful assembly, or by any member of it, in prosecution of the common object, the offence committed by the assembly is:",
+      "options": [
+        { "label": "A", "text": "Affray under s.159 IPC" },
+        { "label": "B", "text": "Rioting under s.146 IPC" },
+        { "label": "C", "text": "Criminal conspiracy under s.120A IPC" },
+        { "label": "D", "text": "Wrongful restraint under s.339 IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 146 IPC defines rioting as the use of force or violence by an unlawful assembly or any member thereof in prosecution of the common object.",
+        "whyMistakeHappens": "Confusing rioting (s.146) with affray (public fighting by 2+ persons, s.159).",
+        "howToRectify": "Unlawful assembly + force/violence = Rioting (s.146 IPC)."
+      }
+    },
+    {
+      "number": 25,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 148)",
+      "question": "A is a member of an unlawful assembly that commits rioting; he himself is armed with a deadly weapon, namely a sword, likely to cause death. The aggravated form of rioting and its punishing section are:",
+      "options": [
+        { "label": "A", "text": "Rioting simpliciter, s.147 IPC" },
+        { "label": "B", "text": "Affray, s.160 IPC" },
+        { "label": "C", "text": "Unlawful assembly, s.143 IPC" },
+        { "label": "D", "text": "Rioting armed with a deadly weapon, s.148 IPC" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 147 punishes plain rioting, whereas Section 148 punishes aggravated rioting while armed with a deadly weapon likely to cause death.",
+        "whyMistakeHappens": "Choosing s.147 misses the deadly-weapon aggravation.",
+        "howToRectify": "s.147 = plain rioting; s.148 = rioting armed with a deadly weapon."
+      }
+    },
+    {
+      "number": 26,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 354)",
+      "question": "A assaults B, a woman, intending to outrage her modesty. The offence of assault or criminal force to a woman with intent to outrage her modesty is punishable under:",
+      "options": [
+        { "label": "A", "text": "Section 354 IPC" },
+        { "label": "B", "text": "Section 509 IPC" },
+        { "label": "C", "text": "Section 350 IPC" },
+        { "label": "D", "text": "Section 339 IPC" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 354 IPC punishes assault or criminal force to a woman with intent to outrage, or knowing it likely to outrage, her modesty.",
+        "whyMistakeHappens": "Confusing s.354 (physical assault/force) with s.509 (word/gesture insulting modesty).",
+        "howToRectify": "s.354 = physical assault/force; s.509 = words/gestures."
+      }
+    },
+    {
+      "number": 27,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 354A)",
+      "question": "A man makes physically explicit sexual overtures and demands sexual favours from a female colleague at the workplace. The specific offence of sexual harassment, inserted by the Criminal Law (Amendment) Act, 2013, is contained in:",
+      "options": [
+        { "label": "A", "text": "Section 354 IPC" },
+        { "label": "B", "text": "Section 354A IPC" },
+        { "label": "C", "text": "Section 354C IPC" },
+        { "label": "D", "text": "Section 509 IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 354A IPC (inserted in 2013) specifically criminalises sexual harassment, including unwelcome sexual advances and demands for sexual favours.",
+        "whyMistakeHappens": "Mixing up the 2013 suffixes 354A–354D.",
+        "howToRectify": "354A = Sexual harassment; 354B = Disrobing; 354C = Voyeurism; 354D = Stalking."
+      }
+    },
+    {
+      "number": 28,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Secs. 354B, 354C, 354D)",
+      "question": "Match the offence with the correct section inserted by the Criminal Law (Amendment) Act, 2013: assault or use of criminal force with intent to disrobe a woman, voyeurism, and stalking are respectively dealt with under:",
+      "options": [
+        { "label": "A", "text": "ss.354A, 354B and 354C IPC" },
+        { "label": "B", "text": "ss.354, 354A and 354B IPC" },
+        { "label": "C", "text": "ss.354B, 354C and 354D IPC" },
+        { "label": "D", "text": "ss.354C, 354D and 509 IPC" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Inserted in 2013: s.354B covers intent to disrobe, s.354C covers voyeurism, and s.354D covers stalking.",
+        "whyMistakeHappens": "Shifting one letter earlier (picking 354A–354C).",
+        "howToRectify": "Mnemonic: B = Bare (disrobe), C = Capture (voyeurism), D = Dog/follow (stalking)."
+      }
+    },
+    {
+      "number": 29,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 498A)",
+      "question": "A husband and his relatives subject the wife to harassment to coerce her family into meeting an unlawful demand for property. The offence of subjecting a married woman to cruelty by her husband or his relatives is punishable under:",
+      "options": [
+        { "label": "A", "text": "Section 498A IPC" },
+        { "label": "B", "text": "Section 304B IPC" },
+        { "label": "C", "text": "Section 406 IPC" },
+        { "label": "D", "text": "Section 354 IPC" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 498A IPC punishes cruelty (including harassment for unlawful property/dowry demands) by a husband or his relatives.",
+        "whyMistakeHappens": "Confusing s.498A (cruelty while alive) with s.304B (dowry death).",
+        "howToRectify": "If the woman is alive and harassed for property/dowry -> s.498A IPC."
+      }
+    },
+    {
+      "number": 30,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 304B)",
+      "question": "A woman dies of burns within seven years of marriage and it is shown that, soon before her death, she was subjected by her husband to cruelty in connection with a demand for dowry. The death is to be treated as “dowry death,” an offence under:",
+      "options": [
+        { "label": "A", "text": "Section 302 IPC" },
+        { "label": "B", "text": "Section 304B IPC" },
+        { "label": "C", "text": "Section 498A IPC" },
+        { "label": "D", "text": "Section 306 IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 304B IPC defines dowry death as unnatural death (burns/bodily injury) within 7 years of marriage preceded soon before death by dowry-linked cruelty.",
+        "whyMistakeHappens": "Picking s.498A ignores the unnatural death element.",
+        "howToRectify": "7 years + dowry cruelty soon before death + unnatural death = s.304B IPC."
+      }
+    },
+    {
+      "number": 31,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 113B)",
+      "question": "In a trial for dowry death, where it is proved that soon before her death the woman was subjected to cruelty for dowry, the court “shall presume” that the accused caused the dowry death. This mandatory presumption is provided by:",
+      "options": [
+        { "label": "A", "text": "Section 113A of the Indian Evidence Act, 1872" },
+        { "label": "B", "text": "Section 112 of the Indian Evidence Act, 1872" },
+        { "label": "C", "text": "Section 113B of the Indian Evidence Act, 1872" },
+        { "label": "D", "text": "Section 114 of the Indian Evidence Act, 1872" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 113B of the Indian Evidence Act mandates that the court 'shall presume' the accused caused the dowry death once dowry cruelty soon before death is proved.",
+        "whyMistakeHappens": "Swapping s.113A ('may presume' suicide abetment) with s.113B ('shall presume' dowry death).",
+        "howToRectify": "Pair B with B: 304B IPC <-> 113B Evidence Act."
+      }
+    },
+    {
+      "number": 32,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Secs. 498A & 304B)",
+      "question": "Which statement correctly distinguishes cruelty under s.498A IPC from dowry death under s.304B IPC?",
+      "options": [
+        { "label": "A", "text": "Section 498A applies only after the woman’s death, s.304B only during her life" },
+        { "label": "B", "text": "Both require the death of the woman within seven years of marriage" },
+        { "label": "C", "text": "Section 498A penalises cruelty (whether or not death results) and dowry need not be the only cause, whereas s.304B requires the woman’s death by burns or bodily injury, otherwise than in normal circumstances, within seven years of marriage and cruelty soon before death in connection with a dowry demand" },
+        { "label": "D", "text": "Section 304B can be invoked only if the woman survives" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 498A punishes cruelty whether or not death results, whereas s.304B specifically requires unnatural death within 7 years of marriage connected to dowry harassment soon before death.",
+        "whyMistakeHappens": "Options (A) and (D) reverse the life/death requirements.",
+        "howToRectify": "498A protects the living wife from cruelty; 304B punishes unnatural dowry-linked death within 7 years."
+      }
+    },
+    {
+      "number": 33,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 156)",
+      "question": "A receives information of the commission of a cognizable offence. The power of an officer in charge of a police station to investigate a cognizable case without the order of a Magistrate is found in:",
+      "options": [
+        { "label": "A", "text": "Section 156 CrPC" },
+        { "label": "B", "text": "Section 202 CrPC" },
+        { "label": "C", "text": "Section 190 CrPC" },
+        { "label": "D", "text": "Section 200 CrPC" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 156(1) CrPC authorises an officer in charge of a police station to investigate any cognizable case without a Magistrate's order.",
+        "whyMistakeHappens": "Confusing police investigation power (s.156) with Magistrate cognizance/complaint inquiry (ss.190, 200, 202).",
+        "howToRectify": "Police suo motu cognizable investigation power = Section 156 CrPC."
+      }
+    },
+    {
+      "number": 34,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 157)",
+      "question": "On receiving information of a cognizable offence, the officer must, if he has reason to suspect its commission, forthwith send a report to the Magistrate and proceed to the spot to investigate. The provision requiring this report and the procedure for investigation is:",
+      "options": [
+        { "label": "A", "text": "Section 154 CrPC" },
+        { "label": "B", "text": "Section 157 CrPC" },
+        { "label": "C", "text": "Section 161 CrPC" },
+        { "label": "D", "text": "Section 164 CrPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 157 CrPC mandates sending an occurrence report forthwith to the Magistrate and proceeding to the spot to investigate.",
+        "whyMistakeHappens": "Swapping s.154 (FIR) with s.157 (occurrence report & spot investigation).",
+        "howToRectify": "154 register FIR -> 157 report to Magistrate & proceed to spot -> 161 examine -> 173 charge-sheet."
+      }
+    },
+    {
+      "number": 35,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 173)",
+      "question": "On completion of investigation, the officer in charge of a police station forwards to the Magistrate a report in the prescribed form, commonly called the “charge-sheet” or “final report.” This report is filed under:",
+      "options": [
+        { "label": "A", "text": "Section 161 CrPC" },
+        { "label": "B", "text": "Section 164 CrPC" },
+        { "label": "C", "text": "Section 190 CrPC" },
+        { "label": "D", "text": "Section 173 CrPC" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 173(2) CrPC governs submission of the final police report (charge-sheet or closure report) upon completing investigation.",
+        "whyMistakeHappens": "Confusing Magistrate cognizance of the report (s.190) with filing the police report (s.173).",
+        "howToRectify": "Charge-sheet / final report = Section 173 CrPC."
+      }
+    },
+    {
+      "number": 36,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 154 — Zero FIR)",
+      "question": "A cognizable offence is committed at a place that does not fall within the local jurisdiction of the police station where the informant goes. The station must still register the FIR and then transfer it to the station having jurisdiction. Such an FIR registered irrespective of territorial jurisdiction is commonly called a:",
+      "options": [
+        { "label": "A", "text": "Zero FIR" },
+        { "label": "B", "text": "Cross FIR" },
+        { "label": "C", "text": "Second FIR" },
+        { "label": "D", "text": "Quash FIR" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A Zero FIR is registered at any police station irrespective of territorial jurisdiction and later transferred to the police station having jurisdiction.",
+        "whyMistakeHappens": "Cross FIR and second FIR deal with counter-versions or duplicate FIRs on the same incident.",
+        "howToRectify": "Zero FIR = register regardless of jurisdiction, then transfer."
+      }
+    },
+    {
+      "number": 37,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 125)",
+      "question": "A wife, unable to maintain herself, applies for monthly maintenance from her husband who has sufficient means and neglects her. The summary remedy enabling a wife, children or parents to claim maintenance is contained in:",
+      "options": [
+        { "label": "A", "text": "Section 125 CrPC" },
+        { "label": "B", "text": "Section 482 CrPC" },
+        { "label": "C", "text": "Section 145 CrPC" },
+        { "label": "D", "text": "Section 156 CrPC" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 125 CrPC provides a summary, secular remedy for monthly maintenance of a neglected wife, children, or parents unable to maintain themselves.",
+        "whyMistakeHappens": "Unrelated sections (s.482 inherent powers, s.145 property disputes) serve as distractors.",
+        "howToRectify": "Maintenance order in CrPC = Section 125."
+      }
+    },
+    {
+      "number": 38,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 125(1))",
+      "question": "Under s.125 CrPC, which of the following persons is NOT entitled to claim maintenance from a person having sufficient means who neglects or refuses to maintain them?",
+      "options": [
+        { "label": "A", "text": "A wife unable to maintain herself" },
+        { "label": "B", "text": "A legitimate or illegitimate minor child unable to maintain itself" },
+        { "label": "C", "text": "A father or mother unable to maintain themselves" },
+        { "label": "D", "text": "A brother of full age earning his own livelihood" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 125(1) covers wife, minor/disabled child, and father or mother—never siblings.",
+        "whyMistakeHappens": "Missing the word 'NOT' when skimming valid claimants.",
+        "howToRectify": "s.125 covers wife, children, and parents only—never brothers or sisters."
+      }
+    },
+    {
+      "number": 39,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 127)",
+      "question": "An order of maintenance has been passed under s.125 CrPC. On proof of a change in the circumstances of the person paying or receiving maintenance, the Magistrate may alter the allowance. The power to alter the maintenance order is conferred by:",
+      "options": [
+        { "label": "A", "text": "Section 125(3) CrPC" },
+        { "label": "B", "text": "Section 126 CrPC" },
+        { "label": "C", "text": "Section 127 CrPC" },
+        { "label": "D", "text": "Section 128 CrPC" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 127 CrPC empowers the Magistrate to alter the maintenance allowance upon proof of a change in circumstances.",
+        "whyMistakeHappens": "Confusing s.126 (procedure) or s.128 (enforcement) with s.127 (alteration).",
+        "howToRectify": "125 grant, 126 procedure, 127 alter, 128 enforce."
+      }
+    },
+    {
+      "number": 40,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 41)",
+      "question": "In a civil suit, a party seeks to prove the existence of a previous judgment in order to show that a particular court had no jurisdiction to take cognizance, the judgment being one of those affecting things “in rem.” The relevancy of judgments, orders or decrees in probate, matrimonial, admiralty or insolvency jurisdiction is governed by:",
+      "options": [
+        { "label": "A", "text": "Section 40 of the Indian Evidence Act, 1872" },
+        { "label": "B", "text": "Section 43 of the Indian Evidence Act, 1872" },
+        { "label": "C", "text": "Section 44 of the Indian Evidence Act, 1872" },
+        { "label": "D", "text": "Section 41 of the Indian Evidence Act, 1872" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 41 Evidence Act makes final judgments in probate, matrimonial, admiralty, or insolvency jurisdiction relevant as judgments in rem.",
+        "whyMistakeHappens": "Swapping ss.40–44 (s.40 res judicata bar, s.43 unrelated judgments, s.44 fraud/lack of jurisdiction).",
+        "howToRectify": "Judgments in rem (Probate, Matrimonial, Admiralty, Insolvency) = Section 41."
+      }
+    },
+    {
+      "number": 41,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 54)",
+      "question": "In a criminal trial, the prosecution seeks to lead evidence of the accused’s bad character merely to show that he was likely to have committed the offence. Under the Indian Evidence Act, 1872, in criminal proceedings the fact that the accused has a bad character is:",
+      "options": [
+        { "label": "A", "text": "Always relevant under s.52" },
+        { "label": "B", "text": "Irrelevant under s.54, unless evidence of good character has been given, or bad character is itself a fact in issue" },
+        { "label": "C", "text": "Relevant only under s.53A" },
+        { "label": "D", "text": "Conclusively presumed under s.55" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 54 Evidence Act, an accused's bad character is irrelevant in criminal proceedings unless he gives evidence of good character or bad character is itself a fact in issue.",
+        "whyMistakeHappens": "Mixing up civil character rules (s.52) with criminal bad-character rules (s.54).",
+        "howToRectify": "s.53 good character relevant; s.54 bad character irrelevant unless triggered by good-character evidence or fact in issue."
+      }
+    },
+    {
+      "number": 42,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 115)",
+      "question": "A, by his declaration and conduct, intentionally causes B to believe a thing to be true and to act on that belief; later A is not allowed, in a suit between himself and B, to deny the truth of that thing. This doctrine is contained in:",
+      "options": [
+        { "label": "A", "text": "Section 115 of the Indian Evidence Act, 1872 (estoppel)" },
+        { "label": "B", "text": "Section 114 of the Indian Evidence Act, 1872" },
+        { "label": "C", "text": "Section 116 of the Indian Evidence Act, 1872" },
+        { "label": "D", "text": "Section 117 of the Indian Evidence Act, 1872" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 115 Evidence Act enacts the general rule of estoppel by representation.",
+        "whyMistakeHappens": "Sections 116 and 117 are specific estoppels (tenant/licensee and acceptor/bailee).",
+        "howToRectify": "General estoppel by declaration/act/omission = Section 115."
+      }
+    },
+    {
+      "number": 43,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 134)",
+      "question": "In a murder trial only one eye-witness deposes to the occurrence, but his testimony is found wholly reliable. The court may convict on his sole testimony because s.134 of the Indian Evidence Act, 1872 lays down that:",
+      "options": [
+        { "label": "A", "text": "At least two witnesses are required to prove any fact" },
+        { "label": "B", "text": "No particular number of witnesses is required for the proof of any fact; evidence is weighed, not counted" },
+        { "label": "C", "text": "A minimum of three witnesses is required in a murder trial" },
+        { "label": "D", "text": "The sole witness must always be corroborated by documentary evidence" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 134 Evidence Act specifies that no particular number of witnesses is required for proof of any fact—quality outweighs quantity.",
+        "whyMistakeHappens": "Assuming capital offences legally require two or more witnesses.",
+        "howToRectify": "Evidence is weighed, not counted—one wholly reliable witness suffices under s.134."
+      }
+    },
+    {
+      "number": 44,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 154)",
+      "question": "During trial a witness called by the prosecution turns against it and begins to depose untruthfully in favour of the accused. With the court’s permission, the party calling such a “hostile” witness may put questions in the nature of cross-examination to him under:",
+      "options": [
+        { "label": "A", "text": "Section 137 of the Indian Evidence Act, 1872" },
+        { "label": "B", "text": "Section 138 of the Indian Evidence Act, 1872" },
+        { "label": "C", "text": "Section 145 of the Indian Evidence Act, 1872" },
+        { "label": "D", "text": "Section 154 of the Indian Evidence Act, 1872" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 154 empowers the court in its discretion to allow a party to put cross-examination questions to its own ('hostile') witness.",
+        "whyMistakeHappens": "Confusing s.145 (contradicting with prior written statements) with s.154 (leave to cross-examine own witness).",
+        "howToRectify": "Hostile witness = Section 154 Evidence Act."
+      }
+    },
+    {
+      "number": 45,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 55 Explanation)",
+      "question": "The prosecution wishes to establish the general reputation and disposition of a person. Under s.55 read with the Explanation to ss.52–55 of the Indian Evidence Act, 1872, the word “character” includes:",
+      "options": [
+        { "label": "A", "text": "Only the general reputation, and not disposition" },
+        { "label": "B", "text": "Only the particular acts by which reputation is shown" },
+        { "label": "C", "text": "Only such facts as amount to previous convictions" },
+        { "label": "D", "text": "Both reputation and disposition, but evidence may generally be given only of general reputation and general disposition, not of particular acts" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Explanation to Section 55 defines 'character' as including both reputation and disposition, limiting proof (save under s.54) to general reputation and general disposition rather than particular acts.",
+        "whyMistakeHappens": "Omitting 'disposition' or thinking particular acts can prove character generally.",
+        "howToRectify": "Character (s.55 Expl.) = reputation + disposition, proved only generally."
+      }
+    },
+    {
+      "number": 46,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order XXXIX, Sec. 151)",
+      "question": "In an application for a temporary injunction under Order XXXIX of the Code of Civil Procedure, 1908, where the court is not in a position at the first hearing to decide whether to grant or refuse the injunction and merely wishes to preserve the existing state of affairs between the parties pending adjudication, the appropriate course is to:",
+      "options": [
+        { "label": "A", "text": "pass an order directing the parties to maintain status quo, after hearing the parties (an inter-partes order), so that neither party alters the position to the prejudice of the other" },
+        { "label": "B", "text": "dismiss the application outright for want of a clear prima facie case" },
+        { "label": "C", "text": "grant a permanent injunction immediately to avoid delay" },
+        { "label": "D", "text": "refer the dispute to arbitration before any interim relief is considered" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "At an interlocutory stage before full adjudication, a court preserves the existing position under Order XXXIX read with s.151 CPC via an inter-partes status quo order.",
+        "whyMistakeHappens": "Confusing interim status quo preservation with final permanent injunction or outright dismissal.",
+        "howToRectify": "Preserve present position pending hearing = inter-partes status quo order."
+      }
+    },
+    {
+      "number": 47,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 148A)",
+      "question": "Under Section 148A of the Code of Civil Procedure, 1908, a person who apprehends that an application is expected to be, or has been, made against him in any suit or proceeding instituted or about to be instituted may lodge a caveat, the principal effect of which is that:",
+      "options": [
+        { "label": "A", "text": "the suit against the caveator is automatically stayed for ninety days" },
+        { "label": "B", "text": "the court shall not pass any interim order on such an application without first serving notice of the application on the caveator" },
+        { "label": "C", "text": "the caveator is treated as having admitted the plaintiff’s claim" },
+        { "label": "D", "text": "the caveat operates as a substitute for filing a written statement" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 148A CPC ensures that once a caveat is lodged, no ex parte interim order is passed without serving notice on the caveator.",
+        "whyMistakeHappens": "Seeing '90 days' in (A) confuses the caveat's 90-day shelf life with a stay of suit.",
+        "howToRectify": "Caveat = mandatory notice before interim order."
+      }
+    },
+    {
+      "number": 48,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 151)",
+      "question": "The inherent powers of a civil court saved by Section 151 of the Code of Civil Procedure, 1908 are to be exercised only:",
+      "options": [
+        { "label": "A", "text": "in preference to, and in supersession of, the express provisions of the Code" },
+        { "label": "B", "text": "to review and reverse the court’s own decrees on merits at any time" },
+        { "label": "C", "text": "to make such orders as may be necessary for the ends of justice or to prevent abuse of the process of the court, and not where the Code contains a specific provision governing the matter" },
+        { "label": "D", "text": "to confer fresh substantive jurisdiction on the court where none otherwise exists" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 151 saves residual inherent powers for ends of justice or preventing abuse of process only where the Code does not contain a specific governing provision.",
+        "whyMistakeHappens": "Treating s.151 as overriding express provisions of the CPC.",
+        "howToRectify": "s.151 fills statutory gaps—never defeats express CPC provisions."
+      }
+    },
+    {
+      "number": 49,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order XXXVII)",
+      "question": "In a summary suit instituted under Order XXXVII of the Code of Civil Procedure, 1908, a defendant who has entered appearance and seeks to defend the suit must apply for leave to defend, and such leave is ordinarily to be granted where the defendant:",
+      "options": [
+        { "label": "A", "text": "merely denies the claim without disclosing any facts" },
+        { "label": "B", "text": "has already paid the entire claimed amount before suit" },
+        { "label": "C", "text": "is a registered company rather than an individual" },
+        { "label": "D", "text": "discloses such facts as would make it incumbent on the plaintiff to prove consideration, or otherwise raises a triable issue or a substantial defence that is not frivolous or vexatious" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Order XXXVII Rule 3(5) CPC, leave to defend is granted when the defendant discloses facts raising a genuine triable issue or substantial non-frivolous defence.",
+        "whyMistakeHappens": "Mistaking bare denial or status for disclosure of a genuine triable issue.",
+        "howToRectify": "Order XXXVII leave = genuine triable issue."
+      }
+    },
+    {
+      "number": 50,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order XXXVII Rule 3)",
+      "question": "Where a defendant in a summary suit under Order XXXVII of the Code of Civil Procedure, 1908 discloses a defence that, though raising a triable issue, appears to the court to be intended merely to gain time or where the defence is plausible but improbable, the court may grant leave to defend:",
+      "options": [
+        { "label": "A", "text": "only unconditionally, in every case where any issue is raised" },
+        { "label": "B", "text": "conditionally, for instance upon the defendant depositing in court the amount claimed or furnishing security" },
+        { "label": "C", "text": "only after the defendant succeeds in a separate suit" },
+        { "label": "D", "text": "never, since any triable issue compels a full trial without conditions" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Where a defence raises a plausible yet improbable triable issue or seems aimed at delay, the court grants conditional leave (e.g., deposit or security) under Order XXXVII.",
+        "whyMistakeHappens": "Thinking any triable issue forces unconditional leave.",
+        "howToRectify": "Plausible-but-improbable defence -> conditional leave (deposit/security)."
+      }
+    },
+    {
+      "number": 51,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order IX Rule 6)",
+      "question": "Under Order IX Rule 6 of the Code of Civil Procedure, 1908, where the plaintiff appears on the day fixed for hearing but the defendant does not appear, and it is proved that the summons was duly served, the court may:",
+      "options": [
+        { "label": "A", "text": "dismiss the suit for default of the plaintiff" },
+        { "label": "B", "text": "adjourn the suit indefinitely until the defendant chooses to appear" },
+        { "label": "C", "text": "proceed to hear the suit ex parte against the absent defendant" },
+        { "label": "D", "text": "strike the suit off the file without any order" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Order IX Rule 6(1)(a) CPC, when the plaintiff appears and the defendant stays absent despite proof of due service, the court may proceed to hear the suit ex parte.",
+        "whyMistakeHappens": "Swapping Rule 6 (defendant absent -> ex parte) with Rule 8 (plaintiff absent -> suit dismissed).",
+        "howToRectify": "Defendant absent + service proved = court hears the suit ex parte (O.IX R.6)."
+      }
+    },
+    {
+      "number": 52,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order IX Rule 8)",
+      "question": "Under Order IX Rule 8 of the Code of Civil Procedure, 1908, where on the day fixed for hearing the defendant appears but the plaintiff does not appear, the court shall ordinarily:",
+      "options": [
+        { "label": "A", "text": "proceed to decide the suit on merits in favour of the plaintiff" },
+        { "label": "B", "text": "issue a fresh summons to the plaintiff in every case" },
+        { "label": "C", "text": "pass an ex parte decree against the defendant" },
+        { "label": "D", "text": "make an order that the suit be dismissed, unless the defendant admits the claim or part thereof, in which case judgment is passed on the admission" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Order IX Rule 8 CPC, when the defendant appears and the plaintiff fails to appear, the suit is dismissed unless the defendant admits all or part of the claim.",
+        "whyMistakeHappens": "Overlooking the exception for claims admitted by the defendant.",
+        "howToRectify": "Plaintiff absent + defendant present = suit dismissed (subject to admissions) under O.IX R.8."
+      }
+    },
+    {
+      "number": 53,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 4)",
+      "question": "Under Sections 3 to 5 of the Indian Contract Act, 1872, the communication of an acceptance, as against the proposer, is complete:",
+      "options": [
+        { "label": "A", "text": "when it is put in a course of transmission to the proposer so as to be out of the power of the acceptor" },
+        { "label": "B", "text": "only when the acceptance comes to the actual knowledge of the proposer" },
+        { "label": "C", "text": "only after the proposer despatches a confirmation of receipt" },
+        { "label": "D", "text": "at the moment the offer is first received by the acceptor" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 4 Contract Act, communication of acceptance is complete as against the proposer when put into transmission out of the acceptor's power, and as against the acceptor when it comes to the proposer's knowledge.",
+        "whyMistakeHappens": "Confusing completion as against the proposer (dispatch) with completion as against the acceptor (receipt/knowledge).",
+        "howToRectify": "Against proposer = dispatched; against acceptor = received/known by proposer."
+      }
+    },
+    {
+      "number": 54,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 8)",
+      "question": "In Carlill v. Carbolic Smoke Ball Co., the company’s newspaper advertisement promising a reward to anyone who used the smoke ball as directed and still caught influenza was held to be:",
+      "options": [
+        { "label": "A", "text": "a mere invitation to treat incapable of creating any contract" },
+        { "label": "B", "text": "an offer that lapsed because it was not addressed to a named person" },
+        { "label": "C", "text": "a general offer to the world at large, which ripened into a binding contract with any person who performed the stipulated conditions" },
+        { "label": "D", "text": "void for want of consideration, the use of the smoke ball being no detriment" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Carlill v. Carbolic Smoke Ball Co. established that a general offer made to the world at large ripens into a binding contract upon performance of the stipulated conditions (s.8 Contract Act).",
+        "whyMistakeHappens": "Assuming all advertisements are mere invitations to treat without contractual intent.",
+        "howToRectify": "General offer + performance of conditions = binding contract (Carlill)."
+      }
+    },
+    {
+      "number": 55,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 5)",
+      "question": "Under Section 5 of the Indian Contract Act, 1872, a proposal may be revoked by the proposer at any time:",
+      "options": [
+        { "label": "A", "text": "before the communication of its acceptance is complete as against the proposer, but not afterwards" },
+        { "label": "B", "text": "even after the acceptance has been communicated to the proposer" },
+        { "label": "C", "text": "only with the consent of the person to whom it was made" },
+        { "label": "D", "text": "at no stage once the proposal has been made" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 5 Contract Act permits revocation of a proposal at any time before communication of acceptance is complete as against the proposer, i.e., before dispatch by the acceptor.",
+        "whyMistakeHappens": "Thinking revocation can still happen after the offeree posts acceptance.",
+        "howToRectify": "Revoke before acceptance is complete against proposer (dispatch)."
+      }
+    },
+    {
+      "number": 56,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Secs. 2(a) & 8)",
+      "question": "A standing offer (also called a continuing or open offer), such as a tender to supply goods as and when required over a stated period, is best understood in the law of contract as:",
+      "options": [
+        { "label": "A", "text": "a single concluded contract for the entire quantity from the moment the tender is accepted" },
+        { "label": "B", "text": "an invitation to treat that can never give rise to any contract" },
+        { "label": "C", "text": "a contract that binds the offeror to supply but never binds the buyer to order" },
+        { "label": "D", "text": "a continuing offer that is accepted, and thereby converted into a binding contract, each time an order is placed, so a distinct contract arises with every order" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Per Bengal Coal Co. v. Homee Wadia & Co., a standing tender is a continuing offer; each requisition order acts as a separate acceptance creating a distinct contract.",
+        "whyMistakeHappens": "Assuming approval of the tender binds the parties for the entire future quantity at once.",
+        "howToRectify": "Standing offer = a fresh contract arises with each order placed."
+      }
+    },
+    {
+      "number": 57,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 25 Explanation 2)",
+      "question": "Under the definition of consideration in the Indian Contract Act, 1872 read with Explanation 2 to Section 25, the general position regarding the adequacy of consideration is that an agreement is not void merely because the consideration is inadequate, but inadequacy:",
+      "options": [
+        { "label": "A", "text": "automatically renders the agreement void as being unconscionable" },
+        { "label": "B", "text": "is irrelevant in every respect and can never be looked at by the court" },
+        { "label": "C", "text": "may be taken into account by the court in determining whether the consent of the promisor was freely given" },
+        { "label": "D", "text": "must always equal the market value of the promise for the contract to be valid" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Explanation 2 to s.25 Contract Act confirms that inadequate consideration does not void a contract if consent is free, though inadequacy may be examined to test whether consent was freely given.",
+        "whyMistakeHappens": "Picking 'irrelevant in every respect' ignores the free-consent safeguard in Explanation 2.",
+        "howToRectify": "Consideration need not be adequate, but gross inadequacy can help test free consent."
+      }
+    },
+    {
+      "number": 58,
+      "subject": "Law of Torts",
+      "statuteRef": "Tort of Negligence (Donoghue v. Stevenson)",
+      "question": "In the tort of negligence, before a defendant can be held liable a plaintiff must establish, among other things, that the defendant owed him a duty of care; the existence and scope of such a duty is, in the modern law, determined principally by reference to:",
+      "options": [
+        { "label": "A", "text": "the defendant’s personal wealth and capacity to pay damages" },
+        { "label": "B", "text": "the reasonable foreseeability of harm to a person in the plaintiff’s position, together with a relationship of sufficient proximity between the parties" },
+        { "label": "C", "text": "whether the plaintiff suffered any economic loss exceeding a fixed threshold" },
+        { "label": "D", "text": "the existence of a written contract between the parties in every case" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Donoghue v. Stevenson and Caparo Industries v. Dickman, duty of care turns on reasonable foreseeability of harm and sufficient proximity between the parties.",
+        "whyMistakeHappens": "Assuming a contract is required for tortious negligence.",
+        "howToRectify": "Duty of care = reasonable foreseeability + proximity."
+      }
+    },
+    {
+      "number": 59,
+      "subject": "Law of Torts",
+      "statuteRef": "Tort of Negligence (Res Ipsa Loquitur)",
+      "question": "The maxim res ipsa loquitur operates in the law of negligence so as to:",
+      "options": [
+        { "label": "A", "text": "impose absolute liability on the defendant irrespective of fault" },
+        { "label": "B", "text": "bar the plaintiff’s claim unless he proves the precise act of carelessness" },
+        { "label": "C", "text": "raise an inference of negligence where the thing causing the harm was under the defendant’s exclusive control and the accident is such as does not ordinarily happen without negligence, shifting an evidentiary burden to the defendant to explain" },
+        { "label": "D", "text": "apply only where there is a contract between the parties" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Res ipsa loquitur ('the thing speaks for itself') raises a rebuttable inference of negligence where the thing was under the defendant's exclusive control and the accident does not ordinarily occur without negligence.",
+        "whyMistakeHappens": "Confusing an evidentiary burden shift with strict or absolute liability.",
+        "howToRectify": "Res ipsa = exclusive control + accident bespeaks negligence -> shifts evidentiary burden."
+      }
+    },
+    {
+      "number": 60,
+      "subject": "Law of Torts",
+      "statuteRef": "Tort of Negligence (Nervous Shock)",
+      "question": "In the tort of negligence, a claim for damages founded on nervous shock (psychiatric injury) is, on settled principles, maintainable where the claimant:",
+      "options": [
+        { "label": "A", "text": "suffers mere grief, sorrow or anxiety not amounting to any recognised psychiatric illness" },
+        { "label": "B", "text": "is a complete stranger who merely reads about the accident long afterwards" },
+        { "label": "C", "text": "has suffered no perceptible harm of any kind but fears future injury" },
+        { "label": "D", "text": "suffers a recognisable psychiatric illness brought about by a sudden shock, the risk of such injury being reasonably foreseeable and the requisite proximity being present" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Damages for nervous shock require a recognised psychiatric illness caused by a sudden shock, together with foreseeability and requisite proximity (McLoughlin v. O'Brian).",
+        "whyMistakeHappens": "Assuming ordinary grief or anxiety suffices without a recognised psychiatric injury.",
+        "howToRectify": "Recognised psychiatric illness + sudden shock + foreseeability & proximity."
+      }
+    },
+    {
+      "number": 61,
+      "subject": "Law of Torts",
+      "statuteRef": "Occupier's Liability",
+      "question": "In the law of torts governing occupier’s liability, the duty owed by an occupier of premises to a lawful visitor is, in substance, a duty to:",
+      "options": [
+        { "label": "A", "text": "take such care as in all the circumstances is reasonable to see that the visitor will be reasonably safe in using the premises for the purposes for which he is invited or permitted to be there" },
+        { "label": "B", "text": "guarantee the absolute safety of the visitor against every conceivable harm" },
+        { "label": "C", "text": "owe no duty whatsoever, since entry is at the visitor’s own risk in all cases" },
+        { "label": "D", "text": "warn the visitor of dangers only if a written notice has been demanded" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "An occupier owes lawful visitors a common duty of reasonable care to see that they are reasonably safe for the permitted purpose of the visit (Wheat v. E. Lacon).",
+        "whyMistakeHappens": "Exaggerating the standard into an absolute safety guarantee.",
+        "howToRectify": "Occupier's duty = reasonable care for safety for the permitted purpose of the visit."
+      }
+    },
+    {
+      "number": 62,
+      "subject": "Specific Relief Act",
+      "statuteRef": "Specific Relief Act, 1963 (Sec. 6)",
+      "question": "Under Section 6 of the Specific Relief Act, 1963, a person who has been dispossessed of immovable property without his consent otherwise than in due course of law may recover possession by a suit, provided that such suit is brought within:",
+      "options": [
+        { "label": "A", "text": "twelve years from the date of dispossession, and may also be brought against the Government" },
+        { "label": "B", "text": "six months from the date of the dispossession, and no such suit shall be brought against the Government" },
+        { "label": "C", "text": "three years from the date of dispossession, irrespective of who the defendant is" },
+        { "label": "D", "text": "thirty days from the date of dispossession, only with the leave of the court" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 6 SRA, 1963, a summary suit for recovery of possession based on prior possession must be filed within 6 months of dispossession, and cannot be filed against the Government.",
+        "whyMistakeHappens": "Confusing the 12-year limitation for title suits with the 6-month possessory remedy under s.6 SRA.",
+        "howToRectify": "s.6 SRA = 6 months limitation + bar against Government."
+      }
+    },
+    {
+      "number": 63,
+      "subject": "Family Law",
+      "statuteRef": "Special Marriage Act, 1954 (Sec. 4)",
+      "question": "Under the Special Marriage Act, 1954, a marriage may be solemnised between any two persons provided that, among the conditions in Section 4, at the time of the marriage:",
+      "options": [
+        { "label": "A", "text": "the male has completed eighteen years and the female fifteen years of age" },
+        { "label": "B", "text": "the male has completed twenty-one years and the female eighteen years of age" },
+        { "label": "C", "text": "both parties profess the same religion at the date of solemnisation" },
+        { "label": "D", "text": "the parties obtain the prior sanction of a District Court in every case" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 4(c) of the Special Marriage Act, 1954 requires the male to have completed 21 years and the female 18 years of age.",
+        "whyMistakeHappens": "Confusing general majority age (18) with statutory marriageable ages.",
+        "howToRectify": "SMA s.4(c): Male 21 / Female 18."
+      }
+    },
+    {
+      "number": 64,
+      "subject": "Family Law",
+      "statuteRef": "Special Marriage Act, 1954 (Secs. 5–7)",
+      "question": "A couple intending to marry under the Special Marriage Act, 1954 give notice to the Marriage Officer. Under the scheme of Sections 5 to 7, the marriage may ordinarily be solemnised:",
+      "options": [
+        { "label": "A", "text": "after the expiry of thirty days from the date of publication of the notice, if no objection is upheld" },
+        { "label": "B", "text": "immediately, since the notice is a mere formality" },
+        { "label": "C", "text": "only after sixty days and with the written consent of both sets of parents" },
+        { "label": "D", "text": "after fifteen days, regardless of any objection received" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sections 5–7 of the Special Marriage Act require publication of intended marriage notice for 30 days to invite objections; absent upheld objections, marriage may be solemnised thereafter.",
+        "whyMistakeHappens": "Misremembering the 30-day statutory notice period.",
+        "howToRectify": "SMA timeline: Notice -> 30 days publication -> Solemnisation."
+      }
+    },
+    {
+      "number": 65,
+      "subject": "Family Law",
+      "statuteRef": "Special Marriage Act, 1954 (Sec. 19)",
+      "question": "Where a Hindu undivided family member marries under the Special Marriage Act, 1954, the effect under Section 19 of the Act, in relation to his joint family, is that:",
+      "options": [
+        { "label": "A", "text": "the marriage has no effect whatever on his membership of the family" },
+        { "label": "B", "text": "he automatically becomes the karta of the joint family" },
+        { "label": "C", "text": "he is severed from the undivided family of which he was a member" },
+        { "label": "D", "text": "his interest in coparcenary property is forfeited to the State" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 19 SMA states that marriage under the Act by a member of a Hindu, Buddhist, Sikh, or Jain undivided family operates as severance from that family.",
+        "whyMistakeHappens": "Assuming joint family membership remains unaffected across all SMA marriages.",
+        "howToRectify": "Section 19 SMA = statutory severance from the undivided family."
+      }
+    },
+    {
+      "number": 66,
+      "subject": "Family Law",
+      "statuteRef": "Special Marriage Act, 1954 (Sec. 21)",
+      "question": "Succession to the property of a person whose marriage is solemnised under the Special Marriage Act, 1954 and who is married to a non-Hindu is governed by:",
+      "options": [
+        { "label": "A", "text": "the personal law to which the deceased belonged before the marriage" },
+        { "label": "B", "text": "the Hindu Succession Act, 1956 in every case" },
+        { "label": "C", "text": "customary law of the locality where the marriage took place" },
+        { "label": "D", "text": "the Indian Succession Act, 1925, by virtue of Section 21 of the Special Marriage Act" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 21 of the Special Marriage Act regulates succession to property of persons married under the Act (except two-Hindu marriages under s.21A) under the Indian Succession Act, 1925.",
+        "whyMistakeHappens": "Thinking prior personal law still governs an inter-faith SMA marriage.",
+        "howToRectify": "Inter-faith SMA marriage -> s.21 -> Indian Succession Act, 1925."
+      }
+    },
+    {
+      "number": 67,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Succession Act, 1956 (Sec. 15(2)(a))",
+      "question": "A female Hindu dies intestate possessed of property inherited from her father. She leaves no son, daughter or children of any predeceased child. Under Section 15(2)(a) of the Hindu Succession Act, 1956 such property devolves upon:",
+      "options": [
+        { "label": "A", "text": "the heirs of the father, in preference to other heirs" },
+        { "label": "B", "text": "the heirs of her husband" },
+        { "label": "C", "text": "her mother-in-law absolutely" },
+        { "label": "D", "text": "the State by escheat" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 15(2)(a) HSA, when a female Hindu dies issueless, property inherited from her father or mother returns to the heirs of her father.",
+        "whyMistakeHappens": "Applying general s.15(1) succession instead of the source-based exception in s.15(2).",
+        "howToRectify": "Issueless female intestate: father's property goes back to father's heirs."
+      }
+    },
+    {
+      "number": 68,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Succession Act, 1956 (Sec. 15(1))",
+      "question": "Section 15(1) of the Hindu Succession Act, 1956 lays down the general order of succession to the property of a female Hindu dying intestate. The first entry in this order is:",
+      "options": [
+        { "label": "A", "text": "the heirs of the husband" },
+        { "label": "B", "text": "the mother and father" },
+        { "label": "C", "text": "the sons and daughters (including the children of any predeceased son or daughter) and the husband" },
+        { "label": "D", "text": "the heirs of the father" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Entry (a) of Section 15(1) HSA gives first priority to sons, daughters (including children of any predeceased son or daughter), and the husband.",
+        "whyMistakeHappens": "Confusing s.15(1)(a) with s.15(1)(b) (husband's heirs) or s.15(2) (source reversion).",
+        "howToRectify": "s.15(1) Entry (a) = Children (and predeceased children's issue) + Husband."
+      }
+    },
+    {
+      "number": 69,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act, 1955 (Sec. 16)",
+      "question": "Under Section 16 of the Hindu Marriage Act, 1955, children born of a marriage which is null and void under Section 11:",
+      "options": [
+        { "label": "A", "text": "are illegitimate and have no right to any property" },
+        { "label": "B", "text": "inherit coparcenary property in the same manner as children of a valid marriage in all respects" },
+        { "label": "C", "text": "can claim legitimacy only if the parents subsequently marry validly" },
+        { "label": "D", "text": "are deemed legitimate, but their rights in property are confined to the property of their parents" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 16(1) HMA confers statutory legitimacy on children of void marriages, while s.16(3) restricts their property rights to the property of their parents only.",
+        "whyMistakeHappens": "Ignoring the statutory limitation in s.16(3) regarding parents' property.",
+        "howToRectify": "s.16 HMA = legitimate + rights confined to parents' property."
+      }
+    },
+    {
+      "number": 70,
+      "subject": "Transfer of Property Act",
+      "statuteRef": "Transfer of Property Act, 1882 (Sec. 53A)",
+      "question": "X agrees in writing to sell his land to Y, who pays part of the price and is put into possession and continues in possession in part-performance of the contract, though the sale deed is not registered. X later sues to evict Y. Y’s best defence under Section 53A of the Transfer of Property Act, 1882 is that:",
+      "options": [
+        { "label": "A", "text": "X is debarred from enforcing against Y any right in respect of the property other than a right expressly provided by the contract" },
+        { "label": "B", "text": "Y has become the full owner of the land by operation of part-performance" },
+        { "label": "C", "text": "Y can compel X to execute a fresh sale deed without paying the balance" },
+        { "label": "D", "text": "the contract being unregistered is a complete nullity and no defence survives" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 53A TPA debars the transferor from enforcing any right against the transferee in possession other than a right expressly provided by the written contract.",
+        "whyMistakeHappens": "Assuming s.53A transfers legal title rather than protecting possession.",
+        "howToRectify": "s.53A bars eviction—it protects possession without creating ownership."
+      }
+    },
+    {
+      "number": 71,
+      "subject": "Transfer of Property Act",
+      "statuteRef": "Transfer of Property Act, 1882 (Sec. 53A)",
+      "question": "The equitable doctrine of part-performance under Section 53A of the Transfer of Property Act, 1882 operates:",
+      "options": [
+        { "label": "A", "text": "as a sword, enabling the transferee to sue for title" },
+        { "label": "B", "text": "as a shield only, available as a defence to protect the transferee’s possession" },
+        { "label": "C", "text": "to confer ownership automatically after twelve years of possession" },
+        { "label": "D", "text": "only where the contract is oral and supported by part payment" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 53A operates strictly as a defensive shield to protect possession, not as an offensive sword to sue for title.",
+        "whyMistakeHappens": "Reversing shield vs. sword or confusing with 12-year adverse possession.",
+        "howToRectify": "s.53A TPA = 'Shield, not sword'."
+      }
+    },
+    {
+      "number": 72,
+      "subject": "Transfer of Property Act",
+      "statuteRef": "Transfer of Property Act, 1882 (Sec. 52)",
+      "question": "During the pendency of a suit concerning title to immovable property, the defendant transfers the suit property to a third party. Under Section 52 of the Transfer of Property Act, 1882 (lis pendens), the transfer is:",
+      "options": [
+        { "label": "A", "text": "void ab initio and of no legal effect" },
+        { "label": "B", "text": "valid and binding on the court irrespective of the decree" },
+        { "label": "C", "text": "valid but the transferee takes subject to the result of the pending suit" },
+        { "label": "D", "text": "voidable only at the option of the transferee" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 52 TPA (lis pendens), a pendente lite transfer is not void; it is valid inter partes, but the transferee takes subject to the court's decree.",
+        "whyMistakeHappens": "Assuming transfers during pending litigation are void ab initio.",
+        "howToRectify": "Lis pendens: transfer survives, subject to the outcome of the suit."
+      }
+    },
+    {
+      "number": 73,
+      "subject": "Transfer of Property Act",
+      "statuteRef": "Transfer of Property Act, 1882 (Sec. 53)",
+      "question": "A debtor, with intent to defeat and delay his creditors, gratuitously transfers his property to a relative. The creditors seek to set aside the transfer. Under Section 53 of the Transfer of Property Act, 1882 such a transfer is:",
+      "options": [
+        { "label": "A", "text": "void and incapable of being challenged" },
+        { "label": "B", "text": "voidable at the option of any creditor so defeated or delayed" },
+        { "label": "C", "text": "valid and binding on all creditors" },
+        { "label": "D", "text": "voidable only at the option of the transferee" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 53(1) TPA makes every transfer of immovable property intended to defeat or delay creditors voidable at the option of any creditor so defeated or delayed.",
+        "whyMistakeHappens": "Calling it void instead of voidable at the creditor's option.",
+        "howToRectify": "s.53 TPA = voidable at the option of the defeated/delayed creditor."
+      }
+    },
+    {
+      "number": 74,
+      "subject": "Transfer of Property Act",
+      "statuteRef": "Transfer of Property Act, 1882 (Sec. 127)",
+      "question": "A donor makes a single gift of several properties to a donee, one of which is burdened with an onerous obligation. Under Section 127 of the Transfer of Property Act, 1882, the donee:",
+      "options": [
+        { "label": "A", "text": "may accept the beneficial gifts and reject the onerous one, taking the benefits free of burden" },
+        { "label": "B", "text": "is liable beyond the property comprised in the gift for the obligation" },
+        { "label": "C", "text": "is automatically discharged from the onerous obligation on acceptance" },
+        { "label": "D", "text": "must, if he accepts one, accept the whole, taking the onerous gift with the others" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 127 TPA, when a single gift includes both beneficial and onerous properties, the donee must accept all or none.",
+        "whyMistakeHappens": "Confusing a single transfer (all or none) with separate independent transfers (selective acceptance allowed).",
+        "howToRectify": "Single onerous gift = accept whole or take nothing (s.127)."
+      }
+    },
+    {
+      "number": 75,
+      "subject": "Company Law",
+      "statuteRef": "Companies Act, 2013 (Salomon v. Salomon)",
+      "question": "A creditor of a company seeks to make the directors personally liable for a debt incurred by the company in the ordinary course of business. The principle that ordinarily prevents this, and which the creditor must overcome, is best described as:",
+      "options": [
+        { "label": "A", "text": "the principle that a company is a separate legal person distinct from its members and directors" },
+        { "label": "B", "text": "the doctrine of ultra vires" },
+        { "label": "C", "text": "the rule in Foss v. Harbottle" },
+        { "label": "D", "text": "the doctrine of constructive notice" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "An incorporated company is a separate juristic person distinct from its members and directors, shielding them from personal liability for corporate debts unless the veil is pierced.",
+        "whyMistakeHappens": "Confusing corporate entity separation with ultra vires or constructive notice.",
+        "howToRectify": "Shield against personal liability for corporate debts = Separate Legal Personality."
+      }
+    },
+    {
+      "number": 76,
+      "subject": "Company Law",
+      "statuteRef": "Companies Act, 2013 (Corporate Veil)",
+      "question": "In which of the following situations is a court least likely to lift the corporate veil and look at the persons behind the company?",
+      "options": [
+        { "label": "A", "text": "where the company is a mere sham or facade to evade a legal obligation" },
+        { "label": "B", "text": "where the corporate form is used to commit fraud or improper conduct" },
+        { "label": "C", "text": "where the company is incorporated to defeat the operation of law" },
+        { "label": "D", "text": "where the company is carrying on its stated lawful business in the ordinary course with no element of fraud or evasion" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Courts respect separate corporate personality when a company conducts stated lawful business without fraud, facade, or evasion of legal obligations.",
+        "whyMistakeHappens": "Missing 'least likely' in the stem.",
+        "howToRectify": "No fraud, no sham, no evasion -> corporate veil stays intact."
+      }
+    },
+    {
+      "number": 77,
+      "subject": "Company Law",
+      "statuteRef": "Company Law (Doctrine of Indoor Management)",
+      "question": "An outsider deals in good faith with a company and enters into a transaction that the company’s articles permit, assuming that the internal procedures (such as passing of a board resolution) have been duly followed. The doctrine of indoor management protects this outsider. The doctrine is associated with:",
+      "options": [
+        { "label": "A", "text": "Royal British Bank v. Turquand" },
+        { "label": "B", "text": "Salomon v. Salomon & Co." },
+        { "label": "C", "text": "Foss v. Harbottle" },
+        { "label": "D", "text": "Derry v. Peek" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The doctrine of indoor management originates in Royal British Bank v. Turquand (1856), allowing bona fide outsiders to assume internal corporate procedures were complied with.",
+        "whyMistakeHappens": "Confusing Turquand with Salomon or Foss v. Harbottle.",
+        "howToRectify": "Indoor management = Turquand rule."
+      }
+    },
+    {
+      "number": 78,
+      "subject": "Company Law",
+      "statuteRef": "Company Law (Exceptions to Indoor Management)",
+      "question": "Which of the following is not recognised as an exception to the doctrine of indoor management, i.e. a situation in which an outsider cannot claim its protection?",
+      "options": [
+        { "label": "A", "text": "where the outsider had actual knowledge of the irregularity" },
+        { "label": "B", "text": "where the circumstances were suspicious and ought to have put the outsider on inquiry" },
+        { "label": "C", "text": "where the act is one beyond the apparent authority and the outsider had notice" },
+        { "label": "D", "text": "where the outsider, acting honestly, simply assumed that an internal board resolution had been passed" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Actual knowledge, suspicion inviting inquiry, excess of apparent authority with notice, and forgery are exceptions; honestly assuming an internal resolution was passed is protected.",
+        "whyMistakeHappens": "Double negatives in the stem cause misreading.",
+        "howToRectify": "Honest assumption of internal compliance = protected core of Turquand."
+      }
+    },
+    {
+      "number": 79,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Sec. 2(s))",
+      "question": "Under Section 2(s) of the Industrial Disputes Act, 1947, a person employed mainly in a managerial or administrative capacity, or in a supervisory capacity drawing wages above the prescribed limit, is:",
+      "options": [
+        { "label": "A", "text": "always a “workman” regardless of his functions" },
+        { "label": "B", "text": "excluded from the definition of “workman”" },
+        { "label": "C", "text": "a “workman” only if he is a member of a trade union" },
+        { "label": "D", "text": "deemed an “employer” for all purposes of the Act" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(s) ID Act excludes persons employed mainly in managerial/administrative roles and supervisors drawing wages above the prescribed threshold from 'workman'.",
+        "whyMistakeHappens": "Assuming union membership overrides statutory exclusions or calling them 'employers'.",
+        "howToRectify": "Managerial/administrative + high-wage supervisory = excluded from 'workman' (s.2(s))."
+      }
+    },
+    {
+      "number": 80,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Sec. 2(kkk))",
+      "question": "“Lay-off” under the Industrial Disputes Act, 1947 refers to the failure, refusal or inability of an employer to give employment to a workman whose name is on the muster rolls and who has not been retrenched, on account of:",
+      "options": [
+        { "label": "A", "text": "misconduct proved against the workman after inquiry" },
+        { "label": "B", "text": "the workman attaining the age of superannuation" },
+        { "label": "C", "text": "shortage of coal, power or raw materials, accumulation of stocks, breakdown of machinery, natural calamity or similar reason" },
+        { "label": "D", "text": "voluntary abandonment of service by the workman" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(kkk) defines lay-off as temporary inability to employ a muster-roll workman due to shortage of coal, power, raw materials, stock accumulation, machinery breakdown, or natural calamity.",
+        "whyMistakeHappens": "Confusing lay-off with disciplinary dismissal or superannuation.",
+        "howToRectify": "Lay-off = temporary operational/resource inability while workman stays on muster rolls."
+      }
+    },
+    {
+      "number": 81,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Sec. 25F)",
+      "question": "Under Section 25F of the Industrial Disputes Act, 1947, before a workman who has been in continuous service for not less than one year is validly retrenched, the employer must, among other conditions:",
+      "options": [
+        { "label": "A", "text": "obtain the written consent of every other workman in the establishment" },
+        { "label": "B", "text": "give the workman one month’s notice (or wages in lieu) and pay compensation at fifteen days’ average pay for every completed year of continuous service" },
+        { "label": "C", "text": "pay compensation equal to three years’ wages in all cases" },
+        { "label": "D", "text": "secure the prior approval of the trade union in writing" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 25F requires one month's notice (or wages in lieu) plus retrenchment compensation at 15 days' average pay per completed year of continuous service.",
+        "whyMistakeHappens": "Forgetting the exact 1 month + 15 days/year statutory formula.",
+        "howToRectify": "s.25F = 1 month's notice/pay + 15 days' average pay × completed years."
+      }
+    },
+    {
+      "number": 82,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Secs. 22 & 24)",
+      "question": "A strike is commenced by workmen in a public utility service without giving the notice required by Section 22 of the Industrial Disputes Act, 1947. Such a strike is:",
+      "options": [
+        { "label": "A", "text": "legal, since the right to strike is absolute" },
+        { "label": "B", "text": "legal only if a majority of workmen participate" },
+        { "label": "C", "text": "illegal, being in contravention of the notice requirements applicable to public utility services" },
+        { "label": "D", "text": "neither legal nor illegal, but merely irregular" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 24 read with Section 22 ID Act, a strike in a public utility service commenced without mandatory prior notice is illegal.",
+        "whyMistakeHappens": "Assuming majority support makes an unnotified public utility strike lawful.",
+        "howToRectify": "Public utility service + no s.22 notice = illegal strike (s.24)."
+      }
+    },
+    {
+      "number": 83,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Sec. 2(cc))",
+      "question": "Closure of an undertaking under the Industrial Disputes Act, 1947 differs from lay-off and retrenchment principally in that closure means:",
+      "options": [
+        { "label": "A", "text": "a temporary stoppage of work with the intention to resume" },
+        { "label": "B", "text": "termination of an individual workman for reasons other than punishment" },
+        { "label": "C", "text": "refusal to employ a workman on the muster rolls for a temporary period" },
+        { "label": "D", "text": "the permanent closing down of a place of employment or part thereof" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(cc) defines 'closure' as the permanent closing down of a place of employment or part thereof.",
+        "whyMistakeHappens": "Confusing closure with temporary lay-off or individual retrenchment.",
+        "howToRectify": "Closure = permanent shutdown of the place of employment."
+      }
+    },
+    {
+      "number": 84,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Industrial Disputes Act, 1947 (Fifth Schedule)",
+      "question": "Engaging workmen as “badlis”, casuals or temporaries and continuing them as such for years with the object of depriving them of the status and privileges of permanent workmen is, under the Fifth Schedule to the Industrial Disputes Act, 1947, an example of:",
+      "options": [
+        { "label": "A", "text": "an unfair labour practice on the part of the employer" },
+        { "label": "B", "text": "a lawful managerial prerogative" },
+        { "label": "C", "text": "a legitimate lockout" },
+        { "label": "D", "text": "a protected strike by workmen" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Fifth Schedule (read with ss.2(ra) and 25T) classifies continuing casual/badli/temporary workers for years to deny permanent status as an unfair labour practice by the employer.",
+        "whyMistakeHappens": "Viewing prolonged temporary engagement as an unrestricted management right.",
+        "howToRectify": "Perpetual temporary status to avoid permanency = Fifth Schedule unfair labour practice."
+      }
+    },
+    {
+      "number": 85,
+      "subject": "Consumer Protection Act",
+      "statuteRef": "Consumer Protection Act, 2019 (Secs. 82–87)",
+      "question": "Under the Consumer Protection Act, 2019, a “product liability” action enables a complainant to claim compensation from a product manufacturer, product seller or product service provider for harm caused by:",
+      "options": [
+        { "label": "A", "text": "a defective product or deficient service, including manufacturing, design or warning defects" },
+        { "label": "B", "text": "any commercial loss suffered in a purely business-to-business transaction" },
+        { "label": "C", "text": "delay in delivery alone, irrespective of any defect or harm" },
+        { "label": "D", "text": "breach of an arbitration clause in the sale contract" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sections 82–87 of the Consumer Protection Act, 2019 allow product liability claims for harm caused by defective products (manufacturing, design, or warning defects) or deficient services.",
+        "whyMistakeHappens": "Forgetting that commercial B2B transactions fall outside consumer protection.",
+        "howToRectify": "Product liability = harm caused by defective product or deficient service."
+      }
+    },
+    {
+      "number": 86,
+      "subject": "Consumer Protection Act",
+      "statuteRef": "Consumer Protection (E-Commerce) Rules, 2020",
+      "question": "Under the Consumer Protection (E-Commerce) Rules, 2020 made under the Consumer Protection Act, 2019, an e-commerce entity is, among other duties, required to:",
+      "options": [
+        { "label": "A", "text": "refuse to entertain any consumer complaint about goods sold on its platform" },
+        { "label": "B", "text": "appoint a grievance officer and display details enabling consumers to make complaints, while not adopting unfair trade practices" },
+        { "label": "C", "text": "charge cancellation fees on consumers without disclosing them, as it sees fit" },
+        { "label": "D", "text": "escape all liability by describing itself merely as an intermediary in every case" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The E-Commerce Rules, 2020 oblige e-commerce entities to appoint a grievance officer, display complaint redressal contact details, and abstain from unfair trade practices.",
+        "whyMistakeHappens": "Assuming intermediary status creates blanket exemption from consumer duties.",
+        "howToRectify": "E-commerce duties = grievance officer + complaint transparency + no unfair trade practices."
+      }
+    },
+    {
+      "number": 87,
+      "subject": "Consumer Protection Act",
+      "statuteRef": "Consumer Protection Act, 2019 (Secs. 2(46), 49, 59)",
+      "question": "Under Section 2(46) read with Section 49 of the Consumer Protection Act, 2019, a term of a contract which causes a significant change in the rights of the consumer, such as requiring excessive security deposits or imposing a disproportionate penalty for breach, may be declared by the appropriate forum to be:",
+      "options": [
+        { "label": "A", "text": "a valid and binding term immune from review" },
+        { "label": "B", "text": "a mere unfair trade practice attracting no remedy" },
+        { "label": "C", "text": "an “unfair contract” term, which the State Commission or National Commission may declare null and void" },
+        { "label": "D", "text": "enforceable only against the trader and not the consumer" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(46) defines 'unfair contract' and Sections 49 & 59 empower the State Commission and National Commission to declare unfair contract terms null and void.",
+        "whyMistakeHappens": "Missing the new 2019 statutory power given to State and National Commissions over unfair contracts.",
+        "howToRectify": "s.2(46) + s.49/59 = Commissions can strike down 'unfair contract' terms as null and void."
+      }
+    },
+    {
+      "number": 88,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act, 1955 (Sec. 16), HAMA (Sec. 20)",
+      "question": "A maintains a maintenance claim for his minor child born of a void marriage. The correct legal position regarding such a child’s right to maintenance from the father is that:",
+      "options": [
+        { "label": "A", "text": "the child has no right to maintenance because the marriage is void" },
+        { "label": "B", "text": "maintenance is payable only until the child attains five years of age" },
+        { "label": "C", "text": "the obligation to maintain falls solely on the mother in every case" },
+        { "label": "D", "text": "the child, being deemed legitimate under Section 16 of the Hindu Marriage Act, 1955, is entitled to maintenance from the father" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A child born of a void marriage is deemed legitimate under s.16 HMA and is entitled to maintenance from the father under s.20 HAMA and s.125 CrPC.",
+        "whyMistakeHappens": "Denying maintenance because the parents' marriage is void.",
+        "howToRectify": "Void marriage -> child deemed legitimate (s.16 HMA) -> entitled to father's maintenance."
+      }
+    },
+    {
+      "number": 89,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Parts I & II)",
+      "question": "Two Indian companies refer their dispute to an arbitration seated in Singapore. After the foreign award is rendered, one party seeks to challenge it in an Indian court under Section 34 of the Arbitration and Conciliation Act, 1996. Which Part of the Act governs an arbitration seated outside India, and what is the consequence for such a challenge?",
+      "options": [
+        { "label": "A", "text": "Part I applies in full, so the Section 34 setting-aside remedy is freely available" },
+        { "label": "B", "text": "Part II governs enforcement of foreign awards, and Section 34 of Part I does not apply to set aside an award made at a foreign seat" },
+        { "label": "C", "text": "The award is automatically void because two Indian parties cannot choose a foreign seat" },
+        { "label": "D", "text": "Both Parts apply simultaneously, giving the party a double remedy" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Per BALCO (2012), Part I (including s.34 setting aside) does not apply to foreign-seated arbitrations; Part II governs enforcement of foreign awards in India.",
+        "whyMistakeHappens": "Applying the overruled Bhatia International view or doubting Indian parties' freedom to pick a foreign seat.",
+        "howToRectify": "Foreign seat -> Part II governs enforcement; s.34 setting aside unavailable."
+      }
+    },
+    {
+      "number": 90,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 20)",
+      "question": "A contract names “the seat of arbitration shall be London” while hearings for convenience are conducted in New Delhi. A party argues that Indian courts have supervisory jurisdiction because the hearings took place in India. Following the distinction between “seat” and “venue”, the correct position is:",
+      "options": [
+        { "label": "A", "text": "The venue of hearings always determines the curial law and supervisory jurisdiction" },
+        { "label": "B", "text": "Indian courts have full supervisory jurisdiction whenever any hearing occurs in India" },
+        { "label": "C", "text": "The chosen seat (London) fixes the supervisory jurisdiction and curial law; the New Delhi venue is merely a convenient geographical location for hearings" },
+        { "label": "D", "text": "The parties cannot fix any seat once hearings have begun elsewhere" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The arbitral 'seat' (London) determines supervisory court jurisdiction and curial law; 'venue' (New Delhi) is merely a convenient location for hearings (BALCO; BGS SGS Soma).",
+        "whyMistakeHappens": "Conflating hearing location (venue) with juridical seat.",
+        "howToRectify": "Seat = jurisdiction & curial law; Venue = hearing location."
+      }
+    },
+    {
+      "number": 91,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Secs. 44–49)",
+      "question": "A party seeks to enforce in India a commercial arbitral award made in a country that is a signatory to the New York Convention and which the Central Government has notified as a reciprocating territory. Enforcement of such a foreign award is governed by which provisions of the Arbitration and Conciliation Act, 1996?",
+      "options": [
+        { "label": "A", "text": "Sections 53 to 60, dealing with Geneva Convention awards" },
+        { "label": "B", "text": "Section 36, on enforcement of purely domestic awards" },
+        { "label": "C", "text": "Sections 34 and 37, on setting aside and appeals" },
+        { "label": "D", "text": "Sections 44 to 49 of Part II, Chapter I, which give effect to the New York Convention" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sections 44 to 49 (Part II, Chapter I) govern enforcement of New York Convention awards in India, whereas Sections 53 to 60 govern Geneva Convention awards.",
+        "whyMistakeHappens": "Swapping New York Convention (ss.44–49) with Geneva Convention (ss.53–60).",
+        "howToRectify": "New York Convention = ss.44–49; Geneva Convention = ss.53–60."
+      }
+    },
+    {
+      "number": 92,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 48)",
+      "question": "Resisting enforcement of a New York Convention foreign award in India, the award-debtor pleads that enforcement would be contrary to the “public policy of India”. On the scope of the public-policy ground for refusing enforcement of a foreign award under Section 48 of the Arbitration and Conciliation Act, 1996, the correct position is:",
+      "options": [
+        { "label": "A", "text": "The ground is construed narrowly and does not permit a review on the merits; “patent illegality” is not a ground for refusing a foreign award" },
+        { "label": "B", "text": "Any error of law on the face of the award justifies refusal of enforcement" },
+        { "label": "C", "text": "The enforcing court must re-hear the entire dispute afresh on the evidence" },
+        { "label": "D", "text": "Public policy here is identical to and as wide as the domestic patent-illegality ground" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 48 (Shri Lal Mahal v. Progetto Grano), public policy for foreign awards is construed narrowly without merits review, and 'patent illegality' applies only to domestic awards (s.34(2A)).",
+        "whyMistakeHappens": "Applying domestic 'patent illegality' to foreign-award enforcement.",
+        "howToRectify": "Foreign awards (s.48): narrow public policy, NO merits review, NO patent illegality."
+      }
+    },
+    {
+      "number": 93,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 2(2) Proviso)",
+      "question": "Before a foreign-seated arbitration has commenced, an Indian party fears that assets located in India will be dissipated and seeks urgent interim protection from an Indian court. Which provision of the Arbitration and Conciliation Act, 1996 permits a court to grant interim measures in support of a foreign-seated arbitration, subject to the parties not having agreed to exclude it?",
+      "options": [
+        { "label": "A", "text": "Section 17, since only the foreign tribunal can grant any interim relief" },
+        { "label": "B", "text": "The proviso to Section 2(2), which makes Section 9 (interim measures by court) applicable to international commercial arbitrations even where the seat is outside India, unless the parties agree otherwise" },
+        { "label": "C", "text": "Section 27, on court assistance in taking evidence only" },
+        { "label": "D", "text": "No provision; Indian courts can never assist a foreign-seated arbitration" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The proviso to Section 2(2) extends Section 9 (court interim relief) to foreign-seated international commercial arbitrations unless excluded by agreement.",
+        "whyMistakeHappens": "Overlooking the 2015 statutory proviso to s.2(2).",
+        "howToRectify": "Proviso to s.2(2) keeps Section 9 interim relief available for foreign-seated arbitrations unless excluded."
+      }
+    },
+    {
+      "number": 94,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Mediation Act, 2023 (Sec. 27)",
+      "question": "Two parties resolve a commercial dispute through a mediation conducted under the Mediation Act, 2023 and sign a written settlement. As to the legal status and enforceability of such a mediated settlement agreement under that Act, the correct position is:",
+      "options": [
+        { "label": "A", "text": "It is a mere moral understanding with no enforceable value" },
+        { "label": "B", "text": "It must first be converted into a civil-court decree before it has any effect at all" },
+        { "label": "C", "text": "A mediated settlement agreement (other than one arrived at in a court-referred mediation, which is governed otherwise) is final and binding and is enforceable in the same manner as a judgment, decree or order of a court under the Code of Civil Procedure, 1908" },
+        { "label": "D", "text": "It can be unilaterally repudiated by either party at any time without consequence" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 27 of the Mediation Act, 2023, a signed mediated settlement agreement (other than court-referred) is final, binding, and directly enforceable like a court decree under the CPC.",
+        "whyMistakeHappens": "Thinking a separate civil suit or prior decree conversion is mandatory.",
+        "howToRectify": "Mediation Act 2023 s.27 = directly enforceable as a CPC decree."
+      }
+    },
+    {
+      "number": 95,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Mediation Act, 2023 (Secs. 22 & 23)",
+      "question": "During mediation under the Mediation Act, 2023, one party makes admissions and discloses settlement proposals that ultimately fail. In a later court proceeding the opposing party seeks to lead these in evidence. On the confidentiality of mediation communications, the Act provides that:",
+      "options": [
+        { "label": "A", "text": "All mediation communications are freely admissible as ordinary evidence" },
+        { "label": "B", "text": "Confidentiality applies only if the mediator personally objects in writing" },
+        { "label": "C", "text": "Mediation communications, admissions and proposals are confidential and, as a rule, are not admissible as evidence in any subsequent judicial or arbitral proceeding" },
+        { "label": "D", "text": "Confidentiality ends the moment the mediation fails to produce a settlement" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sections 22 and 23 of the Mediation Act, 2023 protect confidentiality of mediation admissions and proposals and bar their admissibility in subsequent judicial or arbitral proceedings.",
+        "whyMistakeHappens": "Assuming confidentiality expires if mediation fails.",
+        "howToRectify": "Mediation communications remain confidential and inadmissible even after failed mediation."
+      }
+    },
+    {
+      "number": 96,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Advocates Act, 1961 (Sec. 16)",
+      "question": "A practising advocate of standing and ability, whose conduct of cases shows special knowledge in a field of law, is proposed for an elevated status with attendant restrictions, for instance that the advocate shall not appear without a junior or file pleadings on his own. This status and the restrictions flow from which provision of the Advocates Act, 1961?",
+      "options": [
+        { "label": "A", "text": "Section 16, which provides for the designation of senior advocates by the Supreme Court or a High Court on the basis of ability and standing, with restrictions framed by the Bar Council of India" },
+        { "label": "B", "text": "Section 30, the right to practise" },
+        { "label": "C", "text": "Section 24, on persons qualified to be admitted as advocates" },
+        { "label": "D", "text": "Section 49, the general rule-making power" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 16 of the Advocates Act, 1961 governs designation of senior advocates by the Supreme Court or High Courts based on ability and standing, subject to BCI restrictions.",
+        "whyMistakeHappens": "Confusing s.16 with general enrolment (s.24) or right to practise (s.30).",
+        "howToRectify": "Senior Advocate designation & restrictions = Section 16 Advocates Act."
+      }
+    },
+    {
+      "number": 97,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Bar Council of India Rules (Rule 36)",
+      "question": "An advocate sets up a large illuminated hoarding outside the courthouse advertising “Best Divorce Lawyer — Guaranteed Results — Lowest Fees” and circulates pamphlets soliciting clients. Such conduct most directly violates which professional-ethics norm?",
+      "options": [
+        { "label": "A", "text": "It is perfectly permissible, as advertising is a fundamental right of every advocate" },
+        { "label": "B", "text": "Rule 36 of the Bar Council of India Rules (Standards of Professional Conduct), which prohibits an advocate from advertising or soliciting work, directly or indirectly" },
+        { "label": "C", "text": "It is governed solely by the Consumer Protection Act and raises no ethical issue" },
+        { "label": "D", "text": "It is barred only if the advocate has fewer than ten years at the Bar" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Rule 36 of the BCI Rules forbids advocates from advertising or soliciting work directly or indirectly through hoardings, circulars, or touts.",
+        "whyMistakeHappens": "Assuming commercial advertising is permitted as a fundamental right.",
+        "howToRectify": "Rule 36 BCI Rules = strict bar on advocate advertising and solicitation."
+      }
+    },
+    {
+      "number": 98,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Constitution of India (Arts. 39A & 21); BCI Rules",
+      "question": "An indigent accused who cannot afford counsel is being tried for a serious offence. Reflecting both the constitutional guarantee and the advocate’s professional obligation, the duty to render legal aid is best described as:",
+      "options": [
+        { "label": "A", "text": "A purely optional act of charity that no advocate is expected to perform" },
+        { "label": "B", "text": "Owed only to clients who can pay a reduced fee" },
+        { "label": "C", "text": "A duty that arises only after conviction, never during trial" },
+        { "label": "D", "text": "A duty rooted in the right to free legal aid flowing from Article 39A and Article 21 of the Constitution, reinforced by the advocate’s professional obligation to assist in providing legal aid to the poor" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Free legal aid flows from Article 39A read with Article 21 (Hussainara Khatoon; M.H. Hoskot) and is reinforced by an advocate's BCI ethical obligation to assist the indigent.",
+        "whyMistakeHappens": "Treating legal aid as optional charity rather than a constitutional & ethical duty.",
+        "howToRectify": "Free legal aid = Art. 39A + Art. 21 + BCI professional duty."
+      }
+    },
+    {
+      "number": 99,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Contempt of Courts Act, 1971 (Sec. 13(b))",
+      "question": "A litigant publishes an article making a factual allegation of corruption against a sitting judge in respect of a decided matter and, when faced with contempt proceedings, pleads that the statement is true and its publication is in the public interest. Under the Contempt of Courts Act, 1971 (as amended in 2006), this plea:",
+      "options": [
+        { "label": "A", "text": "Is never available; truth can never be a defence to contempt" },
+        { "label": "B", "text": "Automatically results in punishment regardless of any justification" },
+        { "label": "C", "text": "Is available only if the judge personally consents to the publication" },
+        { "label": "D", "text": "May be a valid defence under Section 13(b), which permits the court to allow justification by truth as a defence if it is satisfied that it is in the public interest and the request is bona fide" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Inserted in 2006, Section 13(b) of the Contempt of Courts Act, 1971 permits justification by truth as a valid defence where it is in public interest and the request is bona fide.",
+        "whyMistakeHappens": "Relying on the pre-2006 position where truth was not a statutory defence.",
+        "howToRectify": "Post-2006 s.13(b): Truth + Public Interest + Bona Fide = valid defence."
+      }
+    },
+    {
+      "number": 100,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Contempt of Courts Act, 1971 (Sec. 3)",
+      "question": "A newspaper, in the ordinary course and without any knowledge that a matter was pending, publishes a report that is later said to prejudice that proceeding. On the defence available to such a publisher under the Contempt of Courts Act, 1971, the correct position is:",
+      "options": [
+        { "label": "A", "text": "Section 3 provides a defence of innocent publication and distribution where, at the time of publication, the person had no reasonable grounds for believing that the proceeding was pending" },
+        { "label": "B", "text": "No defence exists; every publication touching a pending matter is automatically contempt" },
+        { "label": "C", "text": "The publisher escapes only by paying compensation to the affected litigant" },
+        { "label": "D", "text": "Innocent publication is a defence only for advocates, not for newspapers" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 3 of the Contempt of Courts Act, 1971 provides the defence of innocent publication and distribution when the publisher had no reasonable grounds to believe proceedings were pending.",
+        "whyMistakeHappens": "Assuming contempt liability is strict even without knowledge of pending proceedings.",
+        "howToRectify": "Section 3 Contempt of Courts Act = innocent publication defence absent knowledge of pendency."
+      }
+    }
+  ]
+}

@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   Clock,
   FileDown,
+  FileWarning,
   Info,
   Quote,
   RefreshCw,
@@ -21,7 +22,7 @@ import {
 import type { ExamResultReport, QuestionReviewItem } from '../../shared/types';
 import { RESULT_COMEBACK_QUOTES, RESULT_PASS_QUOTES } from '../data/quotes';
 import { formatDurationVerbose, formatSubmittedAt } from '../utils/format';
-import { downloadExamProgressPdf } from '../utils/pdfReport';
+import { downloadExamProgressPdf, downloadMistakesPdf } from '../utils/pdfReport';
 import { OrnamentalDivider } from './OrnamentalDivider';
 
 interface ResultReportViewProps {
@@ -247,7 +248,7 @@ export function ResultReportView({
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       {/* Decorative Celebratory / Diagnostic Banner */}
-      <section className="overflow-hidden rounded-2xl border border-amber-300/70 bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 text-white shadow-md">
+      <section className="overflow-hidden rounded-2xl border border-slate-200/60 bg-gradient-to-br from-[#0B1437] via-[#122056] to-[#172554] text-white shadow-md">
         <div
           className={`h-1.5 w-full bg-gradient-to-r ${
             report.qualifiedGeneral
@@ -308,7 +309,16 @@ export function ResultReportView({
               qualified={report.qualifiedGeneral}
             />
 
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+            <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
+              <button
+                type="button"
+                onClick={() => downloadMistakesPdf(report)}
+                className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-rose-300/70 bg-gradient-to-r from-rose-600 to-orange-600 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:brightness-110"
+              >
+                <FileWarning className="h-4 w-4" aria-hidden="true" />
+                Download Mistakes PDF ({report.incorrectCount + report.unattemptedCount})
+              </button>
+
               <button
                 type="button"
                 onClick={() => downloadExamProgressPdf(report)}
@@ -449,7 +459,13 @@ export function ResultReportView({
             <div className="mt-2 font-mono text-2xl font-bold text-amber-950 tabular-nums">
               {formatDurationVerbose(report.durationSeconds)}
             </div>
-            <p className="mt-2 text-xs text-slate-600">Out of 3h 00m 00s allotted</p>
+            <p className="mt-2 text-xs text-slate-600">
+              Out of{' '}
+              {report.durationMinutes
+                ? formatDurationVerbose(report.durationMinutes * 60)
+                : '3h 00m 00s'}{' '}
+              allotted
+            </p>
           </div>
         </div>
 
@@ -705,6 +721,14 @@ export function ResultReportView({
               rectify each mistake.
             </p>
           </div>
+          <button
+            type="button"
+            onClick={() => downloadMistakesPdf(report)}
+            className="inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-xl border border-rose-200 bg-gradient-to-r from-rose-600 to-orange-600 px-4 py-2 text-xs font-bold text-white shadow-xs transition-all hover:brightness-110"
+          >
+            <FileWarning className="h-4 w-4" aria-hidden="true" />
+            Download Mistakes PDF
+          </button>
         </div>
 
         {/* Filter Toolbar */}

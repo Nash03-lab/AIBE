@@ -1,8 +1,15 @@
-export type ExamId = 'aibe-21' | 'aibe-20' | 'aibe-19';
+export type ExamId = 'aibe-21' | 'aibe-20' | 'aibe-19' | 'mock-1' | 'mock-2' | 'mock-3';
+
+export type ExamCategory = 'mock-test' | 'past-paper';
 
 export type ExamMode = 'standard' | 'aibe-22-mock';
 
 export type OptionLetter = 'A' | 'B' | 'C' | 'D';
+
+export interface QuestionSourceRef {
+  examId: ExamId;
+  number: number;
+}
 
 export interface CandidateDetails {
   fullName: string;
@@ -44,6 +51,7 @@ export interface ExamQuestion {
 
 export interface ExamPaper {
   id: ExamId;
+  category?: ExamCategory;
   title: string;
   shortTitle: string;
   setCode: string;
@@ -54,6 +62,7 @@ export interface ExamPaper {
 
 export interface ExamSummary {
   id: ExamId;
+  category?: ExamCategory;
   title: string;
   shortTitle: string;
   setCode: string;
@@ -75,6 +84,7 @@ export interface PublicQuestion {
 
 export interface PublicExamPaper {
   id: ExamId;
+  category?: ExamCategory;
   title: string;
   shortTitle: string;
   setCode: string;
@@ -82,6 +92,7 @@ export interface PublicExamPaper {
   durationMinutes: number;
   mockMode?: ExamMode;
   windowClosesAtMs?: number;
+  deckToken?: string;
   questions: PublicQuestion[];
 }
 
@@ -123,6 +134,7 @@ export interface ExamResultReport {
   accuracyPercent: number;
   qualifiedGeneral: boolean;
   durationSeconds: number;
+  durationMinutes?: number;
   submittedAt: string;
   subjectBreakdown: SubjectBreakdown[];
   review: QuestionReviewItem[];

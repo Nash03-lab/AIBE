@@ -16,6 +16,7 @@ import type {
   OptionLetter,
   PublicExamPaper,
   QuestionReviewItem,
+  QuestionSourceRef,
   SubjectBreakdown,
 } from './shared/types.ts';
 
@@ -40,12 +41,16 @@ interface StoredSubmission {
   candidateDetails?: CandidateDetails;
   examId: ExamId;
   mockMode?: ExamMode;
+  questionRefs?: QuestionSourceRef[];
   durationSeconds: number;
   submittedAt: string;
   answers: Record<string, OptionLetter>;
 }
 
 const EXAM_FILES: Record<ExamId, string> = {
+  'mock-1': path.resolve(process.cwd(), 'shared/data/mock_1.json'),
+  'mock-2': path.resolve(process.cwd(), 'shared/data/mock_2.json'),
+  'mock-3': path.resolve(process.cwd(), 'shared/data/mock_3.json'),
   'aibe-21': path.resolve(process.cwd(), 'shared/data/aibe_21.json'),
   'aibe-20': path.resolve(process.cwd(), 'shared/data/aibe_20.json'),
   'aibe-19': path.resolve(process.cwd(), 'shared/data/aibe_19.json'),
@@ -160,6 +165,82 @@ function getOrCreateAibe22Schedule(clientTodayYmd?: string, clientTzOffset?: num
   return info;
 }
 
+function shuffleArray<T>(items: T[]): T[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = crypto.randomInt(0, i + 1);
+    const tmp = copy[i];
+    copy[i] = copy[j];
+    copy[j] = tmp;
+  }
+  return copy;
+}
+
+function signDeckToken(refs: QuestionSourceRef[]): string {
+  const compact = refs.map((r) => `${r.examId}:${r.number}`).join(',');
+  const payload = Buffer.from(compact, 'utf8').toString('base64url');
+  const sig = crypto.createHmac('sha256', SESSION_SECRET).update(payload).digest('base64url');
+  return `${payload}.${sig}`;
+}
+
+function verifyDeckToken(token: string): QuestionSourceRef[] | null {
+  const parts = token.split('.');
+  if (parts.length !== 2) return null;
+  const [payload, providedSig] = parts;
+  const expectedSig = crypto
+    .createHmac('sha256', SESSION_SECRET)
+    .update(payload)
+    .digest('base64url');
+  const a = Buffer.from(providedSig, 'utf8');
+  const b = Buffer.from(expectedSig, 'utf8');
+  if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
+  try {
+    const decoded = Buffer.from(payload, 'base64url').toString('utf8');
+    const items = decoded.split(',').filter(Boolean);
+    if (items.length === 0 || items.length > 100) return null;
+    const refs: QuestionSourceRef[] = [];
+    for (const item of items) {
+      const [examId, numStr] = item.split(':');
+      const num = Number(numStr);
+      if (!examId || !isValidExamId(examId) || !Number.isInteger(num) || num < 1 || num > 100) {
+        return null;
+      }
+      const exists = EXAM_PAPERS[examId].questions.some((q) => q.number === num);
+      if (!exists) return null;
+      refs.push({ examId, number: num });
+    }
+    return refs;
+  } catch {
+    return null;
+  }
+}
+
+function buildAibe22ShuffledDeck(): {
+  refs: QuestionSourceRef[];
+  questions: { number: number; source: (typeof EXAM_PAPERS)['aibe-21']['questions'][number] }[];
+} {
+  const allExamIds = Object.keys(EXAM_FILES) as ExamId[];
+  const shuffledIds = shuffleArray(allExamIds);
+  const picked: { examId: ExamId; q: (typeof EXAM_PAPERS)['aibe-21']['questions'][number] }[] = [];
+
+  shuffledIds.forEach((id, idx) => {
+    const validPool = shuffleArray(EXAM_PAPERS[id].questions.filter((q) => !q.withdrawn));
+    const quota = idx < 4 ? 17 : 16; // 17*4 + 16*2 = 100 MCQs across all 6 papers
+    validPool.slice(0, quota).forEach((q) => {
+      picked.push({ examId: id, q });
+    });
+  });
+
+  const finalDeck = shuffleArray(picked);
+  return {
+    refs: finalDeck.map((item) => ({ examId: item.examId, number: item.q.number })),
+    questions: finalDeck.map((item, idx) => ({
+      number: idx + 1,
+      source: item.q,
+    })),
+  };
+}
+
 function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
   const paper = EXAM_PAPERS[sub.examId];
   let correctCount = 0;
@@ -172,14 +253,26 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     { totalValid: number; correct: number; incorrect: number; unattempted: number }
   >();
 
-  const review: QuestionReviewItem[] = paper.questions.map((q) => {
-    const rawSelection = sub.answers[String(q.number)] ?? null;
+  const resolvedQuestions =
+    Array.isArray(sub.questionRefs) && sub.questionRefs.length > 0
+      ? sub.questionRefs.map((ref, idx) => {
+          const sourcePaper = EXAM_PAPERS[ref.examId] ?? paper;
+          const match =
+            sourcePaper.questions.find((item) => item.number === ref.number) ??
+            paper.questions[idx] ??
+            paper.questions[0];
+          return { displayNumber: idx + 1, q: match };
+        })
+      : paper.questions.map((q) => ({ displayNumber: q.number, q }));
+
+  const review: QuestionReviewItem[] = resolvedQuestions.map(({ displayNumber, q }) => {
+    const rawSelection = sub.answers[String(displayNumber)] ?? null;
     const selectedOption = rawSelection && VALID_OPTIONS.has(rawSelection) ? rawSelection : null;
 
     if (q.withdrawn) {
       withdrawnCount += 1;
       return {
-        number: q.number,
+        number: displayNumber,
         subject: q.subject,
         statuteRef: q.statuteRef,
         question: q.question,
@@ -218,7 +311,7 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     subjectMap.set(q.subject, bucket);
 
     return {
-      number: q.number,
+      number: displayNumber,
       subject: q.subject,
       statuteRef: q.statuteRef,
       question: q.question,
@@ -231,7 +324,7 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     };
   });
 
-  const maxScore = paper.questions.length - withdrawnCount;
+  const maxScore = resolvedQuestions.length - withdrawnCount;
   const accuracyPercent = maxScore > 0 ? Math.round((correctCount / maxScore) * 1000) / 10 : 0;
 
   const subjectBreakdown: SubjectBreakdown[] = Array.from(subjectMap.entries()).map(
@@ -253,7 +346,7 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     ...(sub.candidateDetails ? { candidateDetails: sub.candidateDetails } : {}),
     examId: sub.examId,
     mockMode: sub.mockMode ?? 'standard',
-    examTitle: isAibe22Mock ? 'AIBE XXII Mock Test (AIBE-XXI Set Code-A)' : paper.title,
+    examTitle: isAibe22Mock ? 'AIBE XXII Mock Test (Shuffled 6-Paper Edition)' : paper.title,
     score: correctCount,
     maxScore,
     correctCount,
@@ -263,6 +356,7 @@ function evaluateSubmission(sub: StoredSubmission): ExamResultReport {
     accuracyPercent,
     qualifiedGeneral: accuracyPercent >= 45,
     durationSeconds: sub.durationSeconds,
+    durationMinutes: isAibe22Mock ? 180 : paper.durationMinutes,
     submittedAt: sub.submittedAt,
     subjectBreakdown,
     review,
@@ -348,7 +442,7 @@ function requireExaminer(
 }
 
 function isValidExamId(id: string): id is ExamId {
-  return id === 'aibe-21' || id === 'aibe-20' || id === 'aibe-19';
+  return Object.prototype.hasOwnProperty.call(EXAM_FILES, id);
 }
 
 async function startServer(): Promise<void> {
@@ -370,6 +464,7 @@ async function startServer(): Promise<void> {
       const subjects = Array.from(new Set(paper.questions.map((q) => q.subject)));
       return {
         id: paper.id,
+        category: paper.category ?? (id.startsWith('mock-') ? 'mock-test' : 'past-paper'),
         title: paper.title,
         shortTitle: paper.shortTitle,
         setCode: paper.setCode,
@@ -391,61 +486,53 @@ async function startServer(): Promise<void> {
       return;
     }
     const mode = req.query.mode === 'aibe-22-mock' ? 'aibe-22-mock' : 'standard';
-    if (mode === 'aibe-22-mock' && examId !== 'aibe-21') {
-      res.status(400).json({ error: 'AIBE XXII Mock Test uses the AIBE-XXI Set Code-A paper.' });
+
+    if (mode === 'aibe-22-mock') {
+      const deck = buildAibe22ShuffledDeck();
+      const deckToken = signDeckToken(deck.refs);
+      const publicPaper: PublicExamPaper = {
+        id: 'aibe-21',
+        category: 'mock-test',
+        title: 'AIBE XXII Mock Test (Shuffled 6-Paper Edition)',
+        shortTitle: 'AIBE XXII Mock',
+        setCode: 'Shuffled 6-Paper Deck',
+        examMeta:
+          'AIBE XXII Mock Test · 100 Shuffled MCQs from Mock Tests 1–3 & Past Year Papers (3 Hours)',
+        durationMinutes: 180,
+        mockMode: 'aibe-22-mock',
+        deckToken,
+        questions: deck.questions.map(({ number, source }) => ({
+          number,
+          subject: source.subject,
+          statuteRef: source.statuteRef,
+          question: source.question,
+          options: source.options,
+        })),
+      };
+      res.json({ paper: publicPaper });
       return;
     }
 
     const paper = EXAM_PAPERS[examId];
-    let durationMinutes = paper.durationMinutes;
-    let windowClosesAtMs: number | undefined;
-
-    if (mode === 'aibe-22-mock') {
-      const authHeader = req.headers.authorization;
-      const bearerToken =
-        authHeader && authHeader.startsWith('Bearer ')
-          ? authHeader.slice('Bearer '.length).trim()
-          : '';
-      const isExaminerPreview = Boolean(bearerToken && verifyExaminerToken(bearerToken));
-
-      const schedule = getOrCreateAibe22Schedule();
-      const now = Date.now();
-      const isWindowOpen = now >= schedule.startTimestampMs && now < schedule.endTimestampMs;
-
-      if (!isWindowOpen && !isExaminerPreview) {
-        if (now < schedule.startTimestampMs) {
-          res.status(403).json({
-            error: `AIBE XXII Mock Test opens at ${schedule.startTimeLabel} on ${schedule.examDateYmd} and closes at ${schedule.endTimeLabel}.`,
-          });
-        } else {
-          res.status(403).json({
-            error: `The AIBE XXII Mock Test window closed at ${schedule.endTimeLabel}.`,
-          });
-        }
-        return;
-      }
-
-      if (isWindowOpen) {
-        const minsLeft = Math.max(1, Math.ceil((schedule.endTimestampMs - now) / 60_000));
-        durationMinutes = Math.min(210, minsLeft);
-        windowClosesAtMs = schedule.endTimestampMs;
-      }
-    }
+    const shuffledQuestions = shuffleArray(paper.questions);
+    const refs: QuestionSourceRef[] = shuffledQuestions.map((q) => ({
+      examId,
+      number: q.number,
+    }));
+    const deckToken = signDeckToken(refs);
 
     const publicPaper: PublicExamPaper = {
       id: paper.id,
-      title: mode === 'aibe-22-mock' ? 'AIBE XXII Mock Test (AIBE-XXI Set Code-A)' : paper.title,
-      shortTitle: mode === 'aibe-22-mock' ? 'AIBE XXII Mock' : paper.shortTitle,
+      category: paper.category ?? (examId.startsWith('mock-') ? 'mock-test' : 'past-paper'),
+      title: paper.title,
+      shortTitle: paper.shortTitle,
       setCode: paper.setCode,
-      examMeta:
-        mode === 'aibe-22-mock'
-          ? 'AIBE XXII Scheduled Mock · 11:30 AM – 3:00 PM · AIBE-XXI Set Code-A (100 MCQs)'
-          : paper.examMeta,
-      durationMinutes,
-      mockMode: mode,
-      ...(windowClosesAtMs ? { windowClosesAtMs } : {}),
-      questions: paper.questions.map((q) => ({
-        number: q.number,
+      examMeta: `${paper.examMeta} · Shuffled 100-MCQ Order`,
+      durationMinutes: paper.durationMinutes,
+      mockMode: 'standard',
+      deckToken,
+      questions: shuffledQuestions.map((q, idx) => ({
+        number: idx + 1,
         subject: q.subject,
         statuteRef: q.statuteRef,
         question: q.question,
@@ -466,11 +553,14 @@ async function startServer(): Promise<void> {
       candidateName?: unknown;
       candidateDetails?: unknown;
       mockMode?: unknown;
+      deckToken?: unknown;
       durationSeconds?: unknown;
       answers?: unknown;
     };
 
     const mockMode: ExamMode = body?.mockMode === 'aibe-22-mock' ? 'aibe-22-mock' : 'standard';
+    const verifiedRefs =
+      typeof body?.deckToken === 'string' ? verifyDeckToken(body.deckToken) : null;
 
     if (typeof body?.candidateName !== 'string') {
       res.status(400).json({ error: 'Candidate name is required.' });
@@ -528,6 +618,7 @@ async function startServer(): Promise<void> {
       ...(candidateDetails ? { candidateDetails } : {}),
       examId,
       mockMode,
+      ...(verifiedRefs ? { questionRefs: verifiedRefs } : {}),
       durationSeconds,
       submittedAt: new Date().toISOString(),
       answers: sanitizedAnswers,

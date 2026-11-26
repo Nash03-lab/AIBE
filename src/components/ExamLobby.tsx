@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   ArrowRight,
   Award,
   BookOpen,
-  CalendarClock,
   CheckCircle2,
+  ClipboardCheck,
   Clock,
   Crown,
   FileCheck2,
@@ -12,11 +12,13 @@ import {
   Quote,
   RefreshCw,
   Scale,
+  ScrollText,
   ShieldAlert,
+  Shuffle,
   Sparkles,
   UserCheck,
 } from 'lucide-react';
-import type { Aibe22ScheduleInfo, ExamId, ExamSummary } from '../../shared/types';
+import type { ExamId, ExamSummary } from '../../shared/types';
 import { LOBBY_QUOTES } from '../data/quotes';
 import { OrnamentalDivider } from './OrnamentalDivider';
 
@@ -27,7 +29,6 @@ interface ExamLobbyProps {
   candidateName: string;
   startingExam: boolean;
   startError: string | null;
-  aibe22Schedule: Aibe22ScheduleInfo | null;
   onSelectExam: (id: ExamId) => void;
   onChangeName: (name: string) => void;
   onStartExam: () => void;
@@ -46,6 +47,36 @@ const PAPER_PALETTES: Record<
     mixSegments: string[];
   }
 > = {
+  'mock-1': {
+    topBar: 'from-indigo-600 via-violet-600 to-blue-500',
+    activeRing:
+      'border-indigo-700 bg-gradient-to-br from-white via-indigo-50/45 to-violet-50/45 ring-1 ring-indigo-700 shadow-sm',
+    accentText: 'text-indigo-800',
+    radioBg: 'border-indigo-700 bg-indigo-700',
+    ringStroke: '#4338ca',
+    ringTrack: '#e0e7ff',
+    mixSegments: ['#4338ca', '#7c3aed', '#2563eb', '#0d9488', '#d97706'],
+  },
+  'mock-2': {
+    topBar: 'from-cyan-600 via-sky-600 to-blue-600',
+    activeRing:
+      'border-cyan-700 bg-gradient-to-br from-white via-cyan-50/45 to-sky-50/45 ring-1 ring-cyan-700 shadow-sm',
+    accentText: 'text-cyan-800',
+    radioBg: 'border-cyan-700 bg-cyan-700',
+    ringStroke: '#0e7490',
+    ringTrack: '#cffafe',
+    mixSegments: ['#0e7490', '#0284c7', '#2563eb', '#059669', '#f59e0b'],
+  },
+  'mock-3': {
+    topBar: 'from-rose-600 via-pink-600 to-amber-500',
+    activeRing:
+      'border-rose-700 bg-gradient-to-br from-white via-rose-50/45 to-amber-50/45 ring-1 ring-rose-700 shadow-sm',
+    accentText: 'text-rose-800',
+    radioBg: 'border-rose-700 bg-rose-700',
+    ringStroke: '#be123c',
+    ringTrack: '#ffe4e6',
+    mixSegments: ['#be123c', '#db2777', '#d97706', '#2563eb', '#0f766e'],
+  },
   'aibe-21': {
     topBar: 'from-blue-700 via-indigo-600 to-cyan-500',
     activeRing:
@@ -124,7 +155,6 @@ export function ExamLobby({
   candidateName,
   startingExam,
   startError,
-  aibe22Schedule,
   onSelectExam,
   onChangeName,
   onStartExam,
@@ -135,43 +165,11 @@ export function ExamLobby({
   const [crestImgError, setCrestImgError] = useState(false);
   const [studyImgError, setStudyImgError] = useState(false);
   const [quoteIdx, setQuoteIdx] = useState(0);
-  const [nowMs, setNowMs] = useState(() => Date.now());
-
-  useEffect(() => {
-    const id = window.setInterval(() => setNowMs(Date.now()), 1000);
-    return () => window.clearInterval(id);
-  }, []);
 
   const selectedExam = exams.find((e) => e.id === selectedExamId) ?? exams[0];
   const trimmedName = candidateName.trim();
   const isNameValid = trimmedName.length >= 2;
   const activeQuote = LOBBY_QUOTES[quoteIdx % LOBBY_QUOTES.length];
-
-  const aibe22Status = !aibe22Schedule
-    ? { label: 'Starts Tomorrow · 11:30 AM – 3:00 PM', clock: '' }
-    : nowMs < aibe22Schedule.startTimestampMs
-      ? (() => {
-          const sec = Math.max(0, Math.floor((aibe22Schedule.startTimestampMs - nowMs) / 1000));
-          const h = Math.floor(sec / 3600);
-          const m = Math.floor((sec % 3600) / 60);
-          const s = sec % 60;
-          return {
-            label: 'Starts Tomorrow 11:30 AM · Closes 3:00 PM',
-            clock: `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`,
-          };
-        })()
-      : nowMs < aibe22Schedule.endTimestampMs
-        ? (() => {
-            const sec = Math.max(0, Math.floor((aibe22Schedule.endTimestampMs - nowMs) / 1000));
-            const h = Math.floor(sec / 3600);
-            const m = Math.floor((sec % 3600) / 60);
-            const s = sec % 60;
-            return {
-              label: 'LIVE NOW · Closes 3:00 PM',
-              clock: `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s left`,
-            };
-          })()
-        : { label: 'Exam Window Closed at 3:00 PM', clock: 'Closed' };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -187,56 +185,46 @@ export function ExamLobby({
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10">
-      {/* Separate Golden-Themed Icon Showcase: AIBE XXII mock test */}
+      {/* Sovereign Golden Edition Showcase: AIBE XXII mock test */}
       <section className="mb-7">
         <button
           type="button"
           onClick={onOpenAibe22}
-          className="group relative flex w-full cursor-pointer flex-col items-start justify-between gap-5 overflow-hidden rounded-2xl border-2 border-amber-400 bg-gradient-to-r from-amber-950 via-yellow-950 to-slate-950 p-5 text-left text-white shadow-lg transition-all hover:-translate-y-0.5 hover:border-yellow-300 hover:shadow-xl sm:flex-row sm:items-center sm:px-7 sm:py-6"
+          className="group relative flex w-full cursor-pointer flex-col items-start justify-between gap-5 overflow-hidden rounded-2xl border border-amber-400/70 bg-gradient-to-r from-[#0B1437] via-[#131D42] to-[#1D1508] p-5 text-left text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:border-amber-300 hover:shadow-xl sm:flex-row sm:items-center sm:px-7 sm:py-6"
         >
           <div
-            className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-200"
+            className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500"
             aria-hidden="true"
           />
           <div className="flex items-center gap-4 sm:gap-5">
             {/* Golden Medallion Icon */}
-            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border-2 border-yellow-300/80 bg-gradient-to-br from-yellow-300 via-amber-400 to-amber-600 text-amber-950 shadow-md transition-transform group-hover:scale-105">
-              <Crown className="h-8 w-8" aria-hidden="true" />
+            <span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-2xl border border-amber-300/80 bg-gradient-to-br from-amber-300 via-yellow-300 to-amber-500 text-[#0B1437] shadow-md transition-transform duration-200 group-hover:scale-105">
+              <Crown className="h-7 w-7" aria-hidden="true" />
             </span>
 
             <div>
-              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-yellow-300 uppercase">
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-amber-300 uppercase">
                 <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-                <span>Golden Edition · Scheduled Live Mock Portal</span>
+                <span>Golden Edition · Shuffled 6-Paper Mock Portal</span>
               </div>
-              <h2 className="mt-0.5 font-serif text-2xl font-bold text-amber-100 sm:text-3xl">
+              <h2 className="mt-0.5 font-serif text-2xl font-bold text-white sm:text-3xl">
                 AIBE XXII mock test
               </h2>
-              <p className="mt-1 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-amber-100/90 sm:text-sm">
-                <span className="inline-flex items-center gap-1 font-semibold text-yellow-200">
-                  <CalendarClock className="h-3.5 w-3.5" aria-hidden="true" />
-                  {aibe22Status.label}
+              <p className="mt-1 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-slate-200 sm:text-sm">
+                <span className="inline-flex items-center gap-1 font-semibold text-amber-200">
+                  <Shuffle className="h-3.5 w-3.5" aria-hidden="true" />
+                  100 Shuffled MCQs from All 6 Papers
                 </span>
                 <span aria-hidden="true">·</span>
-                <span>AIBE-XXI (Set Code-A) Paper</span>
+                <span>180 Min · Open Anytime</span>
                 <span aria-hidden="true">·</span>
-                <span>Instant PDF Progress Download</span>
+                <span>Instant PDF Mistakes &amp; Progress Download</span>
               </p>
             </div>
           </div>
 
           <div className="flex shrink-0 items-center gap-3 self-end sm:self-center">
-            {aibe22Status.clock && (
-              <div className="rounded-xl border border-amber-300/45 bg-black/40 px-3.5 py-2 text-right">
-                <div className="text-[10px] font-semibold tracking-wider text-amber-300 uppercase">
-                  Timer
-                </div>
-                <div className="font-mono text-sm font-bold text-yellow-200 tabular-nums">
-                  {aibe22Status.clock}
-                </div>
-              </div>
-            )}
-            <span className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-yellow-300 via-amber-400 to-amber-500 px-4 py-2.5 text-xs font-extrabold text-slate-950 shadow-sm transition-all group-hover:brightness-105 sm:text-sm">
+            <span className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-300 via-yellow-300 to-amber-400 px-4 py-2.5 text-xs font-extrabold text-[#0B1437] shadow-sm transition-all group-hover:brightness-105 sm:text-sm">
               Enter Mock Portal
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </span>
@@ -246,8 +234,8 @@ export function ExamLobby({
 
       {/* Grand Illustrated Hero Showcase + Candidate Check-In Split */}
       <section className="grid grid-cols-1 gap-7 lg:grid-cols-12 lg:items-stretch">
-        {/* Left: Colorful Illustrated Judicial Pavilion Banner */}
-        <div className="relative overflow-hidden rounded-2xl border border-amber-300/70 bg-slate-900 shadow-md lg:col-span-7">
+        {/* Left: Illustrated Judicial Pavilion Banner */}
+        <div className="relative overflow-hidden rounded-2xl border border-slate-200/80 bg-[#0B1437] shadow-md lg:col-span-7">
           {!heroImgError ? (
             <img
               src="/src/assets/images/hero_bar_pavilion_1795450305022.jpg"
@@ -257,70 +245,70 @@ export function ExamLobby({
               className="h-64 w-full object-cover sm:h-80 lg:h-full lg:min-h-[370px]"
             />
           ) : (
-            <div className="flex h-64 w-full items-center justify-center bg-gradient-to-br from-blue-950 via-indigo-900 to-amber-800 sm:h-80 lg:h-full lg:min-h-[370px]">
+            <div className="flex h-64 w-full items-center justify-center bg-gradient-to-br from-[#0B1437] via-[#132052] to-amber-800 sm:h-80 lg:h-full lg:min-h-[370px]">
               <Scale className="h-20 w-20 text-amber-300/60" aria-hidden="true" />
             </div>
           )}
 
           {/* Measured contrast scrim */}
           <div
-            className="absolute inset-0 bg-gradient-to-t from-slate-950/92 via-slate-950/55 to-blue-950/20"
+            className="absolute inset-0 bg-gradient-to-t from-[#070D24]/95 via-[#0B1437]/55 to-[#0B1437]/20"
             aria-hidden="true"
           />
 
-          {/* Top colorful filigree accent strip */}
+          {/* Top sovereign hairline accent */}
           <div
-            className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-amber-400 via-teal-400 to-blue-500"
+            className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-teal-400 to-indigo-400"
             aria-hidden="true"
           />
 
           <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
             <p className="text-xs font-semibold tracking-wider text-amber-300">
-              Nash Law Portal · Official Set Code-A Papers
+              Nash Law Chambers · Mock Tests &amp; Official Past Year Papers
             </p>
             <h1 className="text-balance mt-2 font-serif text-3xl leading-tight font-bold tracking-tight text-white sm:text-4xl">
               Official AIBE Mock Examination &amp; Mistake Rectification
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
-              Attempt complete 100-question official papers under realistic 3-hour exam conditions.
-              Your total score, exact completion time, and statute-backed rectification guide unlock
-              once you submit.
+              Attempt 100-question Mock Tests and Past Year Papers in a fresh shuffled sequence
+              every session. Download your Mistakes PDF, progress report, and Bare Act rectification
+              guide immediately after submission.
             </p>
           </div>
         </div>
 
-        {/* Right: Ornate Candidate Check-In Card (Name Only) */}
+        {/* Right: Sovereign Candidate Check-In Card */}
         <aside className="flex lg:col-span-5">
           <form
             onSubmit={handleSubmit}
-            className="flex w-full flex-col justify-between overflow-hidden rounded-2xl border border-amber-200/90 bg-white shadow-md"
+            className="flex w-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-md"
           >
             <div>
               <div
-                className="h-1.5 w-full bg-gradient-to-r from-blue-800 via-indigo-700 to-amber-500"
+                className="h-1 w-full bg-gradient-to-r from-[#0B1437] via-indigo-700 to-amber-500"
                 aria-hidden="true"
               />
               <div className="p-6 sm:p-7">
-                <div className="flex items-center gap-3.5 border-b border-amber-100 pb-4">
+                <div className="flex items-center gap-3.5 border-b border-slate-100 pb-4">
                   {!crestImgError ? (
                     <img
                       src="/src/assets/images/crest_scales_emblem_1795450304802.jpg"
                       alt="Nash Law scales of justice circular crest"
                       referrerPolicy="no-referrer"
                       onError={() => setCrestImgError(true)}
-                      className="h-12 w-12 shrink-0 rounded-xl border border-amber-300 object-cover shadow-xs"
+                      className="h-12 w-12 shrink-0 rounded-xl border border-amber-300/80 object-cover shadow-xs"
                     />
                   ) : (
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800 to-indigo-900 text-amber-300">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0B1437] text-amber-300">
                       <UserCheck className="h-5 w-5" aria-hidden="true" />
                     </span>
                   )}
                   <div>
-                    <h2 className="font-serif text-xl font-bold text-slate-900">
+                    <h2 className="font-serif text-xl font-bold text-[#0B1437]">
                       Candidate Registration
                     </h2>
                     <p className="text-xs font-medium text-slate-500">
-                      Name only · No Roll Number needed
+                      Name only · Shuffled 100-MCQ Attempt
                     </p>
                   </div>
                 </div>
@@ -345,36 +333,36 @@ export function ExamLobby({
                       maxLength={80}
                       autoComplete="name"
                       placeholder="e.g., Ananya Sharma"
-                      className="mt-2 w-full rounded-lg border border-slate-300 bg-amber-50/30 px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-800 focus:bg-white focus:ring-2 focus:ring-blue-700/20 focus:outline-none"
+                      className="mt-2 w-full rounded-xl border border-slate-300 bg-slate-50/50 px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-[#0B1437] focus:bg-white focus:ring-2 focus:ring-indigo-900/15 focus:outline-none"
                     />
                   </div>
 
                   {selectedExam && (
-                    <div className="overflow-hidden rounded-xl border border-blue-200/80 bg-gradient-to-br from-blue-50/70 via-white to-amber-50/60 p-4">
-                      <div className="flex items-center justify-between text-xs font-semibold text-blue-900">
+                    <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50/75 p-4">
+                      <div className="flex items-center justify-between text-xs font-semibold text-[#0B1437]">
                         <span>Selected Booklet</span>
-                        <span className="font-mono text-amber-800">{selectedExam.setCode}</span>
+                        <span className="font-mono text-amber-700">{selectedExam.setCode}</span>
                       </div>
                       <div className="mt-1 font-serif text-base font-bold text-slate-900">
                         {selectedExam.title}
                       </div>
-                      <dl className="mt-3 grid grid-cols-3 gap-3 border-t border-blue-200/60 pt-3 text-xs">
+                      <dl className="mt-3 grid grid-cols-3 gap-3 border-t border-slate-200/80 pt-3 text-xs">
                         <div>
                           <dt className="text-slate-500">Questions</dt>
-                          <dd className="mt-0.5 font-mono font-bold text-blue-950 tabular-nums">
-                            {selectedExam.totalQuestions} MCQs
+                          <dd className="mt-0.5 font-mono font-bold text-[#0B1437] tabular-nums">
+                            {selectedExam.totalQuestions} Shuffled
                           </dd>
                         </div>
                         <div>
                           <dt className="text-slate-500">Scored Marks</dt>
-                          <dd className="mt-0.5 font-mono font-bold text-emerald-800 tabular-nums">
+                          <dd className="mt-0.5 font-mono font-bold text-teal-800 tabular-nums">
                             {selectedExam.validQuestions}
                           </dd>
                         </div>
                         <div>
                           <dt className="text-slate-500">Duration</dt>
                           <dd className="mt-0.5 font-mono font-bold text-amber-800 tabular-nums">
-                            180 min
+                            {selectedExam.durationMinutes} min
                           </dd>
                         </div>
                       </dl>
@@ -401,9 +389,11 @@ export function ExamLobby({
               <button
                 type="submit"
                 disabled={startingExam || loadingExams}
-                className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-800 via-indigo-700 to-blue-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:from-slate-300 disabled:to-slate-300 disabled:text-slate-600"
+                className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#0B1437] via-[#15245E] to-[#1E3A8A] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:from-slate-300 disabled:to-slate-300 disabled:text-slate-600"
               >
-                <span>{startingExam ? 'Preparing Question Booklet...' : 'Begin Examination'}</span>
+                <span>
+                  {startingExam ? 'Shuffling Question Booklet...' : 'Begin Shuffled Examination'}
+                </span>
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </button>
             </div>
@@ -411,15 +401,15 @@ export function ExamLobby({
         </aside>
       </section>
 
-      {/* Motivational Counsel Quote Showcase + Illustrated Judicial Laurel Graphic */}
-      <section className="mt-7 overflow-hidden rounded-2xl border border-amber-300/70 bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950 text-white shadow-sm">
+      {/* Motivational Counsel Quote Showcase */}
+      <section className="mt-7 overflow-hidden rounded-2xl border border-slate-200/80 bg-gradient-to-r from-[#0B1437] via-[#111E4D] to-[#162766] text-white shadow-sm">
         <div
-          className="h-1 w-full bg-gradient-to-r from-amber-400 via-rose-400 to-teal-400"
+          className="h-1 w-full bg-gradient-to-r from-amber-400 via-teal-400 to-indigo-400"
           aria-hidden="true"
         />
         <div className="grid grid-cols-1 items-center gap-6 p-6 sm:p-7 lg:grid-cols-12">
           <div className="flex items-start gap-4 lg:col-span-9">
-            <div className="hidden shrink-0 rounded-xl border border-amber-400/30 bg-amber-500/10 p-3 sm:block">
+            <div className="hidden shrink-0 rounded-xl border border-amber-400/30 bg-white/5 p-3 sm:block">
               <svg
                 width="52"
                 height="52"
@@ -461,7 +451,7 @@ export function ExamLobby({
               <blockquote className="mt-2 font-serif text-lg leading-relaxed font-semibold text-white sm:text-xl">
                 &ldquo;{activeQuote.text}&rdquo;
               </blockquote>
-              <p className="mt-2 text-xs text-blue-200">
+              <p className="mt-2 text-xs text-slate-300">
                 <strong className="font-semibold text-amber-200">{activeQuote.author}</strong> ·{' '}
                 {activeQuote.role}
               </p>
@@ -472,7 +462,7 @@ export function ExamLobby({
             <button
               type="button"
               onClick={handleCycleQuote}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-amber-300/50 bg-white/10 px-4 py-2 text-xs font-semibold text-amber-100 transition-colors hover:bg-white/20 whitespace-nowrap"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-amber-300/40 bg-white/10 px-4 py-2 text-xs font-semibold whitespace-nowrap text-amber-100 transition-colors hover:bg-white/20"
             >
               <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
               Inspire Another
@@ -504,9 +494,9 @@ export function ExamLobby({
                 <UserCheck className="h-4 w-4" aria-hidden="true" />
               </span>
             </div>
-            <p className="mt-2 text-sm font-bold text-slate-900">Enter Name &amp; Pick Set A</p>
+            <p className="mt-2 text-sm font-bold text-slate-900">Enter Name &amp; Pick Paper</p>
             <p className="mt-1 text-xs text-slate-600">
-              No roll number needed. Select AIBE-XXI, XX, or XIX.
+              No roll number needed. Pick a Mock Test or Past Year Paper below.
             </p>
           </div>
 
@@ -531,9 +521,9 @@ export function ExamLobby({
                 <Clock className="h-4 w-4" aria-hidden="true" />
               </span>
             </div>
-            <p className="mt-2 text-sm font-bold text-slate-900">Answer 100 Blind MCQs</p>
+            <p className="mt-2 text-sm font-bold text-slate-900">Shuffled 100 Blind MCQs</p>
             <p className="mt-1 text-xs text-slate-600">
-              Flag questions for review across the 1–100 palette.
+              Each paper deals its 100 questions in a freshly shuffled order.
             </p>
           </div>
 
@@ -542,7 +532,7 @@ export function ExamLobby({
             <svg width="44" height="20" viewBox="0 0 44 20" fill="none">
               <path
                 d="M2 10H38M38 10L31 4M38 10L31 16"
-                stroke="#0d9488"
+                stroke="#0f766e"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -558,39 +548,40 @@ export function ExamLobby({
                 <Award className="h-4 w-4" aria-hidden="true" />
               </span>
             </div>
-            <p className="mt-2 text-sm font-bold text-slate-900">Result &amp; Bare Act Fixes</p>
+            <p className="mt-2 text-sm font-bold text-slate-900">Result &amp; Mistakes PDF</p>
             <p className="mt-1 text-xs text-slate-600">
-              See final score, completion time &amp; mistake rectification.
+              Download your Mistakes PDF, completion time &amp; Bare Act fixes.
             </p>
           </div>
         </div>
       </section>
 
-      <OrnamentalDivider label="Official Question Booklets" />
+      <OrnamentalDivider label="Mock Tests & Past Year Question Booklets" />
 
-      {/* 3 Colorful Graphical AIBE Examination Paper Cards */}
+      {/* Categorized Mock Tests & Past Year Papers */}
       <section aria-labelledby="select-paper-heading">
-        <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+        <div className="mb-5 flex flex-wrap items-baseline justify-between gap-2">
           <div>
             <h2
               id="select-paper-heading"
-              className="font-serif text-2xl font-bold text-slate-900"
+              className="font-serif text-2xl font-bold text-[#0B1437]"
             >
-              Select Official Examination Paper
+              Choose a Mock Test or Past Year Paper
             </h2>
             <p className="mt-0.5 text-sm text-slate-600">
-              Choose from the three complete official AIBE papers calibrated to Set Code-A Final
-              Answer Keys.
+              All 6 booklets shuffle their 100 questions each attempt — and AIBE XXII shuffles a
+              100-question mix across all 6 papers.
             </p>
           </div>
           <span className="font-mono text-xs font-medium text-slate-600">
-            3 Papers · 300 Official Questions · Zero Negative Marking
+            {exams.length} Papers · {exams.reduce((sum, e) => sum + e.totalQuestions, 0)} Questions ·
+            Zero Negative Marking
           </span>
         </div>
 
         {loadingExams ? (
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
+            {[1, 2, 3, 4, 5, 6].map((i) => (
               <div
                 key={i}
                 className="h-52 animate-pulse rounded-2xl border border-slate-200 bg-white"
@@ -598,103 +589,169 @@ export function ExamLobby({
             ))}
           </div>
         ) : (
-          <div
-            className="grid grid-cols-1 gap-5 md:grid-cols-3"
-            role="radiogroup"
-            aria-label="Select AIBE Question Paper"
-          >
-            {exams.map((exam) => {
-              const isSelected = exam.id === selectedExamId;
-              const palette = PAPER_PALETTES[exam.id] ?? PAPER_PALETTES['aibe-21'];
+          <div className="space-y-8" role="radiogroup" aria-label="Select AIBE Question Paper">
+            {[
+              {
+                sectionId: 'mock-tests-section',
+                headingId: 'mock-tests-heading',
+                title: 'Mock Tests',
+                subtitle: 'Full 100-question shuffled practice booklets with verified answer keys.',
+                icon: ClipboardCheck,
+                badgeClass: 'bg-gradient-to-br from-[#0B1437] to-indigo-800 text-amber-300',
+                items: exams.filter(
+                  (e) => e.category === 'mock-test' || e.id.startsWith('mock-'),
+                ),
+              },
+              {
+                sectionId: 'past-papers-section',
+                headingId: 'past-papers-heading',
+                title: 'Past Year Papers',
+                subtitle:
+                  'Same 100 official Bar Council of India questions per paper, freshly shuffled.',
+                icon: ScrollText,
+                badgeClass: 'bg-gradient-to-br from-teal-700 to-emerald-800 text-white',
+                items: exams.filter(
+                  (e) => e.category !== 'mock-test' && !e.id.startsWith('mock-'),
+                ),
+              },
+            ].map((group) => {
+              const GroupIcon = group.icon;
+              if (group.items.length === 0) return null;
               return (
-                <button
-                  key={exam.id}
-                  type="button"
-                  role="radio"
-                  aria-checked={isSelected}
-                  onClick={() => onSelectExam(exam.id)}
-                  className={`flex cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border text-left transition-all ${
-                    isSelected
-                      ? palette.activeRing
-                      : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm'
-                  }`}
-                >
-                  <div className="w-full">
-                    <div
-                      className={`h-1.5 w-full bg-gradient-to-r ${palette.topBar}`}
-                      aria-hidden="true"
-                    />
-                    <div className="p-5">
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="flex items-start gap-2.5">
-                          <span
-                            className={`mt-1 flex h-4.5 w-4.5 shrink-0 items-center justify-center rounded-full border ${
-                              isSelected ? `${palette.radioBg} text-white` : 'border-slate-400 bg-white'
-                            }`}
-                          >
-                            {isSelected && <span className="h-1.5 w-1.5 rounded-full bg-white" />}
-                          </span>
-                          <div>
-                            <span className="font-serif text-lg font-bold text-slate-900">
-                              {exam.title}
-                            </span>
-                            <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs font-medium text-slate-600">
-                              <span className="font-mono font-semibold text-slate-800 tabular-nums">
-                                {exam.validQuestions}/{exam.totalQuestions} Scored
-                              </span>
-                              <span aria-hidden="true">·</span>
-                              <span>{exam.durationMinutes} min</span>
-                              {exam.withdrawnQuestions > 0 && (
-                                <>
-                                  <span aria-hidden="true">·</span>
-                                  <span className="text-amber-800">
-                                    {exam.withdrawnQuestions} Withdrawn
+                <div key={group.sectionId} id={group.sectionId} className="scroll-mt-24">
+                  <div className="mb-3.5 flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <span
+                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-xs ${group.badgeClass}`}
+                      >
+                        <GroupIcon className="h-5 w-5" aria-hidden="true" />
+                      </span>
+                      <div>
+                        <h3
+                          id={group.headingId}
+                          className="font-serif text-xl font-bold text-slate-900"
+                        >
+                          {group.title}
+                        </h3>
+                        <p className="text-xs text-slate-600">{group.subtitle}</p>
+                      </div>
+                    </div>
+
+                    {group.sectionId === 'mock-tests-section' && (
+                      <button
+                        type="button"
+                        onClick={onOpenAibe22}
+                        className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-amber-400 bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-950 transition-colors hover:bg-amber-100"
+                      >
+                        <Crown className="h-3.5 w-3.5 text-amber-700" aria-hidden="true" />
+                        Open AIBE XXII Golden Mock
+                      </button>
+                    )}
+                  </div>
+
+                  <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+                    {group.items.map((exam) => {
+                      const isSelected = exam.id === selectedExamId;
+                      const palette = PAPER_PALETTES[exam.id] ?? PAPER_PALETTES['aibe-21'];
+                      return (
+                        <button
+                          key={exam.id}
+                          type="button"
+                          role="radio"
+                          aria-checked={isSelected}
+                          onClick={() => onSelectExam(exam.id)}
+                          className={`flex cursor-pointer flex-col justify-between overflow-hidden rounded-2xl border text-left transition-all ${
+                            isSelected
+                              ? palette.activeRing
+                              : 'border-slate-200 bg-white hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-sm'
+                          }`}
+                        >
+                          <div className="w-full">
+                            <div
+                              className={`h-1.5 w-full bg-gradient-to-r ${palette.topBar}`}
+                              aria-hidden="true"
+                            />
+                            <div className="p-5">
+                              <div className="flex items-start justify-between gap-3">
+                                <div className="flex items-start gap-2.5">
+                                  <span
+                                    className={`mt-1 flex h-4.5 w-4.5 shrink-0 items-center justify-center rounded-full border ${
+                                      isSelected
+                                        ? `${palette.radioBg} text-white`
+                                        : 'border-slate-400 bg-white'
+                                    }`}
+                                  >
+                                    {isSelected && (
+                                      <span className="h-1.5 w-1.5 rounded-full bg-white" />
+                                    )}
                                   </span>
-                                </>
-                              )}
+                                  <div>
+                                    <span className="font-serif text-lg font-bold text-slate-900">
+                                      {exam.title}
+                                    </span>
+                                    <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs font-medium text-slate-600">
+                                      <span className="font-mono font-semibold text-slate-800 tabular-nums">
+                                        {exam.validQuestions}/{exam.totalQuestions} Scored
+                                      </span>
+                                      <span aria-hidden="true">·</span>
+                                      <span>{exam.durationMinutes} min</span>
+                                      {exam.withdrawnQuestions > 0 && (
+                                        <>
+                                          <span aria-hidden="true">·</span>
+                                          <span className="text-amber-800">
+                                            {exam.withdrawnQuestions} Withdrawn
+                                          </span>
+                                        </>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <ScoredMiniRing
+                                  valid={exam.validQuestions}
+                                  total={exam.totalQuestions}
+                                  strokeColor={palette.ringStroke}
+                                  trackColor={palette.ringTrack}
+                                />
+                              </div>
+
+                              {/* Graphical Subject Distribution Spectrum Bar */}
+                              <div className="mt-4">
+                                <div className="mb-1 flex items-center justify-between text-[11px] font-medium text-slate-500">
+                                  <span>{exam.subjects.length} Legal Subjects Covered</span>
+                                  <span className={`font-mono font-bold ${palette.accentText}`}>
+                                    {isSelected ? 'Active Booklet' : 'Select Paper'}
+                                  </span>
+                                </div>
+                                <div
+                                  className="flex h-2 w-full overflow-hidden rounded-full bg-slate-100"
+                                  aria-hidden="true"
+                                >
+                                  {palette.mixSegments.map((color, segIdx) => (
+                                    <div
+                                      key={segIdx}
+                                      style={{
+                                        width: `${100 / palette.mixSegments.length}%`,
+                                        backgroundColor: color,
+                                      }}
+                                    />
+                                  ))}
+                                </div>
+                              </div>
+
+                              <p className="mt-3 text-xs leading-relaxed text-slate-500">
+                                {exam.subjects.slice(0, 5).join(' · ')}
+                                {exam.subjects.length > 5
+                                  ? ` · +${exam.subjects.length - 5} more`
+                                  : ''}
+                              </p>
                             </div>
                           </div>
-                        </div>
-
-                        <ScoredMiniRing
-                          valid={exam.validQuestions}
-                          total={exam.totalQuestions}
-                          strokeColor={palette.ringStroke}
-                          trackColor={palette.ringTrack}
-                        />
-                      </div>
-
-                      {/* Graphical Subject Distribution Spectrum Bar */}
-                      <div className="mt-4">
-                        <div className="mb-1 flex items-center justify-between text-[11px] font-medium text-slate-500">
-                          <span>{exam.subjects.length} Legal Subjects Covered</span>
-                          <span className={`font-mono font-bold ${palette.accentText}`}>
-                            {isSelected ? 'Active Booklet' : 'Select Paper'}
-                          </span>
-                        </div>
-                        <div
-                          className="flex h-2 w-full overflow-hidden rounded-full bg-slate-100"
-                          aria-hidden="true"
-                        >
-                          {palette.mixSegments.map((color, segIdx) => (
-                            <div
-                              key={segIdx}
-                              style={{
-                                width: `${100 / palette.mixSegments.length}%`,
-                                backgroundColor: color,
-                              }}
-                            />
-                          ))}
-                        </div>
-                      </div>
-
-                      <p className="mt-3 text-xs leading-relaxed text-slate-500">
-                        {exam.subjects.slice(0, 5).join(' · ')}
-                        {exam.subjects.length > 5 ? ` · +${exam.subjects.length - 5} more` : ''}
-                      </p>
-                    </div>
+                        </button>
+                      );
+                    })}
                   </div>
-                </button>
+                </div>
               );
             })}
           </div>
@@ -706,7 +763,7 @@ export function ExamLobby({
       {/* Format & Evaluation Protocol with Bespoke Editorial Illustration */}
       <section
         id="exam-rules"
-        className="overflow-hidden rounded-2xl border border-amber-200/80 bg-white shadow-sm"
+        className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-sm"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:items-stretch">
           <div className="relative overflow-hidden bg-amber-50 lg:col-span-5">
@@ -796,9 +853,9 @@ export function ExamLobby({
                 aria-hidden="true"
               />
               <span>
-                Official Final Keys enforced: AIBE-XXI scored out of 100 (dual key Q2: C/D);
-                AIBE-XX scored out of 95 (5 withdrawn; dual keys Q54 &amp; Q91); AIBE-XIX scored out
-                of 93 (7 withdrawn; dual key Q75: A/C).
+                Verified Keys &amp; Mistake Downloads: Every Mock Test (1, 2 &amp; 3), AIBE XXII
+                Golden Mock, and Past Year Paper (AIBE-XXI, XX &amp; XIX) includes a downloadable
+                Mistakes PDF and Bare Act rectification notes after submission.
               </span>
             </div>
           </div>

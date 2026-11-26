@@ -173,8 +173,8 @@ export function ExamWorkspace({
 
   return (
     <div className="min-h-[calc(100vh-4rem)]">
-      {/* Royal Sapphire & Gold Examination Control Sub-bar */}
-      <div className="border-b border-amber-400/40 bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950 text-white shadow-sm">
+      {/* Sovereign Navy & Gold Examination Control Sub-bar */}
+      <div className="border-b border-amber-400/35 bg-gradient-to-r from-[#0B1437] via-[#131F4E] to-[#172554] text-white shadow-sm">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -454,7 +454,7 @@ export function ExamWorkspace({
                 <div className="mt-4 grid grid-cols-3 gap-1 rounded-lg border border-slate-200 bg-slate-100 p-1 text-xs font-semibold">
                   {(
                     [
-                      { id: 'all', label: 'All (100)' },
+                      { id: 'all', label: `All (${paper.questions.length})` },
                       { id: 'unanswered', label: 'Skipped' },
                       { id: 'marked', label: 'Marked' },
                     ] as const

@@ -5,6 +5,7 @@ import {
   BarChart3,
   Clock,
   Eye,
+  FileDown,
   KeyRound,
   Lock,
   Medal,
@@ -18,6 +19,7 @@ import {
 } from 'lucide-react';
 import type { ExamId, ExamResultReport, LeaderboardEntry } from '../../shared/types';
 import { formatDurationVerbose, formatSubmittedAt } from '../utils/format';
+import { downloadMistakesPdf } from '../utils/pdfReport';
 import { ResultReportView } from './ResultReportView';
 
 interface ExaminerPinModalProps {
@@ -66,12 +68,12 @@ export function ExaminerPinModal({ onClose, onUnlockSuccess }: ExaminerPinModalP
       aria-modal="true"
       aria-labelledby="pin-modal-title"
     >
-      <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-amber-300/80 bg-white shadow-2xl">
+      <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-2xl">
         <div
-          className="h-1.5 w-full bg-gradient-to-r from-blue-800 via-teal-600 to-amber-500"
+          className="h-1 w-full bg-gradient-to-r from-[#0B1437] via-amber-500 to-teal-600"
           aria-hidden="true"
         />
-        <div className="bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-950 px-6 py-4 text-white">
+        <div className="bg-gradient-to-r from-[#0B1437] via-[#122056] to-[#172554] px-6 py-4 text-white">
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
               {!crestError ? (
@@ -183,6 +185,7 @@ export function ExaminerLeaderboardView({
   const [searchTerm, setSearchTerm] = useState('');
   const [inspectingReport, setInspectingReport] = useState<ExamResultReport | null>(null);
   const [loadingInspectId, setLoadingInspectId] = useState<string | null>(null);
+  const [downloadingMistakesId, setDownloadingMistakesId] = useState<string | null>(null);
   const [inspectError, setInspectError] = useState<string | null>(null);
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
@@ -213,6 +216,30 @@ export function ExaminerLeaderboardView({
       setInspectError('Failed to fetch candidate answers.');
     } finally {
       setLoadingInspectId(null);
+    }
+  };
+
+  const handleDownloadCandidateMistakes = async (submissionId: string) => {
+    setDownloadingMistakesId(submissionId);
+    setInspectError(null);
+    try {
+      const res = await fetch(`/api/leaderboard/${encodeURIComponent(submissionId)}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (res.status === 401) {
+        onSessionExpired();
+        return;
+      }
+      const data = (await res.json()) as { report?: ExamResultReport; error?: string };
+      if (!res.ok || !data.report) {
+        setInspectError(data.error || 'Could not download candidate mistakes sheet.');
+        return;
+      }
+      downloadMistakesPdf(data.report);
+    } catch {
+      setInspectError('Failed to download candidate mistakes PDF.');
+    } finally {
+      setDownloadingMistakesId(null);
     }
   };
 
@@ -284,7 +311,7 @@ export function ExaminerLeaderboardView({
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       {/* Ornate Examiner Console Banner */}
-      <section className="overflow-hidden rounded-2xl border border-amber-300/70 bg-gradient-to-r from-slate-950 via-blue-950 to-indigo-900 text-white shadow-md">
+      <section className="overflow-hidden rounded-2xl border border-slate-200/60 bg-gradient-to-r from-[#0B1437] via-[#122056] to-[#172554] text-white shadow-md">
         <div
           className="h-1.5 w-full bg-gradient-to-r from-amber-400 via-emerald-400 to-blue-400"
           aria-hidden="true"
@@ -466,6 +493,9 @@ export function ExaminerLeaderboardView({
           {(
             [
               { id: 'all', label: 'All Papers' },
+              { id: 'mock-1', label: 'Mock Test 1' },
+              { id: 'mock-2', label: 'Mock Test 2' },
+              { id: 'mock-3', label: 'Mock Test 3' },
               { id: 'aibe-22-mock', label: 'AIBE-XXII Mock' },
               { id: 'aibe-21', label: 'AIBE-XXI' },
               { id: 'aibe-20', label: 'AIBE-XX' },
@@ -590,6 +620,17 @@ export function ExaminerLeaderboardView({
                         >
                           <Eye className="h-3.5 w-3.5" aria-hidden="true" />
                           {loadingInspectId === entry.id ? 'Loading...' : 'Check Mistakes'}
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => handleDownloadCandidateMistakes(entry.id)}
+                          disabled={downloadingMistakesId === entry.id}
+                          title="Download Mistakes PDF"
+                          className="inline-flex cursor-pointer items-center gap-1 rounded-lg border border-rose-200 bg-rose-50 px-2.5 py-1.5 text-xs font-semibold text-rose-800 transition-colors hover:bg-rose-100 disabled:opacity-50"
+                        >
+                          <FileDown className="h-3.5 w-3.5" aria-hidden="true" />
+                          {downloadingMistakesId === entry.id ? '...' : 'Mistakes PDF'}
                         </button>
 
                         {confirmDeleteId === entry.id ? (

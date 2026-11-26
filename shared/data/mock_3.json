@@ -1,0 +1,1911 @@
+{
+  "id": "mock-3",
+  "title": "Mock Test 3 — AIBE-XVI (Set B)",
+  "shortTitle": "Mock Test 3",
+  "setCode": "Set Code-B",
+  "category": "mock-test",
+  "examMeta": "Nash Law Mock Test 3 · Based on AIBE-XVI Set Code-B (100 MCQs · 180 Min)",
+  "durationMinutes": 180,
+  "questions": [
+    {
+      "number": 1,
+      "subject": "Administrative Law",
+      "statuteRef": "Doctrine of Promissory Estoppel",
+      "question": "Promissory estoppel against Government agencies is decided in:",
+      "options": [
+        { "label": "A", "text": "Tweedle Vs Atkinson" },
+        { "label": "B", "text": "Dutton Vs Poole" },
+        { "label": "C", "text": "Pournami all Mills Vs State of Kerala" },
+        { "label": "D", "text": "Kedar Nath Vs Gauri Mohamad" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Pournami Oil Mills v. State of Kerala (1986), the Supreme Court held that the Government is bound by promissory estoppel when industries act on an official notification promising sales-tax exemptions.",
+        "whyMistakeHappens": "Tweedle v. Atkinson, Dutton v. Poole, and Kedar Nath v. Gauri Mohammad are classic Contract Act privity/consideration cases rather than public-law promissory estoppel rulings.",
+        "howToRectify": "Link promissory estoppel against State/Government agencies directly to Pournami Oil Mills v. State of Kerala."
+      }
+    },
+    {
+      "number": 2,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 56)",
+      "question": "Frustration of contract is provided by which section of the India contract Act?",
+      "options": [
+        { "label": "A", "text": "Sec. 73" },
+        { "label": "B", "text": "Sec. 70" },
+        { "label": "C", "text": "Sec. 2(d)" },
+        { "label": "D", "text": "Sec. 56" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 56 of the Indian Contract Act, 1872 embodies the doctrine of frustration (supervening impossibility or illegality rendering a contract void).",
+        "whyMistakeHappens": "Confusing s.56 (impossibility/frustration) with s.73 (damages for breach) or s.70 (quasi-contract).",
+        "howToRectify": "Anchor Section 56 Contract Act directly to agreements to do impossible acts / supervening frustration."
+      }
+    },
+    {
+      "number": 3,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Employees' Compensation Act, 1923 (Schedule II)",
+      "question": "Schedule II of the Employees Compensation Act 1923 deals with",
+      "options": [
+        { "label": "A", "text": "Age factor for calculating the amount of compensation" },
+        { "label": "B", "text": "List of persons who are included in the definition of ‘Employee’" },
+        { "label": "C", "text": "List of occupational diseases" },
+        { "label": "D", "text": "List of injuries Deemed to Result in Permanent Total Disablement" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Schedule II to the Employees' Compensation Act, 1923 enumerates the list of persons included within the statutory definition of 'employee' under Section 2(1)(dd).",
+        "whyMistakeHappens": "Swapping the four Schedules of the 1923 Act: Schedule I lists injuries, Schedule II lists employees, Schedule III lists occupational diseases, and Schedule IV lists age factors.",
+        "howToRectify": "Memorise the 4 Schedules: I Injuries, II Employees, III Occupational Diseases, IV Age Factors."
+      }
+    },
+    {
+      "number": 4,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 19(1)(e))",
+      "question": "Freedom of Residence under Article 19 of that Indian Constitution is available in which of the following clauses?",
+      "options": [
+        { "label": "A", "text": "Clause (1) (E)" },
+        { "label": "B", "text": "Clause (1) (D)" },
+        { "label": "C", "text": "Clause (1) (B)" },
+        { "label": "D", "text": "Clause (1) (C)" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 19(1)(e) guarantees every citizen the right to reside and settle in any part of the territory of India.",
+        "whyMistakeHappens": "Confusing Art. 19(1)(d) (freedom of movement throughout India) with Art. 19(1)(e) (freedom to reside and settle).",
+        "howToRectify": "Keep 19(1) in order: (a) Speech, (b) Assembly, (c) Association, (d) Movement, (e) Residence, (g) Profession."
+      }
+    },
+    {
+      "number": 5,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 17)",
+      "question": "Under which section of the Evidence Act, admissions are defined?",
+      "options": [
+        { "label": "A", "text": "17" },
+        { "label": "B", "text": "16" },
+        { "label": "C", "text": "15" },
+        { "label": "D", "text": "18" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 17 of the Indian Evidence Act, 1872 defines an 'admission' as a statement (oral, documentary, or electronic) suggesting an inference as to any fact in issue or relevant fact made by specified persons.",
+        "whyMistakeHappens": "Selecting Section 18 (which specifies who can make admissions) instead of the definition in Section 17.",
+        "howToRectify": "s.17 = definition of admission; s.18 = admission by party/agent."
+      }
+    },
+    {
+      "number": 6,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "CrPC, 1973 (Sec. 172 — Case Diary)",
+      "question": "In which of the following cases the Supreme Court has held that the investigating officer should be allowed to refer to the records of investigation",
+      "options": [
+        { "label": "A", "text": "State of Karnataka Vs Yarappa Reddi" },
+        { "label": "B", "text": "Mohammed Khalid Vs State of West Bengal" },
+        { "label": "C", "text": "Baburam Vs State of U.P." },
+        { "label": "D", "text": "State of Rajasthan Vs Om prakash" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In State of Karnataka v. K. Yarappa Reddy (1999), the Supreme Court clarified that an investigating officer may refer to case diary records under s.172 CrPC to refresh memory during testimony, and irregular investigation alone does not vitiate prosecution.",
+        "whyMistakeHappens": "Confusing criminal precedent case names across CrPC evidentiary points.",
+        "howToRectify": "Tag Yarappa Reddy with case diary reference by the Investigating Officer and criminal investigation irregularities."
+      }
+    },
+    {
+      "number": 7,
+      "subject": "Specific Relief Act",
+      "statuteRef": "Specific Relief Act, 1963 (Sec. 6)",
+      "question": "Recovery of Specific Immovable Property may be obtained by C.P.C within what period-",
+      "options": [
+        { "label": "A", "text": "Within 7 months" },
+        { "label": "B", "text": "Within 6 months" },
+        { "label": "C", "text": "Within 8 months" },
+        { "label": "D", "text": "Within 10 months" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 6 of the Specific Relief Act, 1963 (read with CPC procedure for possession suits), a person dispossessed without consent may sue to recover specific immovable property within 6 months from dispossession.",
+        "whyMistakeHappens": "Guessing other arbitrary month counts when the question mentions CPC.",
+        "howToRectify": "Summary recovery of dispossessed immovable property = strictly 6 months."
+      }
+    },
+    {
+      "number": 8,
+      "subject": "Land Acquisition Law",
+      "statuteRef": "RFCTLARR Act, 2013 (Sec. 44)",
+      "question": "Who appoints the Commissioner for rehabilitation and resettlement under the LARR Act?",
+      "options": [
+        { "label": "A", "text": "LARR Authority" },
+        { "label": "B", "text": "Minister of Environment and Forests" },
+        { "label": "C", "text": "Central Government" },
+        { "label": "D", "text": "State Government" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 44 of the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement (LARR) Act, 2013, the State Government appoints the Commissioner for Rehabilitation and Resettlement.",
+        "whyMistakeHappens": "Assuming central statutes always vest appointments in the Central Government.",
+        "howToRectify": "Under LARR Act s.44, both the Administrator (s.43) and the Commissioner for R&R (s.44) are appointed by the State Government."
+      }
+    },
+    {
+      "number": 9,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Employees' Compensation Act, 1923 (Sec. 2(1)(dd))",
+      "question": "The payment of compensation to railway employees by the railway administration for injury by accident is governed by:",
+      "options": [
+        { "label": "A", "text": "The Employees Compensation Act, 1923" },
+        { "label": "B", "text": "The payment of Wages Act, 1936" },
+        { "label": "C", "text": "Rights of Persons with Disabilities Act, 2016" },
+        { "label": "D", "text": "The Workmen Compensation Act, 1986" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Compensation for employment-related injury/death of railway servants (other than those permanently employed in administrative/district offices) is governed by the Employees' Compensation Act, 1923 (formerly Workmen's Compensation Act, 1923).",
+        "whyMistakeHappens": "Option (D) uses an incorrect enactment year (1986 instead of 1923).",
+        "howToRectify": "Always check the statutory year: Employees' Compensation Act, 1923."
+      }
+    },
+    {
+      "number": 10,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Employees' Compensation Act, 1923 (Sec. 4(1)(b))",
+      "question": "The minimum amount of compensation payable under Employees Compensation Act, 1923 in case of total permanent disablement of a railway servant due to accident is Rs__.",
+      "options": [
+        { "label": "A", "text": "Rs 80,000/-" },
+        { "label": "B", "text": "Rs 90,000/-" },
+        { "label": "C", "text": "Rs 1,40,000/-" },
+        { "label": "D", "text": "Rs 1,20,000/-" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 4(1)(b) of the Employees' Compensation Act, 1923 (post-2009 Amendment), the minimum compensation for permanent total disablement is Rs. 1,40,000/- (and Rs. 1,20,000/- for death).",
+        "whyMistakeHappens": "Swapping the minimum compensation for death (Rs. 1,20,000) with permanent total disablement (Rs. 1,40,000).",
+        "howToRectify": "Remember: Death minimum = Rs. 1,20,000/-; Permanent Total Disablement minimum = Rs. 1,40,000/-."
+      }
+    },
+    {
+      "number": 11,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 216)",
+      "question": "Harbouring an offender who has escaped from custody, or whose apprehension has been ordered, if the offence be capital is dealt under",
+      "options": [
+        { "label": "A", "text": "Section 215 of IPC" },
+        { "label": "B", "text": "Section 216 of IPC" },
+        { "label": "C", "text": "Section 217 of IPC" },
+        { "label": "D", "text": "Section 218 of IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 216 IPC penalises harbouring an offender who has escaped from custody or whose apprehension has been ordered, with enhanced punishment (up to 7 years) if the offence is punishable with death.",
+        "whyMistakeHappens": "Adjacent Chapter XI sections (s.212 harbouring offender generally, s.215 taking gift to help recover stolen property, s.216A harbouring robbers/dacoits) are easily mixed up.",
+        "howToRectify": "s.216 IPC = Harbouring escaped offender or one ordered to be apprehended."
+      }
+    },
+    {
+      "number": 12,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "General Principles of Criminal Liability",
+      "question": "The maxim ‘actus not facit reum nisi mens sit rea’ means",
+      "options": [
+        { "label": "A", "text": "There can be no crime without a guilty mind" },
+        { "label": "B", "text": "Crime has to be coupled with guilty mind" },
+        { "label": "C", "text": "Crime is the result of guilty mind" },
+        { "label": "D", "text": "In crime intention is relevant, motive is irrelevant" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Actus non facit reum nisi mens sit rea translates as 'an act does not make a person guilty unless the mind is also guilty'—meaning there can be no crime without a guilty mind (mens rea).",
+        "whyMistakeHappens": "Option (B) sounds plausible, but standard Indian jurisprudence translates the maxim strictly as 'there can be no crime without a guilty mind'.",
+        "howToRectify": "Use the exact classical translation: 'There can be no crime without a guilty mind'."
+      }
+    },
+    {
+      "number": 13,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 73)",
+      "question": "Law laid down under section -73 of Indian Contract Act 1872 is related to which of the following cases:",
+      "options": [
+        { "label": "A", "text": "Hothester Vs De-la-tur" },
+        { "label": "B", "text": "Rabinson Vs Devison" },
+        { "label": "C", "text": "Hedley Vs Baxendal" },
+        { "label": "D", "text": "Dikinson Vs Dads" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 73 Contract Act codifies the rule on remoteness of damages from Hadley v. Baxendale (1854): damages naturally arising in the usual course or reasonably contemplated by both parties at contract formation.",
+        "whyMistakeHappens": "Hochster v. De La Tour is anticipatory breach (s.39), Robinson v. Davison is frustration (s.56), and Dickinson v. Dodds is revocation of offer (s.5).",
+        "howToRectify": "Connect Section 73 (compensation/remoteness of damages) directly to Hadley v. Baxendale."
+      }
+    },
+    {
+      "number": 14,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 8)",
+      "question": "Reference to the Arbitration is provided in which section of the Arbitration and Conciliation Act, 1996",
+      "options": [
+        { "label": "A", "text": "Section 7" },
+        { "label": "B", "text": "Section 8" },
+        { "label": "C", "text": "Section 9" },
+        { "label": "D", "text": "Section 10" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 8 of the Arbitration and Conciliation Act, 1996 mandates a judicial authority before which an action is brought in a matter subject to an arbitration agreement to refer the parties to arbitration.",
+        "whyMistakeHappens": "Confusing s.7 (arbitration agreement definition) or s.9 (interim measures) with s.8 (power to refer parties to arbitration).",
+        "howToRectify": "Sequence ss.7–10: 7 Agreement, 8 Reference to arbitration, 9 Interim measures, 10 Number of arbitrators."
+      }
+    },
+    {
+      "number": 15,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 8)",
+      "question": "Under the head subsequent conduct, which of the following type of conduct would be material?",
+      "options": [
+        { "label": "A", "text": "Change of life" },
+        { "label": "B", "text": "Evasion of justice" },
+        { "label": "C", "text": "Fear, trembling" },
+        { "label": "D", "text": "All of them" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 8 Evidence Act, relevant subsequent conduct of an accused/party includes sudden change of lifestyle, absconding/evasion of justice, and visible fear or trembling.",
+        "whyMistakeHappens": "Picking only 'evasion of justice' ignores that all listed forms of post-event conduct can be relevant under s.8.",
+        "howToRectify": "Remember s.8 covers motive, preparation, and previous/subsequent conduct broadly—'All of them'."
+      }
+    },
+    {
+      "number": 16,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 10)",
+      "question": "Provisions of Section 10 of CPC are:",
+      "options": [
+        { "label": "A", "text": "Directory" },
+        { "label": "B", "text": "Mandatory" },
+        { "label": "C", "text": "None- Mandatory" },
+        { "label": "D", "text": "Discretionary" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 10 CPC (res sub judice) uses the imperative word 'shall' ('No Court shall proceed with the trial of any suit...'), making its stay of the subsequent suit mandatory once statutory conditions are satisfied.",
+        "whyMistakeHappens": "Confusing the court's discretion to pass interim orders during a stay with the mandatory duty to stay the trial itself.",
+        "howToRectify": "Section 10 CPC (res sub judice) = Mandatory."
+      }
+    },
+    {
+      "number": 17,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 11 Explanation IV)",
+      "question": "Constructive res-judicata is contained in which of the following?",
+      "options": [
+        { "label": "A", "text": "Explanation III to Section 11" },
+        { "label": "B", "text": "Explanation IV to Section 11" },
+        { "label": "C", "text": "Explanation VI to Section 11" },
+        { "label": "D", "text": "Explanation VIII to Section 11" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Explanation IV to Section 11 CPC codifies constructive res judicata: any matter which might and ought to have been made a ground of defence or attack in a former suit is deemed to have been directly and substantially in issue.",
+        "whyMistakeHappens": "Mixing up Explanation IV (constructive res judicata) with Explanation VI (representative suits) or VIII (courts of limited jurisdiction).",
+        "howToRectify": "Connect Explanation IV to Section 11 with 'might and ought' = Constructive Res Judicata."
+      }
+    },
+    {
+      "number": 18,
+      "subject": "Constitutional Law",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 377)",
+      "question": "The famous pronouncement of Delhi High Court regarding constitutional validity of section 377 Indian Penal Code reversed by Supreme Court in:",
+      "options": [
+        { "label": "A", "text": "NALSA Vs Union of India" },
+        { "label": "B", "text": "Naz Foundation Vs Government of NCT of Delhi" },
+        { "label": "C", "text": "Shabnam Hasmi Vs Union of India" },
+        { "label": "D", "text": "Suresh Kaushal Vs Naz Foundation" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The 2009 Delhi High Court decision in Naz Foundation v. Govt. of NCT of Delhi (reading down s.377 IPC) was reversed by the Supreme Court in Suresh Kumar Koushal v. Naz Foundation (2013), which was later overruled by Navtej Singh Johar (2018).",
+        "whyMistakeHappens": "Picking Naz Foundation (which was the Delhi High Court ruling itself) instead of Suresh Kumar Koushal (the Supreme Court reversal).",
+        "howToRectify": "Trace the s.377 timeline: Naz Foundation (2009 HC) -> reversed by Suresh Koushal (2013 SC) -> overruled by Navtej Johar (2018 SC)."
+      }
+    },
+    {
+      "number": 19,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996",
+      "question": "An arbitration proceeding is a:",
+      "options": [
+        { "label": "A", "text": "Judicial proceeding" },
+        { "label": "B", "text": "Quasi-judicial proceeding" },
+        { "label": "C", "text": "Administrative proceeding" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Arbitral tribunals are private adjudicatory bodies bound by natural justice and statutory procedure, rendering arbitration a quasi-judicial proceeding rather than a sovereign court proceeding.",
+        "whyMistakeHappens": "Assuming enforceability of awards as decrees makes arbitration a full 'judicial proceeding'.",
+        "howToRectify": "Arbitration proceeding = Quasi-judicial proceeding."
+      }
+    },
+    {
+      "number": 20,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration Law (Ad Hoc Arbitration)",
+      "question": "What is ad hoc arbitration?",
+      "options": [
+        { "label": "A", "text": "It is a proceeding administered by the parties themselves, with rules created solely, for that specific case" },
+        { "label": "B", "text": "Parties make their own arrangement with respect to all aspects of the arbitration, including the laws and rules" },
+        { "label": "C", "text": "The seal of arbitration, the language, and the scope and issues to be resolved by means of arbitration." },
+        { "label": "D", "text": "(a) (b) (c)" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In ad hoc arbitration (unlike institutional arbitration), parties independently administer the proceeding, decide procedural rules/laws, seat, language, and scope tailored to the dispute.",
+        "whyMistakeHappens": "Selecting only (a) or (b) without noticing (d) combines all three valid features of ad hoc arbitration.",
+        "howToRectify": "Verify all options before marking (a); here (a), (b), and (c) together define ad hoc arbitration."
+      }
+    },
+    {
+      "number": 21,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 2(12))",
+      "question": "Which of the following Sections of the Civil Procedure Code define the ‘ Mesne Profit’ ?",
+      "options": [
+        { "label": "A", "text": "Section 2(4)" },
+        { "label": "B", "text": "Section 2(14)" },
+        { "label": "C", "text": "Section 2(6)" },
+        { "label": "D", "text": "Section 2(12)" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(12) CPC defines 'mesne profits' of property as profits actually received (or which might with ordinary diligence have been received) by a person in wrongful possession, together with interest.",
+        "whyMistakeHappens": "Confusing s.2 definitions: 2(2) Decree, 2(9) Judgment, 2(12) Mesne Profits, 2(14) Order.",
+        "howToRectify": "Anchor Section 2(12) CPC directly to Mesne Profits."
+      }
+    },
+    {
+      "number": 22,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Advocates Act, 1961 (Professional Misconduct)",
+      "question": "An advocate is under an obligation to uphold the rule of law and ensure that the pubic justice system is enabled to function at its full potential. Any violation of the principle of professional ethic by an advocate is unfortunate and unacceptable. Ignoring even a minor violation/misconduct militates against the fundamental foundation of the public justice system. It was said in-",
+      "options": [
+        { "label": "A", "text": "Hikmant ali khan Vs Ishwar Prasad Arya, 1997 3 SCC 131" },
+        { "label": "B", "text": "O.P. Sharma Vs high court of Punjab & Haryana, (2011) 6 SCC 86" },
+        { "label": "C", "text": "L.D. Jaikwal Vs state of Uttar Pradesh, (1984) 3 SCC 405" },
+        { "label": "D", "text": "Shamsher singh bedi Vs High court of Punjab & Haryana, (1996) 7 SCC 99." }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In O.P. Sharma v. High Court of Punjab & Haryana (2011) 6 SCC 86, the Supreme Court observed that advocates must uphold the rule of law and that ignoring even minor professional misconduct undermines the public justice system.",
+        "whyMistakeHappens": "All four choices are well-known advocate misconduct/contempt decisions frequently tested in AIBE.",
+        "howToRectify": "Connect 'uphold the rule of law... ignoring even a minor violation/misconduct' to O.P. Sharma (2011)."
+      }
+    },
+    {
+      "number": 23,
+      "subject": "Company Law",
+      "statuteRef": "Companies Act, 2013 (Sec. 8)",
+      "question": "Section 8 of the companies act, 2013 contains provision relating to",
+      "options": [
+        { "label": "A", "text": "incorporation of company" },
+        { "label": "B", "text": "formation of companies with charitable objects, etc" },
+        { "label": "C", "text": "effect of registration" },
+        { "label": "D", "text": "Effect of memorandum and articles." }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 8 of the Companies Act, 2013 governs formation of non-profit companies with charitable objects (commerce, art, science, sports, education, religion, charity, environment protection).",
+        "whyMistakeHappens": "Confusing s.7 (incorporation), s.8 (charitable/Section 8 companies), s.9 (effect of registration), and s.10 (effect of MOA/AOA).",
+        "howToRectify": "Companies Act ss.7–10: 7 Incorporation, 8 Charitable objects, 9 Effect of registration, 10 Effect of MOA/AOA."
+      }
+    },
+    {
+      "number": 24,
+      "subject": "Company Law",
+      "statuteRef": "Companies Act, 2013 (Sec. 12(2))",
+      "question": "The verification of the registered office shall be furnished to the registrar within a period of____ incorporation",
+      "options": [
+        { "label": "A", "text": "30 days" },
+        { "label": "B", "text": "60 days" },
+        { "label": "C", "text": "90 days" },
+        { "label": "D", "text": "120 days" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 12(2) of the Companies Act, 2013, a company must furnish verification of its registered office to the Registrar of Companies within 30 days of its incorporation (Form INC-22).",
+        "whyMistakeHappens": "Confusing the 30-day registered office verification window with 60/90-day filing timelines.",
+        "howToRectify": "Registered office verification (s.12(2) Companies Act) = 30 days from incorporation."
+      }
+    },
+    {
+      "number": 25,
+      "subject": "Cyber Law",
+      "statuteRef": "Information Technology Act, 2000",
+      "question": "Cyber law deals with",
+      "options": [
+        { "label": "A", "text": "All activities concerning the internet" },
+        { "label": "B", "text": "IPR" },
+        { "label": "C", "text": "E-commerce" },
+        { "label": "D", "text": "All of the above" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Cyber law encompasses internet governance and cyber crimes, electronic commerce/digital signatures (IT Act, 2000), and digital intellectual property rights (domain names, software copyright, online infringement).",
+        "whyMistakeHappens": "Selecting only 'all activities concerning the internet' without recognising e-commerce and online IPR coverage.",
+        "howToRectify": "Cyber law spans internet activities, digital IPR, and e-commerce -> 'All of the above'."
+      }
+    },
+    {
+      "number": 26,
+      "subject": "Taxation Law",
+      "statuteRef": "Income Tax Act, 1961 (Finance Act, 2018)",
+      "question": "Health and education cess is applicable to —",
+      "options": [
+        { "label": "A", "text": "All assesses" },
+        { "label": "B", "text": "All assesses except company" },
+        { "label": "C", "text": "Individual / HUF" },
+        { "label": "D", "text": "Company only" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Health and Education Cess (at 4% on income-tax plus applicable surcharge) applies uniformly to all categories of assessees—individuals, HUFs, firms, and companies.",
+        "whyMistakeHappens": "Thinking surcharge thresholds apply to Health & Education Cess.",
+        "howToRectify": "Surcharge depends on income/entity type, whereas Health & Education Cess (4%) applies to ALL assessees."
+      }
+    },
+    {
+      "number": 27,
+      "subject": "Law of Contract",
+      "statuteRef": "Indian Contract Act, 1872 (Sec. 10)",
+      "question": "Contractual Liability arises , where:",
+      "options": [
+        { "label": "A", "text": "There is offer and acceptance only." },
+        { "label": "B", "text": "There is intention to create legal relation." },
+        { "label": "C", "text": "There is loss to one party" },
+        { "label": "D", "text": "The loss of one party is the gain of other party." }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "As established in Balfour v. Balfour (1919), a valid enforceable contract requires not merely an agreement (offer + acceptance), but also an intention to create legal relations.",
+        "whyMistakeHappens": "Assuming bare offer and acceptance without intention to create legal obligations creates contractual liability.",
+        "howToRectify": "Remember: Social/domestic promises fail for lack of 'intention to create legal relations'."
+      }
+    },
+    {
+      "number": 28,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Adoptions and Maintenance Act, 1956 (Sec. 23)",
+      "question": "Which of the following sections of the Hindu Adoption and Maintenance Act, 1956 deals with “amount of maintenance”?",
+      "options": [
+        { "label": "A", "text": "Section 21" },
+        { "label": "B", "text": "Section 22" },
+        { "label": "C", "text": "Section 23" },
+        { "label": "D", "text": "Section 24" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 23 of HAMA, 1956 lays down the factors guiding judicial discretion in determining the 'amount of maintenance' payable to a wife, children, aged parents, or dependants.",
+        "whyMistakeHappens": "Confusing nearby HAMA maintenance sections: s.21 (dependants defined), s.22 (maintenance of dependants), s.23 (amount), s.24 (claimant to be Hindu).",
+        "howToRectify": "Keep ss.21–25 HAMA sequenced: 21 Dependants, 22 Maintenance of dependants, 23 Amount, 25 Alteration."
+      }
+    },
+    {
+      "number": 29,
+      "subject": "Environmental Law",
+      "statuteRef": "Constitution of India (Art. 21 — Right to Healthy Environment)",
+      "question": "In which of the following case the Supreme Court First of all made an attempt to look into the question regarding the extension of the right to life to the right to Health and other Hygienic conditions —",
+      "options": [
+        { "label": "A", "text": "The Rural Litigation and Entitlement Kendra Vs State of Uttar Pradesh." },
+        { "label": "B", "text": "M.C Mehta Vs Union of India" },
+        { "label": "C", "text": "V. Lakshmipathy Vs State of Karnataka" },
+        { "label": "D", "text": "F.K. Hussain Vs Union of India." }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Rural Litigation and Entitlement Kendra v. State of U.P. (1985, Dehradun Valley Limestone Quarrying case), the Supreme Court first treated environmental/ecological balance and healthy conditions as integral to Article 21.",
+        "whyMistakeHappens": "Selecting M.C. Mehta v. Union of India because of its prominence in later environmental PILs.",
+        "howToRectify": "First Indian SC environmental Art. 21 case = RLEK v. State of U.P. (1985)."
+      }
+    },
+    {
+      "number": 30,
+      "subject": "Environmental Law",
+      "statuteRef": "Basel Convention, 1989",
+      "question": "Basel Convention is associated with one of the following —",
+      "options": [
+        { "label": "A", "text": "International Trade in Endangered species of wild Fauna & flora" },
+        { "label": "B", "text": "Climate change" },
+        { "label": "C", "text": "Protection of Ozone layer" },
+        { "label": "D", "text": "The control of transboundary movement of Hazardous waste and their disposal." }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Basel Convention (1989) regulates the control of transboundary movements of hazardous wastes and their environmentally sound disposal.",
+        "whyMistakeHappens": "Confusing international environmental treaties: CITES (endangered species), UNFCCC (climate change), Montreal/Vienna (ozone layer).",
+        "howToRectify": "Basel = Hazardous Wastes; CITES = Wildlife; Montreal = Ozone; Kyoto/Paris = Climate Change."
+      }
+    },
+    {
+      "number": 31,
+      "subject": "Cyber Law",
+      "statuteRef": "Information Technology Act, 2000",
+      "question": "Cyber crime is ________ in nature",
+      "options": [
+        { "label": "A", "text": "Tangible" },
+        { "label": "B", "text": "Intangible" },
+        { "label": "C", "text": "Of mental Violence" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Cyber crimes occur in virtual/electronic environments involving data, networks, and digital assets, making them intangible in nature.",
+        "whyMistakeHappens": "Confusing physical hardware (tangible) with the cyber offence itself (intangible).",
+        "howToRectify": "Remember: Cyberspace acts and electronic data offences are intangible."
+      }
+    },
+    {
+      "number": 32,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act, 1955 (Sec. 13(1A)(ii))",
+      "question": "The Hindu Marriage Act, 1955 ________ petition in which a decree of restitution of conjugal rights has been passed to apply to the court for a decree for divorce by showing that there has been no restitution of conjugal rights as between parties of marriage for a period of one year or upwards after passing of the decree.",
+      "options": [
+        { "label": "A", "text": "Does not permit any party to that" },
+        { "label": "B", "text": "Does not permit the party against whom the" },
+        { "label": "C", "text": "Does permit any party to that" },
+        { "label": "D", "text": "Does permit any person related to either party to that" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 13(1A)(ii) of the Hindu Marriage Act, 1955, either party to a marriage (whether petitioner or respondent in the earlier proceeding) may petition for divorce if there has been no restitution of conjugal rights for 1 year or more after the decree.",
+        "whyMistakeHappens": "Assuming only the decree-holder can seek divorce and the defaulting party is barred under s.13(1A).",
+        "howToRectify": "Section 13(1A) deliberately uses 'Either party to a marriage'—any party to that petition can apply (subject to s.23(1)(a))."
+      }
+    },
+    {
+      "number": 33,
+      "subject": "Family Law",
+      "statuteRef": "Prohibition of Child Marriage Act, 2006 (Sec. 15)",
+      "question": "The offences under the Prohibition of Child Marriage Act, 2006 are ______.",
+      "options": [
+        { "label": "A", "text": "Cognizable and bailable" },
+        { "label": "B", "text": "Non cognizable and non-bailable" },
+        { "label": "C", "text": "Cognizable and non-bailable" },
+        { "label": "D", "text": "Non cognizable and bailable" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 15 of the Prohibition of Child Marriage Act, 2006 expressly declares every offence punishable under the Act to be cognizable and non-bailable.",
+        "whyMistakeHappens": "Assuming social-offence statutes carry bailable or non-cognizable classification.",
+        "howToRectify": "Prohibition of Child Marriage Act, s.15 = Cognizable and Non-bailable."
+      }
+    },
+    {
+      "number": 34,
+      "subject": "Law of Torts",
+      "statuteRef": "Strict Liability (Rylands v. Fletcher)",
+      "question": "The rule of Strict Liability is based on the decision in :-",
+      "options": [
+        { "label": "A", "text": "Donoghue Vs Stevenson" },
+        { "label": "B", "text": "Homes Vs Ashford" },
+        { "label": "C", "text": "Rylands Vs Fletcher" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The doctrine of Strict Liability was laid down by Blackburn, J. in Rylands v. Fletcher (1868): bringing a dangerous thing onto land in non-natural use entails strict liability if it escapes and causes damage.",
+        "whyMistakeHappens": "Donoghue v. Stevenson (1932) founded the modern tort of negligence, not strict liability.",
+        "howToRectify": "Strict Liability = Rylands v. Fletcher; Absolute Liability (India) = M.C. Mehta v. Union of India."
+      }
+    },
+    {
+      "number": 35,
+      "subject": "Law of Torts",
+      "statuteRef": "Contributory Negligence (Last Opportunity Rule)",
+      "question": "The Rule of Last opportunity was Laid down in :-",
+      "options": [
+        { "label": "A", "text": "Davies Vs Manh" },
+        { "label": "B", "text": "State of A.P. Vs Ranganna" },
+        { "label": "C", "text": "Nugent Vs Smith." },
+        { "label": "D", "text": "Kalawati Vs state of HP" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The 'Last Opportunity Rule' in contributory negligence was laid down in Davies v. Mann (1842, the fettered donkey case): the party who had the last opportunity to avoid the accident by ordinary care is liable.",
+        "whyMistakeHappens": "Mixing up tort case names (Nugent v. Smith deals with Act of God in common carrier liability).",
+        "howToRectify": "Last Opportunity Rule = Davies v. Mann (1842)."
+      }
+    },
+    {
+      "number": 36,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Adoptions and Maintenance Act, 1956 (Sec. 25)",
+      "question": "In which of the following cases was it held that “the rights conferred under section 25 of the Hindu Adoption and Maintenance Act, 1956 supersedes any contract to the contrary. The fact that the date of decree makes no difference”?",
+      "options": [
+        { "label": "A", "text": "Surenderabal Vs Suppiah" },
+        { "label": "B", "text": "Mukesh teli Vs Bharti Teli" },
+        { "label": "C", "text": "Sesi Ammal Vs Thaiyu Ammal" },
+        { "label": "D", "text": "Laxmi Vs Krishna" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Sesi Ammal v. Thaiyu Ammal (AIR 1964 Mad 217), the court held that the statutory right under Section 25 HAMA to seek alteration of maintenance upon material change of circumstances overrides any prior agreement/contract to the contrary.",
+        "whyMistakeHappens": "Unfamiliarity with specific High Court Bare Act case annotations under s.25 HAMA.",
+        "howToRectify": "Associate s.25 HAMA ('supersedes any contract to the contrary') with Sesi Ammal v. Thaiyu Ammal."
+      }
+    },
+    {
+      "number": 37,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 43)",
+      "question": "Any private person may arrest any person who:",
+      "options": [
+        { "label": "A", "text": "Commits non-bailable offence in his presence" },
+        { "label": "B", "text": "Commits non- bailable offence and cognizable offence in his presence" },
+        { "label": "C", "text": "Commits compoundable offence in his presence" },
+        { "label": "D", "text": "Commits offence in his presence or is a proclaimed offender" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 43(1) CrPC, any private person may arrest any person who in his presence commits a non-bailable AND cognizable offence, or any proclaimed offender.",
+        "whyMistakeHappens": "Option (A) omits 'and cognizable', while (D) omits the non-bailable and cognizable qualifier for offences committed in presence.",
+        "howToRectify": "Verify both statutory conditions under s.43 CrPC: non-bailable AND cognizable offence in presence (or proclaimed offender)."
+      }
+    },
+    {
+      "number": 38,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 70(2))",
+      "question": "How long a warrant of arrest shall remain in force?",
+      "options": [
+        { "label": "A", "text": "6 years" },
+        { "label": "B", "text": "10 years" },
+        { "label": "C", "text": "12 years" },
+        { "label": "D", "text": "Until executed or cancelled" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 70(2) CrPC explicitly states that every warrant of arrest shall remain in force until it is cancelled by the Court which issued it, or until it is executed.",
+        "whyMistakeHappens": "Inventing fixed year limits where CrPC sets no time expiry.",
+        "howToRectify": "Section 70(2) CrPC: Warrant stays valid indefinitely until executed or cancelled."
+      }
+    },
+    {
+      "number": 39,
+      "subject": "Taxation Law",
+      "statuteRef": "Income Tax Act, 1961 (Sec. 32(1)(iia))",
+      "question": "Rate of additional Depreciation will be----- under section 32- Indian Income Tax Act",
+      "options": [
+        { "label": "A", "text": "10 %" },
+        { "label": "B", "text": "20 %" },
+        { "label": "C", "text": "15 %" },
+        { "label": "D", "text": "30 %" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 32(1)(iia) of the Income-tax Act, 1961, additional depreciation on new plant or machinery acquired and installed by a manufacturing/power-generation assessee is allowed at the general rate of 20% of actual cost.",
+        "whyMistakeHappens": "Confusing normal plant depreciation (15%) with additional depreciation (20%).",
+        "howToRectify": "Normal plant/machinery depreciation = 15%; Additional depreciation under s.32(1)(iia) = 20%."
+      }
+    },
+    {
+      "number": 40,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constituent Assembly Debates (1946–1947)",
+      "question": "The “Objective Resolution“ adopted by the constituent assembly on January 22 , 1947 was drafted by",
+      "options": [
+        { "label": "A", "text": "Jawaharlal Nehru" },
+        { "label": "B", "text": "Dr. B.R. Ambedkar" },
+        { "label": "C", "text": "Dr. Rajendra Prashad" },
+        { "label": "D", "text": "B.N. Rao" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The historic Objectives Resolution (which later became the philosophical foundation of the Preamble) was drafted and moved by Pandit Jawaharlal Nehru on 13 December 1946 and adopted on 22 January 1947.",
+        "whyMistakeHappens": "Confusing Drafting Committee Chairman (Dr. Ambedkar) or Constitutional Advisor (B.N. Rau) with the mover/drafter of the Objectives Resolution.",
+        "howToRectify": "Objectives Resolution = Jawaharlal Nehru."
+      }
+    },
+    {
+      "number": 41,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution (44th Amendment) Act, 1978",
+      "question": "Right to the property was eliminated from the list of Fundamental Rights during the tenure of",
+      "options": [
+        { "label": "A", "text": "Indira Gandhi" },
+        { "label": "B", "text": "Charan Singh" },
+        { "label": "C", "text": "Rajiv Gandhi" },
+        { "label": "D", "text": "Morarji Desai" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The 44th Constitutional Amendment Act, 1978—which deleted Article 19(1)(f) and Article 31 and inserted Article 300A—was enacted during the Janata Party government headed by Prime Minister Morarji Desai.",
+        "whyMistakeHappens": "Confusing the 42nd Amendment (Indira Gandhi, 1976) with the 44th Amendment (Morarji Desai, 1978).",
+        "howToRectify": "44th Amendment (1978, removing Fundamental Right to Property) = Morarji Desai."
+      }
+    },
+    {
+      "number": 42,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Secs. 25 & 27)",
+      "question": "When the accused states, \"I will produce the share which I gave received in such and such robbery\" which of the following are not admissible with regard to Section 25, Indian Evidence Act?\nI. An admission that there was a robbery\nII. An admission that the accused took part in it\nIII. An admission that he got part of the property\nIV. A statement as to where the property is",
+      "options": [
+        { "label": "A", "text": "I, II and III" },
+        { "label": "B", "text": "III and IV" },
+        { "label": "C", "text": "II, III and IV" },
+        { "label": "D", "text": "All of them" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 25 read with Section 27 Evidence Act (Pulukuri Kottaya v. King Emperor), confessional parts of a police statement (that a robbery occurred, the accused participated, and received loot) are inadmissible; only statement IV relating distinctly to discovery of the property is admissible.",
+        "whyMistakeHappens": "Missing 'not admissible' in the question or forgetting Pulukuri Kottaya's separation between confessional guilt and discovery of physical fact.",
+        "howToRectify": "Under s.27, ONLY 'where the property is' (IV) is admissible; I, II, and III are inadmissible confessions."
+      }
+    },
+    {
+      "number": 43,
+      "subject": "Specific Relief Act",
+      "statuteRef": "Specific Relief Act, 1963 (Sec. 20C)",
+      "question": "What is the Period of Limitation for expeditious disposal of Suit under Specific Relief Act 1963:",
+      "options": [
+        { "label": "A", "text": "6 month" },
+        { "label": "B", "text": "10 month" },
+        { "label": "C", "text": "12 month" },
+        { "label": "D", "text": "18 month" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Inserted by the 2018 Amendment, Section 20C of the Specific Relief Act, 1963 requires a suit filed under the Act to be disposed of within 12 months from the date of service of summons on the defendant (extendable by up to 6 months for recorded reasons).",
+        "whyMistakeHappens": "Confusing s.6 SRA limitation for filing a dispossession suit (6 months) with s.20C time limit for disposal of suits (12 months).",
+        "howToRectify": "s.6 filing = 6 months; s.20C expeditious disposal = 12 months (extendable by 6 months)."
+      }
+    },
+    {
+      "number": 44,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 29(1))",
+      "question": "A Chief Judicial Magistrate may pass a sentence of imprisonment",
+      "options": [
+        { "label": "A", "text": "Not exceeding seven years" },
+        { "label": "B", "text": "Exceeding seven years" },
+        { "label": "C", "text": "For life" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 29(1) CrPC, a Chief Judicial Magistrate (or Chief Metropolitan Magistrate) may pass any sentence authorised by law except death, imprisonment for life, or imprisonment exceeding 7 years.",
+        "whyMistakeHappens": "Mixing up sentencing limits of JMFC (3 years) and Assistant Sessions Judge (10 years) with CJM (7 years).",
+        "howToRectify": "CrPC s.29 sentencing ladder: JMFC = up to 3 years; CJM = up to 7 years; Asst. Sessions = up to 10 years."
+      }
+    },
+    {
+      "number": 45,
+      "subject": "Administrative Law",
+      "statuteRef": "Doctrine of Ultra Vires (Delegated Legislation)",
+      "question": "What is meant by procedural ultra-vires?",
+      "options": [
+        { "label": "A", "text": "It is the non-observance of the procedural norms by the rule-making authority" },
+        { "label": "B", "text": "It may make the rule ultra vires due to non-observance of rule-making authority and hence become void" },
+        { "label": "C", "text": "It means the lacuna in the procedure of law" },
+        { "label": "D", "text": "(a) and (b)" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Procedural ultra vires occurs when a rule-making authority fails to comply with mandatory procedural norms prescribed by the parent statute (such as prior publication or consultation), rendering the delegated rule void.",
+        "whyMistakeHappens": "Stopping at option (a) without checking that (b) completes the legal consequence and (d) combines both.",
+        "howToRectify": "Always read to option (d) when (a) and (b) both sound accurate."
+      }
+    },
+    {
+      "number": 46,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 32 & 226)",
+      "question": "The ground of “error of law apparent on the face of the record” is connected with which of the writ?",
+      "options": [
+        { "label": "A", "text": "Quo-warranto" },
+        { "label": "B", "text": "Mandamus" },
+        { "label": "C", "text": "Habeas Corpus" },
+        { "label": "D", "text": "Certiorari" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A writ of certiorari lies to quash an order of an inferior court or tribunal on grounds of want/excess of jurisdiction, breach of natural justice, or an error of law apparent on the face of the record.",
+        "whyMistakeHappens": "Confusing certiorari with mandamus or prohibition.",
+        "howToRectify": "'Error of law apparent on the face of the record' is the classic hallmark ground for Certiorari."
+      }
+    },
+    {
+      "number": 47,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Secs. 5–9)",
+      "question": "Under Civil Procedure Code find the incorrect match:",
+      "options": [
+        { "label": "A", "text": "Section 5............ Revenue Court" },
+        { "label": "B", "text": "Section 7............ Provincial Small Causes Court" },
+        { "label": "C", "text": "Section 9............ Pecuniary Jurisdiction of Courts" },
+        { "label": "D", "text": "Section 8............ Presidency Small Cause Courts" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under CPC, Section 5 deals with Revenue Courts, Section 7 with Provincial Small Cause Courts, and Section 8 with Presidency Small Cause Courts; however, Pecuniary Jurisdiction is in Section 6, while Section 9 gives courts jurisdiction to try all civil suits unless barred.",
+        "whyMistakeHappens": "Forgetting that Section 6 (not Section 9) covers pecuniary jurisdiction.",
+        "howToRectify": "Keep CPC ss.5–9 exact: 5 Revenue, 6 Pecuniary, 7 Provincial Small Cause, 8 Presidency Small Cause, 9 All Civil Suits."
+      }
+    },
+    {
+      "number": 48,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 2(5))",
+      "question": "Under Civil Procedure Code, 1908 “Foreign Court” means",
+      "options": [
+        { "label": "A", "text": "A court situated outside India" },
+        { "label": "B", "text": "A court situated outside India and not established under the authority of Government of India" },
+        { "label": "C", "text": "A court situated in India, applying foreign law" },
+        { "label": "D", "text": "All of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(5) CPC defines 'foreign Court' as a Court situate outside India AND not established or continued by the authority of the Central Government.",
+        "whyMistakeHappens": "Picking (A) overlooks the second mandatory statutory limb excluding courts established outside India by Central Government authority.",
+        "howToRectify": "Two limbs of s.2(5) Foreign Court: (1) situated outside India + (2) not established by Central Government."
+      }
+    },
+    {
+      "number": 49,
+      "subject": "Constitutional Law",
+      "statuteRef": "Public Interest Litigation (PIL Abuse)",
+      "question": "Misuse of mechanism of PILs means-",
+      "options": [
+        { "label": "A", "text": "filing PILs for protection of private interest" },
+        { "label": "B", "text": "filing PILs for oblique motive" },
+        { "label": "C", "text": "filing PILs only for publicity" },
+        { "label": "D", "text": "All of the above" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "As emphasised by the Supreme Court in State of Uttaranchal v. Balwant Singh Chaufal (2010), filing PILs for private gain, oblique political/personal motives, or cheap publicity constitutes abuse/misuse of PIL.",
+        "whyMistakeHappens": "Choosing one specific form of abuse without noticing all three are recognised forms of PIL misuse.",
+        "howToRectify": "Private interest + oblique motive + publicity = All of the above."
+      }
+    },
+    {
+      "number": 50,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 44 / Sec. 53)",
+      "question": "As per section 53 of IPC, the word “injury” denotes any harm whatever illegally caused to any person’s",
+      "options": [
+        { "label": "A", "text": "Body" },
+        { "label": "B", "text": "Mind" },
+        { "label": "C", "text": "Reputation" },
+        { "label": "D", "text": "All above" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In IPC (defined in s.44, referenced in the question as s.53), 'injury' denotes any harm whatever illegally caused to any person in body, mind, reputation, or property.",
+        "whyMistakeHappens": "Limiting 'injury' solely to physical bodily harm.",
+        "howToRectify": "IPC 'injury' covers four heads: Body, Mind, Reputation, and Property -> All above."
+      }
+    },
+    {
+      "number": 51,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 465)",
+      "question": "Which of the following cases can be cured under section 465 of the code of criminal procedure, 1973?",
+      "options": [
+        { "label": "A", "text": "Entertaining of complaint without complying with section 195 and 340 of the Cr.P.C" },
+        { "label": "B", "text": "The reading and recording of the evidence taken in one case into another companion case" },
+        { "label": "C", "text": "The examination of witness in absence of the accused" },
+        { "label": "D", "text": "Non Compliance with 235(2)" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 465 CrPC, mere procedural irregularities that do not occasion a failure of justice—such as reading and recording evidence taken in one case into a companion case with consent/no prejudice—are curable, whereas violating mandatory jurisdiction bars (s.195/340), examining witnesses behind the accused's back (s.273), or denying hearing on sentence (s.235(2)) are serious illegalities.",
+        "whyMistakeHappens": "Confusing curable irregularities under s.465 with incurable violations of natural justice or mandatory statutory bars.",
+        "howToRectify": "Remember: s.195 bar, s.273 accused's presence, and s.235(2) sentence hearing are vital safeguards; companion-case evidence reading without prejudice is curable under s.465."
+      }
+    },
+    {
+      "number": 52,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (De Novo Trial)",
+      "question": "Which of the following statements hold true for de nova trials?",
+      "options": [
+        { "label": "A", "text": "Omission or illegality in the procedure even if it does not affect the core of the case can become a ground for calling de nova trials" },
+        { "label": "B", "text": "A de nova trial should be the last resort" },
+        { "label": "C", "text": "the court originally trying the case can order de nova trial" },
+        { "label": "D", "text": "None of these" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "As reiterated by the Supreme Court (Ukha Kolhe v. State of Maharashtra; Ajay Kumar Ghoshal v. State of Bihar), a de novo (retrial from the beginning) trial is an extraordinary power to be exercised only as a last resort where miscarriage of justice cannot otherwise be cured.",
+        "whyMistakeHappens": "Thinking any procedural omission triggers retrial or that the trial court itself orders appellate de novo retrial.",
+        "howToRectify": "Key rule on de novo trial: Exercised sparingly as a LAST RESORT by appellate/revisional courts."
+      }
+    },
+    {
+      "number": 53,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Advocates Act, 1961 (Sec. 3(2)(b))",
+      "question": "The maximum limit of the members of the state bar council:",
+      "options": [
+        { "label": "A", "text": "15" },
+        { "label": "B", "text": "20" },
+        { "label": "C", "text": "25" },
+        { "label": "D", "text": "None." }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 3(2)(b) of the Advocates Act, 1961, an elected State Bar Council consists of 15 members (electorate up to 5,000), 20 members (5,001 to 10,000), or a maximum of 25 elected members (where the electorate exceeds 10,000).",
+        "whyMistakeHappens": "Picking 15 or 20 instead of the highest statutory slab of 25 elected members.",
+        "howToRectify": "State Bar Council elected strength slabs (s.3(2)(b)): 15 -> 20 -> maximum 25."
+      }
+    },
+    {
+      "number": 54,
+      "subject": "Specific Relief Act",
+      "statuteRef": "Specific Relief Act, 1963",
+      "question": "Specific Relief Act 1963 contains-",
+      "options": [
+        { "label": "A", "text": "6 chapters and 40 Sections" },
+        { "label": "B", "text": "7 chapters and 42 Sections" },
+        { "label": "C", "text": "8 chapters and 43 Sections" },
+        { "label": "D", "text": "8 chapters and 44 Sections" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Specific Relief Act, 1963 is divided into 3 Parts, 8 Chapters, and 44 Sections (Sections 43 and 44 were repealed later, yet the Act originally contains 44 numbered sections across 8 chapters).",
+        "whyMistakeHappens": "Confusing 42 or 43 active/repealed section counts with the total structural layout of 8 Chapters and 44 Sections.",
+        "howToRectify": "Specific Relief Act, 1963 structure: 3 Parts, 8 Chapters, 44 Sections."
+      }
+    },
+    {
+      "number": 55,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Criminal Law (Amendment) Act, 2013",
+      "question": "The Committee which led to the passing of the Criminal Law (Amendment) Act, 2013 was headed by",
+      "options": [
+        { "label": "A", "text": "Justice Dalveer Bhandari" },
+        { "label": "B", "text": "Justice Altamas Kabir" },
+        { "label": "C", "text": "Justice J.S. Verma" },
+        { "label": "D", "text": "Justice A.S. Anand" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The three-member committee constituted in December 2012 whose recommendations led to the Criminal Law (Amendment) Act, 2013 was chaired by former Chief Justice of India Justice J.S. Verma (with Justice Leila Seth and Gopal Subramanium).",
+        "whyMistakeHappens": "Confusing former CJI names in the options.",
+        "howToRectify": "2013 Criminal Law Amendment = Justice J.S. Verma Committee."
+      }
+    },
+    {
+      "number": 56,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 2(l))",
+      "question": "Under the scheme of Criminal Procedure Code, non-cognizable offences are:",
+      "options": [
+        { "label": "A", "text": "Public wrongs" },
+        { "label": "B", "text": "Private wrongs" },
+        { "label": "C", "text": "Both public and private wrongs" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the CrPC scheme, cognizable offences are grave public wrongs investigated suo motu by police, whereas non-cognizable offences (s.2(l)) are treated primarily as private wrongs where police cannot arrest or investigate without a Magistrate's order (s.155).",
+        "whyMistakeHappens": "Thinking all criminal offences automatically classify as 'public wrongs'.",
+        "howToRectify": "CrPC distinction: Cognizable = Public wrongs; Non-cognizable = Private wrongs (s.155)."
+      }
+    },
+    {
+      "number": 57,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 15(1))",
+      "question": "A discrimination against a man or a woman, only on grounds of _______ would be violative of Article 15(1)",
+      "options": [
+        { "label": "A", "text": "Sex" },
+        { "label": "B", "text": "Remuneration" },
+        { "label": "C", "text": "Place of birth" },
+        { "label": "D", "text": "Religion" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 15(1) prohibits State discrimination against any citizen on grounds only of religion, race, caste, sex, or place of birth; discrimination between a man and a woman specifically triggers the ground of 'sex'.",
+        "whyMistakeHappens": "Seeing 'Place of birth' or 'Religion' (other Art. 15(1) grounds) without matching 'man or woman' to 'sex'.",
+        "howToRectify": "Match the stem 'against a man or a woman' directly to 'Sex'."
+      }
+    },
+    {
+      "number": 58,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Secs. 17–21)",
+      "question": "Admission can be broadly categorised into:",
+      "options": [
+        { "label": "A", "text": "Judicial" },
+        { "label": "B", "text": "Extra- judicial" },
+        { "label": "C", "text": "Either A and B" },
+        { "label": "D", "text": "Both A and B" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Admissions under the Indian Evidence Act are broadly categorised into both Judicial admissions (made in court proceedings, s.58) and Extra-judicial admissions (made outside court in writings or statements, ss.17–21).",
+        "whyMistakeHappens": "Misreading 'Either A and B' vs. 'Both A and B' for broad classification.",
+        "howToRectify": "Admissions = BOTH Judicial and Extra-judicial."
+      }
+    },
+    {
+      "number": 59,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 66)",
+      "question": "Section 66, Indian Evidence Act lays down:",
+      "options": [
+        { "label": "A", "text": "A notice must be given before secondary evidence can be received under section 65 (a), Indian Evidence Act" },
+        { "label": "B", "text": "Notice to produce a document must be in writing" },
+        { "label": "C", "text": "Order XI, Rules 15, of Civil Procedure Code, prescribes the kind of notice to produce a document" },
+        { "label": "D", "text": "All of them" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 66 Evidence Act provides that secondary evidence under s.65(a) cannot be given unless the party proposing to give it has previously given written notice to produce the original (with CPC Order XI rules governing civil notice forms).",
+        "whyMistakeHappens": "Stopping at (A) without noting that written notice and CPC Order XI procedure are also part of s.66 commentary.",
+        "howToRectify": "Verify all options: s.66 notice rule encompasses (A), (B), and (C) -> All of them."
+      }
+    },
+    {
+      "number": 60,
+      "subject": "Law of Torts",
+      "statuteRef": "Tort of Negligence (Res Ipsa Loquitur)",
+      "question": "Maxim \"Res Ipsa Loquitur\" means :-",
+      "options": [
+        { "label": "A", "text": "The thing speaks for itself" },
+        { "label": "B", "text": "Where there is right there is remedy" },
+        { "label": "C", "text": "Where there is remedy there is right" },
+        { "label": "D", "text": "Where there is no fault there is no remedy" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Res ipsa loquitur translates to 'the thing speaks for itself', raising an inference of negligence when an accident occurs under the defendant's exclusive control.",
+        "whyMistakeHappens": "Confusing it with ubi jus ibi remedium ('where there is a right, there is a remedy').",
+        "howToRectify": "Res = thing, Ipsa = itself, Loquitur = speaks -> 'The thing speaks for itself'."
+      }
+    },
+    {
+      "number": 61,
+      "subject": "Constitutional Law",
+      "statuteRef": "Public Interest Litigation (Abuse of Process)",
+      "question": "The phrase “file a PIL, ostensibly in public interest but, in fact, to serve personal or private interests” means -",
+      "options": [
+        { "label": "A", "text": "filing PIL for protection of only public interest" },
+        { "label": "B", "text": "filing PIL for protection of both public and private interest" },
+        { "label": "C", "text": "filing PIL for protection of only private interest" },
+        { "label": "D", "text": "filing PIL alleging it to be in public interest but actually seeking protection of private interest" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "'Ostensibly in public interest' means appearing on the surface as public interest while actually disguising a private or personal interest (proxy/motivated litigation).",
+        "whyMistakeHappens": "Picking (C) overlooks the key word 'ostensibly' (alleging/masking it as public interest).",
+        "howToRectify": "Ostensibly = pretending/alleging public interest while pursuing private interest -> Option (D)."
+      }
+    },
+    {
+      "number": 62,
+      "subject": "Constitutional Law",
+      "statuteRef": "Public Interest Litigation",
+      "question": "Filing of frivolous PILs results in-",
+      "options": [
+        { "label": "A", "text": "increasing backlog of cases" },
+        { "label": "B", "text": "wastage of resources" },
+        { "label": "C", "text": "lesser availability of time for hearing other genuine cases" },
+        { "label": "D", "text": "All of the above" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Courts consistently deprecate frivolous PILs because they increase judicial backlog, waste scarce public and court resources, and crowd out genuine deserving cases.",
+        "whyMistakeHappens": "Picking a single consequence when all three are true.",
+        "howToRectify": "Frivolous PIL harms: backlog + resource waste + crowding out genuine cases -> All of the above."
+      }
+    },
+    {
+      "number": 63,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 98)",
+      "question": "Z, under the influence of madness, attempts to kill X. Is Z guilty of an offence. Has X the same right of private defence which he would have if Z were sane?",
+      "options": [
+        { "label": "A", "text": "Z has not committed any offence as per section 98 of IPC and same right of private defence to X if Z is mad" },
+        { "label": "B", "text": "As per Section 98 of IPC, X has committed an offence and no right of private defence to X" },
+        { "label": "C", "text": "Z has committed an offence for not using his mind" },
+        { "label": "D", "text": "None above" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 84 IPC, Z (unsound mind) commits no offence; however, Section 98 IPC expressly gives X the exact same right of private defence against an insane attacker as X would have against a sane person.",
+        "whyMistakeHappens": "Assuming private defence cannot be exercised if the attacker is exempt from criminal guilt under s.84.",
+        "howToRectify": "Section 98 IPC illustration: Unsound attacker commits no offence, yet defender retains full right of private defence."
+      }
+    },
+    {
+      "number": 64,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 109)",
+      "question": "The Bond under section 109 Cr.P.C as security for good behaviour from suspected person can be executed for a period not exceeding:",
+      "options": [
+        { "label": "A", "text": "Six months" },
+        { "label": "B", "text": "Two years" },
+        { "label": "C", "text": "One year" },
+        { "label": "D", "text": "Three months" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 109 CrPC empowers an Executive Magistrate to require a suspected person concealing presence with a view to committing a cognizable offence to execute a bond for good behaviour for a period not exceeding one year.",
+        "whyMistakeHappens": "Confusing s.109 (up to 1 year) with s.110 (habitual offenders—up to 3 years).",
+        "howToRectify": "CrPC security periods: s.106 (3 yrs), s.107/108/109 (1 yr), s.110 (3 yrs)."
+      }
+    },
+    {
+      "number": 65,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure (Amendment) Act, 2001 (Sec. 125)",
+      "question": "The maximum limit of Rs. 500 that could be paid to the wife as maintenance under Section 125 of the Cr.P.C 1973 was removed in:",
+      "options": [
+        { "label": "A", "text": "1973" },
+        { "label": "B", "text": "1989" },
+        { "label": "C", "text": "2001" },
+        { "label": "D", "text": "2007" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "By the Code of Criminal Procedure (Amendment) Act, 2001 (Act 50 of 2001), the statutory ceiling of Rs. 500 per month under Section 125 CrPC was deleted, empowering Magistrates to award reasonable maintenance without an upper cap.",
+        "whyMistakeHappens": "Guessing other amendment years like 1989 or 2007.",
+        "howToRectify": "Deletion of Rs. 500 cap under s.125 CrPC = 2001 Amendment."
+      }
+    },
+    {
+      "number": 66,
+      "subject": "Intellectual Property Law",
+      "statuteRef": "World Intellectual Property Organization (WIPO)",
+      "question": "The term ‘WIPO” stands for:",
+      "options": [
+        { "label": "A", "text": "World Investment policy organization" },
+        { "label": "B", "text": "World intellectual property organization" },
+        { "label": "C", "text": "Wildlife Investigation and Policing organization" },
+        { "label": "D", "text": "World institute for Prevention of organized crime" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "WIPO stands for World Intellectual Property Organization, a specialized UN agency headquartered in Geneva dedicated to promoting global intellectual property protection.",
+        "whyMistakeHappens": "Distractor acronyms mimicking 'W-I-P-O'.",
+        "howToRectify": "WIPO = World Intellectual Property Organization."
+      }
+    },
+    {
+      "number": 67,
+      "subject": "Labour & Industrial Law",
+      "statuteRef": "Motor Vehicles Act, 1988 (Sec. 167)",
+      "question": "A Railway servant was killed in a bus accident during the course of employment. His family members may claim compensation under",
+      "options": [
+        { "label": "A", "text": "The Motor Vehicle Act" },
+        { "label": "B", "text": "The Employees Compensation Act, 1923" },
+        { "label": "C", "text": "Both (a) and (b)" },
+        { "label": "D", "text": "Either under (a) OR under (b)" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 167 of the Motor Vehicles Act, 1988, where death or bodily injury gives rise to a claim under both the MV Act and the Employees' (Workmen's) Compensation Act, 1923, claimants may claim under EITHER Act, but NOT under both.",
+        "whyMistakeHappens": "Picking 'Both (a) and (b)' overlooks the statutory bar against double compensation in s.167 MV Act.",
+        "howToRectify": "Section 167 MV Act = Election of forum: Either MV Act OR Employees' Compensation Act, never both."
+      }
+    },
+    {
+      "number": 68,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 354A)",
+      "question": "“Casting Couch” in Bollywood, the Indian film industry, is an example of-",
+      "options": [
+        { "label": "A", "text": "sexual assault" },
+        { "label": "B", "text": "sexual harassment" },
+        { "label": "C", "text": "both (a) and (b)" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Demanding sexual favours in exchange for work, roles, or career advancement ('quid pro quo' harassment, such as the casting couch) is the classic example of workplace sexual harassment (POSH Act, 2013 & s.354A IPC).",
+        "whyMistakeHappens": "Equating quid pro quo demands with physical 'sexual assault'.",
+        "howToRectify": "Quid pro quo favour demands = Sexual Harassment (s.354A IPC / POSH Act)."
+      }
+    },
+    {
+      "number": 69,
+      "subject": "Motor Vehicles Act",
+      "statuteRef": "Motor Vehicles Act, 1988 (Sec. 2(25))",
+      "question": "According to section 2 of motor vehicles Act, 1988 the term motor cab means any motor vehicle constructed or adapted to carry not more than",
+      "options": [
+        { "label": "A", "text": "5 passengers or including the driver" },
+        { "label": "B", "text": "6 passengers or including the driver" },
+        { "label": "C", "text": "5 passengers or excluding the driver" },
+        { "label": "D", "text": "6 passengers or excluding the driver" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 2(25) of the Motor Vehicles Act, 1988 defines 'motor cab' as any motor vehicle constructed or adapted to carry not more than 6 passengers EXCLUDING the driver for hire or reward.",
+        "whyMistakeHappens": "Swapping '6 excluding driver' with '6 including driver' (maxicab is 6+ to 12 excluding driver).",
+        "howToRectify": "Motor cab (s.2(25) MV Act) = up to 6 passengers EXCLUDING driver."
+      }
+    },
+    {
+      "number": 70,
+      "subject": "Consumer Protection Act",
+      "statuteRef": "Consumer Protection Act, 2019 (Sec. 54)",
+      "question": "The National Commission of Consumer Protection is composed of-",
+      "options": [
+        { "label": "A", "text": "7 members ;" },
+        { "label": "B", "text": "5 members ;" },
+        { "label": "C", "text": "8 members ;" },
+        { "label": "D", "text": "6 members ;" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 54 of the Consumer Protection Act, 2019 (and s.20 of the 1986 Act), the National Consumer Disputes Redressal Commission (NCDRC) consists of a President and not less than four (i.e., minimum 5) members.",
+        "whyMistakeHappens": "Confusing the minimum statutory composition (President + 4 = 5 members) with other tribunal sizes.",
+        "howToRectify": "NCDRC minimum composition = 1 President + 4 Members = 5 members."
+      }
+    },
+    {
+      "number": 71,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act, 1955",
+      "question": "On which of the following dates did Hindu Marriage Act, 1955 come into operation?",
+      "options": [
+        { "label": "A", "text": "18th May, 1955" },
+        { "label": "B", "text": "17th June, 1955" },
+        { "label": "C", "text": "22nd May, 1955" },
+        { "label": "D", "text": "18th June, 1955" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Hindu Marriage Act, 1955 received Presidential assent and came into force immediately on 18th May, 1955.",
+        "whyMistakeHappens": "Mixing up enforcement dates of the 1955–1956 Hindu Code Acts (Hindu Succession Act came into force on 17th June, 1956).",
+        "howToRectify": "Hindu Marriage Act, 1955 commencement date = 18th May, 1955."
+      }
+    },
+    {
+      "number": 72,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Succession Act, 1956 (Sec. 30 & Sec. 7)",
+      "question": "Which of the following properties will section 30 of the Hindu Succession Act, 1956, govern?\nI. Tarwad\nII. Tavazhi\nIII. Kutumba\nIV. Kavaru\nV. Illom",
+      "options": [
+        { "label": "A", "text": "I, III, and V" },
+        { "label": "B", "text": "II, IV and V" },
+        { "label": "C", "text": "I and II" },
+        { "label": "D", "text": "All of the above" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Explanation to Section 30 of the Hindu Succession Act, 1956 (permitting testamentary disposition of coparcenary/customary family interest) expressly covers interests in a Tarwad, Tavazhi, Illom, Kutumba, or Kavaru.",
+        "whyMistakeHappens": "Assuming Section 30 applies only to Mitakshara coparcenary property and excludes Marumakkattayam/Aliyasantana/Nambudri properties.",
+        "howToRectify": "Explanation to s.30 HSA includes ALL five traditional undivided family estates: Tarwad, Tavazhi, Kutumba, Kavaru, Illom."
+      }
+    },
+    {
+      "number": 73,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order IV Rule 1)",
+      "question": "A plaint has to be presented to the Court under Order IV, Rule 1 in",
+      "options": [
+        { "label": "A", "text": "Single copy" },
+        { "label": "B", "text": "Duplicate" },
+        { "label": "C", "text": "Triplicate" },
+        { "label": "D", "text": "No fixed rule" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Order IV Rule 1(1) CPC expressly provides that every suit shall be instituted by presenting a plaint in DUPLICATE to the Court or such officer as it appoints.",
+        "whyMistakeHappens": "Overlooking the exact statutory requirement added to Order IV Rule 1 ('in duplicate').",
+        "howToRectify": "Institution of suit (O.IV R.1 CPC) = plaint presented in Duplicate."
+      }
+    },
+    {
+      "number": 74,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order XXI Rule 22)",
+      "question": "Omission to give notice under Order XXI. Rule 22 will",
+      "options": [
+        { "label": "A", "text": "Render the execution null and void" },
+        { "label": "B", "text": "Render the execution irregular" },
+        { "label": "C", "text": "Render the execution voidable" },
+        { "label": "D", "text": "Not affect the execution" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Notice under Order XXI Rule 22 CPC (where execution is sought after more than 2 years or against legal representatives) goes to the root of executing-court jurisdiction; omission renders the execution proceedings null and void (Raghunath Das v. Sundar Das Khetri).",
+        "whyMistakeHappens": "Treating mandatory O.XXI R.22 show-cause notice as a mere curable irregularity.",
+        "howToRectify": "Omission of O.XXI R.22 notice = jurisdictional defect -> execution null and void."
+      }
+    },
+    {
+      "number": 75,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 82(2))",
+      "question": "Where a decree is passed against the Union of India or State for the Act done in the official capacity of the person concerned, under section 82 CPC, execution, shall not be issued on any such decree unless the decree remains unsatisfied for a period of",
+      "options": [
+        { "label": "A", "text": "3 months from the date of decree" },
+        { "label": "B", "text": "6 months from the date of the decree" },
+        { "label": "C", "text": "1 year from the date of the decree" },
+        { "label": "D", "text": "2 years from the date of decree" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 82(2) CPC, execution shall not be issued on a decree against the Union of India, a State, or a public officer for an official act unless it remains unsatisfied for 3 months from the date of the decree.",
+        "whyMistakeHappens": "Confusing the 2-month notice period under s.80 CPC with the 3-month execution waiting period under s.82(2) CPC.",
+        "howToRectify": "s.80 notice = 2 months; s.82 decree satisfaction grace period before execution = 3 months."
+      }
+    },
+    {
+      "number": 76,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 22)",
+      "question": "Protection against arrest and detention in certain cases is mentioned in which of the following Articles of Indian Constitution?",
+      "options": [
+        { "label": "A", "text": "Article 21" },
+        { "label": "B", "text": "Article 21A" },
+        { "label": "C", "text": "Article 22" },
+        { "label": "D", "text": "Article 22A" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 22 of the Constitution is titled 'Protection against arrest and detention in certain cases' (ground of arrest, right to counsel, production before Magistrate within 24 hours, preventive detention safeguards).",
+        "whyMistakeHappens": "Confusing Article 21 (life and personal liberty) with Article 22 (specific arrest/detention safeguards).",
+        "howToRectify": "Art. 20 = Conviction; Art. 21 = Life/Liberty; Art. 21A = Education; Art. 22 = Arrest & Detention."
+      }
+    },
+    {
+      "number": 77,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 300A, 44th Amendment)",
+      "question": "Article 300A of Indian Constitution i.e. Right to property has been inserted in the Constitution by ______",
+      "options": [
+        { "label": "A", "text": "44th Amendment Act" },
+        { "label": "B", "text": "42nd Amendment Act" },
+        { "label": "C", "text": "40th Amendment Act" },
+        { "label": "D", "text": "51st Amendment Act" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The 44th Constitutional Amendment Act, 1978 removed Right to Property from Part III (Articles 19(1)(f) and 31) and inserted Article 300A making it a constitutional/legal right.",
+        "whyMistakeHappens": "Confusing the 42nd and 44th Amendments.",
+        "howToRectify": "Article 300A Right to Property = 44th Amendment Act, 1978."
+      }
+    },
+    {
+      "number": 78,
+      "subject": "Family Law",
+      "statuteRef": "Dissolution of Muslim Marriages Act, 1939 (Sec. 6)",
+      "question": "Which of the following sections of the Muslim Personal Law (Shariat) Application Act, 1937 have been repealed/ amended by section 6 of the Dissolution of Muslim Marriage Act, 1939?",
+      "options": [
+        { "label": "A", "text": "Section 4" },
+        { "label": "B", "text": "Section 5" },
+        { "label": "C", "text": "Section 6" },
+        { "label": "D", "text": "Section 7" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 6 of the Dissolution of Muslim Marriages Act, 1939 repealed Section 5 of the Muslim Personal Law (Shariat) Application Act, 1937, which had earlier empowered District Judges to dissolve Muslim marriages at the wife's suit.",
+        "whyMistakeHappens": "Assuming Section 6 repealed Section 6 instead of Section 5.",
+        "howToRectify": "s.6 Dissolution of Muslim Marriages Act, 1939 repealed s.5 Shariat Act, 1937."
+      }
+    },
+    {
+      "number": 79,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Order VI Rule 18)",
+      "question": "If a party who obtained an order for leave to amend pleading does not amend the same within how many days, he shall not be permitted to do that without the leave of the Court",
+      "options": [
+        { "label": "A", "text": "Fifteen days" },
+        { "label": "B", "text": "Fourteen days" },
+        { "label": "C", "text": "Twenty days" },
+        { "label": "D", "text": "Thirty days" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Order VI Rule 18 CPC, if a party who has obtained an order for leave to amend fails to amend within the time limited by the order, or if no time is limited then within 14 days from the date of the order, he cannot amend without fresh leave of the Court.",
+        "whyMistakeHappens": "Rounding 14 days up to 15 days or 30 days.",
+        "howToRectify": "Order VI Rule 18 CPC default amendment window = 14 days (2 weeks)."
+      }
+    },
+    {
+      "number": 80,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Advocates Act, 1961 (Sec. 35)",
+      "question": "Punishment of advocates for misconduct has been given under section of the Advocate's Act - 1961",
+      "options": [
+        { "label": "A", "text": "30" },
+        { "label": "B", "text": "32" },
+        { "label": "C", "text": "35" },
+        { "label": "D", "text": "None" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 35 of the Advocates Act, 1961 deals with punishment of advocates for professional or other misconduct by the Disciplinary Committee of the State Bar Council (reprimand, suspension, or removal from roll).",
+        "whyMistakeHappens": "Confusing s.30 (right to practise) or s.36 (BCI disciplinary powers) with s.35 (State Bar Council punishment for misconduct).",
+        "howToRectify": "Advocates Act: s.35 = State Bar Council misconduct punishment; s.36 = BCI; s.37/38 = Appeals."
+      }
+    },
+    {
+      "number": 81,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 304A)",
+      "question": "Under which Section of IPC, Professional Negligence is often invoked against medical professionals in cases alleging professional negligence?",
+      "options": [
+        { "label": "A", "text": "303A" },
+        { "label": "B", "text": "304A" },
+        { "label": "C", "text": "302" },
+        { "label": "D", "text": "305" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 304A IPC (causing death by rash or negligent act not amounting to culpable homicide) is invoked in cases of gross medical negligence (Jacob Mathew v. State of Punjab).",
+        "whyMistakeHappens": "Mistyping or misreading s.303A (non-existent) for s.304A.",
+        "howToRectify": "Gross criminal medical negligence causing death = Section 304A IPC (Jacob Mathew)."
+      }
+    },
+    {
+      "number": 82,
+      "subject": "Criminal Law (IPC)",
+      "statuteRef": "Indian Penal Code, 1860 (Sec. 116 / Sec. 161)",
+      "question": "A offers a bribe to B, a public servant, as a reward for showing A some favour in the exercise of B’s official functions. B accepts the bribe",
+      "options": [
+        { "label": "A", "text": "A has abetted the offence define in Section 160, IPC" },
+        { "label": "B", "text": "A has abetted the offence define in Section 161, IPC" },
+        { "label": "C", "text": "A has abetted the offence define in Section 162, IPC" },
+        { "label": "D", "text": "A has abetted the offence define in Section 163, IPC" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "This is Illustration (a) to Section 109 IPC: B commits the offence defined in former Section 161 IPC (public servant taking gratification other than legal remuneration), and A has abetted the offence defined in Section 161 IPC.",
+        "whyMistakeHappens": "Confusing repealed IPC bribery sections (161 vs. 162/163 dealing with influencing a public servant by corrupt/personal means).",
+        "howToRectify": "Remember Illustration (a) to s.109 IPC verbatim: A abetted the offence defined in Section 161 IPC."
+      }
+    },
+    {
+      "number": 83,
+      "subject": "Specific Relief Act",
+      "statuteRef": "Specific Relief Act, 1963 (Sec. 38(3))",
+      "question": "When Perpetual Injunction may be granted-",
+      "options": [
+        { "label": "A", "text": "Where the defendant is trustee of the Property for the plaintiff." },
+        { "label": "B", "text": "Where there is no standard for ascertaining the actual damage." },
+        { "label": "C", "text": "Compensation in money would not afford adequate relief." },
+        { "label": "D", "text": "All of the above." }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 38(3) of the Specific Relief Act, 1963 lists all three circumstances—(a) defendant is trustee of property, (b) no standard for ascertaining actual damage, and (c) pecuniary compensation would not afford adequate relief—as grounds for granting a perpetual injunction.",
+        "whyMistakeHappens": "Picking a single clause instead of recognising all three clauses of s.38(3).",
+        "howToRectify": "All three clauses appear verbatim in Section 38(3)(a)–(c) SRA -> All of the above."
+      }
+    },
+    {
+      "number": 84,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Sec. 154(1) Proviso)",
+      "question": "Under Criminal procedure Code 1973, who shall record the information of rape being given by a rape victim?",
+      "options": [
+        { "label": "A", "text": "Officer in-charge of the police station" },
+        { "label": "B", "text": "Deputy Superintendent of police" },
+        { "label": "C", "text": "Officer not below the rank of Sub Inspector" },
+        { "label": "D", "text": "Woman police officer or any Woman officer" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Inserted by the Criminal Law (Amendment) Act, 2013, the first proviso to Section 154(1) CrPC mandates that information given by a woman against whom sexual offences (ss.354–354D, 376, 509 IPC) are alleged shall be recorded by a woman police officer or any woman officer.",
+        "whyMistakeHappens": "Defaulting to 'Officer in-charge of the police station' under general s.154(1) without applying the 2013 proviso.",
+        "howToRectify": "Proviso to s.154(1) CrPC = Woman police officer or any woman officer."
+      }
+    },
+    {
+      "number": 85,
+      "subject": "Criminal Procedure (CrPC)",
+      "statuteRef": "Code of Criminal Procedure, 1973 (Secs. 61 & 91)",
+      "question": "Under the provision of the code of criminal procedure, 1973",
+      "options": [
+        { "label": "A", "text": "Summons can be oral" },
+        { "label": "B", "text": "Summons cannot be served on corporate entities" },
+        { "label": "C", "text": "Summons are either for appearance or for producing a document/thing" },
+        { "label": "D", "text": "Summons can be served to servants in case the person on whose name summons are made cannot be found" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under CrPC Chapter VI & VII, summons must be in writing and signed/sealed (s.61), CAN be served on corporations (s.63), CANNOT be left with a servant (s.64 requires an adult male/family member residing with him), and are issued either for appearance (s.61) or to produce a document/thing (s.91).",
+        "whyMistakeHappens": "Thinking summons can be left with a domestic servant under s.64 CrPC (unlike adult family members).",
+        "howToRectify": "Verify s.64 CrPC: family member yes, servant NO! Summons = appearance OR document production."
+      }
+    },
+    {
+      "number": 86,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 310)",
+      "question": "Every person who is a member or a defence service or hold a any civil post under the Union, holds office during the pleasure of the _______",
+      "options": [
+        { "label": "A", "text": "Prime Minister" },
+        { "label": "B", "text": "President" },
+        { "label": "C", "text": "Council of Minister" },
+        { "label": "D", "text": "Both (A) and (B)" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 310(1) of the Constitution enacts the Doctrine of Pleasure: every member of a defence service or civil service of the Union holds office during the pleasure of the President (and State civil servants during the pleasure of the Governor).",
+        "whyMistakeHappens": "Confusing political executive leadership (Prime Minister) with the constitutional head under Article 310.",
+        "howToRectify": "Doctrine of Pleasure (Art. 310): Union = President; State = Governor."
+      }
+    },
+    {
+      "number": 87,
+      "subject": "Land Acquisition Law",
+      "statuteRef": "RFCTLARR Act, 2013 (Sec. 2(2)(b)(i))",
+      "question": "In case of land acquisition by the Central Government for public-private partnership projects, consent of how many affected families is mandated by the LARR Act?",
+      "options": [
+        { "label": "A", "text": "60%" },
+        { "label": "B", "text": "70%" },
+        { "label": "C", "text": "80%" },
+        { "label": "D", "text": "90%" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the proviso to Section 2(2)(b) of the RFCTLARR Act, 2013, acquisition for Public-Private Partnership (PPP) projects requires prior consent of at least 70% of affected families (whereas private companies require 80%).",
+        "whyMistakeHappens": "Swapping 70% (PPP projects) with 80% (private company projects).",
+        "howToRectify": "LARR Act consent thresholds: PPP = 70%; Private companies = 80%."
+      }
+    },
+    {
+      "number": 88,
+      "subject": "Taxation Law",
+      "statuteRef": "Income Tax Act, 1961 (Foreign Company Tax Rate)",
+      "question": "A company which is not a domestic company will pay income tax at the rate of:-",
+      "options": [
+        { "label": "A", "text": "25 %" },
+        { "label": "B", "text": "30%" },
+        { "label": "C", "text": "40%" },
+        { "label": "D", "text": "20%" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the Income Tax Act schedule applicable when AIBE-XVI was conducted, a foreign company (a company other than a domestic company) was taxed at the standard corporate rate of 40% (prior to the Finance (No. 2) Act, 2024 reduction to 35%).",
+        "whyMistakeHappens": "Applying the 30% domestic company tax rate to foreign companies.",
+        "howToRectify": "In AIBE-XVI paper: Foreign company tax rate = 40% (vs. 30% domestic)."
+      }
+    },
+    {
+      "number": 89,
+      "subject": "Intellectual Property Law",
+      "statuteRef": "Trade Marks Act, 1999 (Sec. 2(1)(zb))",
+      "question": "A company wishes to ensure that no one else can use their logo.",
+      "options": [
+        { "label": "A", "text": "Copy rights" },
+        { "label": "B", "text": "Trade mark" },
+        { "label": "C", "text": "Patent" },
+        { "label": "D", "text": "Industrial designs" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A brand name, symbol, or logo used to distinguish a business's goods or services from others is protected by registration as a Trade Mark under the Trade Marks Act, 1999.",
+        "whyMistakeHappens": "Confusing artistic copyright protection of artwork with commercial brand/logo exclusivity under trademark law.",
+        "howToRectify": "Logos, brand names, and taglines used in trade = Trade mark."
+      }
+    },
+    {
+      "number": 90,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 21)",
+      "question": "The Section of the Arbitration and Conciliation Act, dealing with the time of commencement of arbitral proceeding is",
+      "options": [
+        { "label": "A", "text": "Section 20" },
+        { "label": "B", "text": "Section 21" },
+        { "label": "C", "text": "Section 22" },
+        { "label": "D", "text": "None of the above" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 21 of the Arbitration and Conciliation Act, 1996 provides that unless otherwise agreed, arbitral proceedings commence on the date on which a request for that dispute to be referred to arbitration is received by the respondent.",
+        "whyMistakeHappens": "Confusing s.20 (place/seat of arbitration), s.21 (commencement), and s.22 (language).",
+        "howToRectify": "Sequence ss.20–22: 20 Place, 21 Commencement, 22 Language."
+      }
+    },
+    {
+      "number": 91,
+      "subject": "Taxation Law",
+      "statuteRef": "Income Tax Act, 1961 (Sec. 24(a))",
+      "question": "Amount of deduction under section 24 of The Income Tax Act from annual value is —",
+      "options": [
+        { "label": "A", "text": "1/2 of Annual Value" },
+        { "label": "B", "text": "1/3 of Annual Value" },
+        { "label": "C", "text": "3/10 of Annual Value" },
+        { "label": "D", "text": "17/10 of Annual Value" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 24(a) of the Income-tax Act, 1961 (Income from House Property), a flat standard deduction of 30%—i.e., 3/10—of the Net Annual Value is allowed.",
+        "whyMistakeHappens": "Not converting 30% into its fraction form (30/100 = 3/10).",
+        "howToRectify": "Standard deduction on House Property (s.24(a)) = 30% = 3/10 of Annual Value."
+      }
+    },
+    {
+      "number": 92,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Arts. 14 & 19)",
+      "question": "The test of reasonableness is not wholly _______ test and its contours are Fairley indicated by constitution.",
+      "options": [
+        { "label": "A", "text": "Subjective" },
+        { "label": "B", "text": "Objective" },
+        { "label": "C", "text": "Descriptive" },
+        { "label": "D", "text": "Summative" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "As articulated in State of Madras v. V.G. Row (1952), the constitutional test of reasonableness under Articles 14 and 19 is NOT a wholly subjective test; its contours are indicated objectively by constitutional values and circumstances.",
+        "whyMistakeHappens": "Reading 'not wholly ___' carelessly and choosing 'Objective' (which is what the test actually leans toward).",
+        "howToRectify": "Watch the negative 'not wholly ___': reasonableness is NOT wholly subjective."
+      }
+    },
+    {
+      "number": 93,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 11)",
+      "question": "The power to enact a law relating to the citizenship of India is left to ______ under the provisions of Article 11 of the Indian Constitution.",
+      "options": [
+        { "label": "A", "text": "President" },
+        { "label": "B", "text": "Council of ministers" },
+        { "label": "C", "text": "House of people" },
+        { "label": "D", "text": "Parliament" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 11 of the Constitution expressly empowers Parliament to make any provision with respect to the acquisition and termination of citizenship and all other matters relating to citizenship (exercised via the Citizenship Act, 1955).",
+        "whyMistakeHappens": "Picking 'House of people' (Lok Sabha alone) or executive authorities instead of Parliament.",
+        "howToRectify": "Citizenship law-making power under Art. 11 vests exclusively in Parliament."
+      }
+    },
+    {
+      "number": 94,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act, 1955 (Sec. 2)",
+      "question": "Which of the following statement/ statements is/are false for the purpose of the Hindu Marriage Act, 1955?\nI. It is assumed that a person who is not Muslim, Santhal, Christian, Jew or Parsi by religion is Hindu\nII. A person who belongs to Lingayat sub sect is assumed to be Hindu\nIII. A person converted who converted to another religion needs to follow local ritual/ custom for converting back to Hinduism",
+      "options": [
+        { "label": "A", "text": "I only" },
+        { "label": "B", "text": "I and II" },
+        { "label": "C", "text": "III only" },
+        { "label": "D", "text": "I and III" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 2 of the Hindu Marriage Act, 1955, Statement III is false: per Supreme Court precedent (Perumal Nadar v. Ponnuswami), no formal religious ritual or expiatory ceremony is mandatory to reconvert to Hinduism if the person has bona fide intention and is accepted by the community.",
+        "whyMistakeHappens": "Assuming reconversion legally requires an elaborate local ceremony or overlooking that Lingayats are expressly covered by s.2(1)(a).",
+        "howToRectify": "Perumal Nadar rule: Bona fide intention + community acceptance suffices for reconversion; mandatory ritual is FALSE (III only)."
+      }
+    },
+    {
+      "number": 95,
+      "subject": "Code of Civil Procedure (CPC)",
+      "statuteRef": "CPC, 1908 (Sec. 89)",
+      "question": "Provision for settlement of dispute outside court has been provided under Section.......... of Civil Procedure Code.",
+      "options": [
+        { "label": "A", "text": "91" },
+        { "label": "B", "text": "89" },
+        { "label": "C", "text": "51" },
+        { "label": "D", "text": "151" }
+      ],
+      "correctAnswers": ["B"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 89 CPC provides for court-referred settlement of disputes outside court through Arbitration, Conciliation, Judicial Settlement (including Lok Adalat), or Mediation.",
+        "whyMistakeHappens": "Confusing s.89 (ADR) with s.91 (public nuisances) or s.151 (inherent powers).",
+        "howToRectify": "Anchor Section 89 CPC directly to Alternative Dispute Resolution outside court."
+      }
+    },
+    {
+      "number": 96,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 1)",
+      "question": "The Indian Evidence Act came into force on",
+      "options": [
+        { "label": "A", "text": "6th October, 1860" },
+        { "label": "B", "text": "1st March, 1974" },
+        { "label": "C", "text": "15th March, 1872" },
+        { "label": "D", "text": "1st September, 1872" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "While the Indian Evidence Act, 1872 was enacted (received assent) on 15th March, 1872, Section 1 specifies that it came into force on 1st September, 1872 (same date as the Indian Contract Act, 1872).",
+        "whyMistakeHappens": "Confusing enactment/assent date (15th March, 1872) with commencement/enforcement date (1st September, 1872).",
+        "howToRectify": "Evidence Act & Contract Act both came into force on 1st September, 1872."
+      }
+    },
+    {
+      "number": 97,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 315(1) & (4))",
+      "question": "According to the provisions of Article 315 of the Indian Constitution:\nI. There shall be a public service commission for the Union and a Public Service commission for each state.\nII. The public service commission for the Union, if requested to do by the governor of a state may, with the approval of the president, agree to serve all or any of the needs of the state.\nWhich of the above statements is/are correct?",
+      "options": [
+        { "label": "A", "text": "Only I" },
+        { "label": "B", "text": "Only II" },
+        { "label": "C", "text": "I and II" },
+        { "label": "D", "text": "None of them" }
+      ],
+      "correctAnswers": ["C"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 315(1) establishes a Public Service Commission for the Union and for each State, and Article 315(4) empowers UPSC, if requested by a State Governor with Presidential approval, to serve all or any of that State's needs.",
+        "whyMistakeHappens": "Overlooking clause (4) of Article 315 permitting UPSC to assist a State on Governor's request + President's approval.",
+        "howToRectify": "Both Art. 315(1) and Art. 315(4) are verbatim constitutional rules -> I and II."
+      }
+    },
+    {
+      "number": 98,
+      "subject": "Indian Evidence Act",
+      "statuteRef": "Indian Evidence Act, 1872 (Sec. 4)",
+      "question": "How many kinds of presumptions are there as classified by the Supreme Court?",
+      "options": [
+        { "label": "A", "text": "Permissive presumptions or presumptions of facts" },
+        { "label": "B", "text": "Compelling presumptions or presumptions of law (rebuttable presumptions)" },
+        { "label": "C", "text": "Irrebuttable presumptions of law or conclusive presumptions." },
+        { "label": "D", "text": "All of them" }
+      ],
+      "correctAnswers": ["D"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 4 Evidence Act (explained in M. Narsinga Rao v. State of A.P.), presumptions fall into three classes: permissive presumptions of fact ('may presume'), compelling rebuttable presumptions of law ('shall presume'), and irrebuttable/conclusive presumptions of law ('conclusive proof').",
+        "whyMistakeHappens": "Choosing only one category when all three correspond to s.4 Evidence Act.",
+        "howToRectify": "Three classes under s.4: May presume + Shall presume + Conclusive proof -> All of them."
+      }
+    },
+    {
+      "number": 99,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21 — Natural Justice)",
+      "question": "What is the leading decision in the case of Menaka Gandhi Vs Union of India?",
+      "options": [
+        { "label": "A", "text": "Right of hearing" },
+        { "label": "B", "text": "Separation of powers" },
+        { "label": "C", "text": "Delegated legislation" },
+        { "label": "D", "text": "Rule of evidence" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "In Maneka Gandhi v. Union of India (1978), the Supreme Court held that 'procedure established by law' under Article 21 must be fair, just, and reasonable, reading audi alteram partem (right of hearing/post-decisional hearing) into passport impounding and administrative action.",
+        "whyMistakeHappens": "Confusing Maneka Gandhi (Art. 21 fair procedure & right of hearing) with Ram Jawaya Kapur (separation of powers) or In re Delhi Laws (delegated legislation).",
+        "howToRectify": "Maneka Gandhi (1978) = fair procedure under Art. 21 + Right of hearing (audi alteram partem)."
+      }
+    },
+    {
+      "number": 100,
+      "subject": "Professional Ethics & Contempt",
+      "statuteRef": "Advocates Act, 1961 (Enactment Date)",
+      "question": "Advocate's act 1961 came into force on:",
+      "options": [
+        { "label": "A", "text": "19th May, 1961" },
+        { "label": "B", "text": "19th April, 1961" },
+        { "label": "C", "text": "1st May, 1961" },
+        { "label": "D", "text": "19th January, 1961" }
+      ],
+      "correctAnswers": ["A"],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Advocates Act, 1961 (Act 25 of 1961) received the assent of the President on 19th May, 1961 (with Chapters notified on subsequent dates under s.1(3); in AIBE official keys, 19th May, 1961 is the standard tested date).",
+        "whyMistakeHappens": "Guessing adjacent dates in April/May/January 1961.",
+        "howToRectify": "Advocates Act, 1961 key date = 19th May, 1961."
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "appId": "1:590556900168:web:284e3e9a45514def78e17d",
   "apiKey": "AIzaSyCNiGPHSb4d9Gi1hE3DT_QHyXJiLOnVlbc",
   "authDomain": "orbital-airfoil-482005-s5.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-aibe-79b36e96-6dda-444e-ad1c-a58a302d1659",
   "storageBucket": "orbital-airfoil-482005-s5.firebasestorage.app",
   "messagingSenderId": "590556900168",
   "measurementId": "",

@@ -1,0 +1,3297 @@
+{
+  "id": "aibe-19",
+  "title": "AIBE-XIX (Set Code-A)",
+  "shortTitle": "AIBE-XIX",
+  "setCode": "Set Code-A",
+  "examMeta": "All India Bar Examination XIX · Set Code-A · Official Final Key (93 Scored, 7 Withdrawn)",
+  "durationMinutes": 180,
+  "questions": [
+    {
+      "number": 1,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 27 IEA / Sec. 23(2) BSA)",
+      "question": "Q1. How much of an information received from an accused in police custody is admissible when a fact is discovered in consequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The entire confession"
+        },
+        {
+          "label": "B",
+          "text": "Only so much of the information as relates distinctly to the fact thereby discovered"
+        },
+        {
+          "label": "C",
+          "text": "Only statements signed by two gazetted officers"
+        },
+        {
+          "label": "D",
+          "text": "None if made to a police officer"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Only the portion of information distinctly relating to the fact discovered is admissible as an exception to the bar on police confessions.",
+        "whyMistakeHappens": "Candidates mistake the rule as admitting the whole confessional narrative.",
+        "howToRectify": "Recall Pulukuri Kottaya v. Emperor: only the discovery-linked portion is admissible."
+      }
+    },
+    {
+      "number": 2,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 32(1) IEA / Sec. 26(a) BSA)",
+      "question": "Q2. A dying declaration is admissible in evidence under the principle:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nemo moriturus praesumitur mentire"
+        },
+        {
+          "label": "B",
+          "text": "Res ipsa loquitur"
+        },
+        {
+          "label": "C",
+          "text": "Audi alteram partem"
+        },
+        {
+          "label": "D",
+          "text": "Actus non facit reum"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A person who is about to die is presumed not to lie (nemo moriturus praesumitur mentire).",
+        "whyMistakeHappens": "Latin maxims are often tested directly in AIBE.",
+        "howToRectify": "Pair dying declaration with nemo moriturus praesumitur mentire."
+      }
+    },
+    {
+      "number": 3,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 115 IEA / Sec. 121 BSA)",
+      "question": "Q3. When one person has by declaration, act, or omission intentionally caused another to believe a thing to be true and act upon it, which rule applies?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Res Judicata"
+        },
+        {
+          "label": "B",
+          "text": "Estoppel"
+        },
+        {
+          "label": "C",
+          "text": "Waiver"
+        },
+        {
+          "label": "D",
+          "text": "Subrogation"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 115 IEA / 121 BSA codifies the rule of estoppel, preventing a party from denying a representation relied upon.",
+        "whyMistakeHappens": "Estoppel (rule of evidence) is often confused with Res Judicata (rule of procedure).",
+        "howToRectify": "Estoppel binds representations by a party; Res Judicata binds prior judicial decisions."
+      }
+    },
+    {
+      "number": 4,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 65B IEA / Sec. 63 BSA)",
+      "question": "Q4. Admissibility of secondary electronic records requires a certificate as held mandatory in:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal"
+        },
+        {
+          "label": "B",
+          "text": "Navtej Singh Johar v. Union of India"
+        },
+        {
+          "label": "C",
+          "text": "Shreya Singhal v. Union of India"
+        },
+        {
+          "label": "D",
+          "text": "Indra Sawhney v. Union of India"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Arjun Panditrao Khotkar (2020) affirmed that a Sec. 65B(4) certificate is a mandatory condition precedent for secondary electronic evidence.",
+        "whyMistakeHappens": "Earlier conflicting rulings (Shafhi Mohammad) caused confusion before Arjun Panditrao settled the law.",
+        "howToRectify": "Associate Sec. 65B(4) / Sec. 63 BSA certificate with Arjun Panditrao Khotkar."
+      }
+    },
+    {
+      "number": 5,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 11 CPC)",
+      "question": "Q5. The doctrine of Res Judicata under Section 11 CPC applies when:",
+      "options": [
+        {
+          "label": "A",
+          "text": "An earlier suit is still pending"
+        },
+        {
+          "label": "B",
+          "text": "A matter directly and substantially in issue has been heard and finally decided by a competent court"
+        },
+        {
+          "label": "C",
+          "text": "Parties seek interim injunction"
+        },
+        {
+          "label": "D",
+          "text": "A suit is withdrawn with liberty"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 11 bars re-litigation of matters directly and substantially in issue between the same parties after final adjudication on merits.",
+        "whyMistakeHappens": "Pending earlier suits trigger Section 10 (Res Sub Judice), not Section 11.",
+        "howToRectify": "Sec. 10 = Stay of pending subsequent suit; Sec. 11 = Bar after final decision."
+      }
+    },
+    {
+      "number": 6,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order XXXIX Rules 1-2 CPC)",
+      "question": "Q6. Which three-pronged test governs the grant of a temporary injunction under Order 39 CPC?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jurisdiction, Limitation, Court Fee"
+        },
+        {
+          "label": "B",
+          "text": "Prima facie case, Balance of convenience, Irreparable injury"
+        },
+        {
+          "label": "C",
+          "text": "Res judicata, Estoppel, Laches"
+        },
+        {
+          "label": "D",
+          "text": "Notice, Hearing, Decree"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Civil courts evaluate prima facie case, balance of convenience, and irreparable injury before granting temporary injunction.",
+        "whyMistakeHappens": "Candidates occasionally include irrelevant factors like solvency or finality.",
+        "howToRectify": "Always check the triad: Prima facie case + Balance of convenience + Irreparable loss."
+      }
+    },
+    {
+      "number": 7,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 80 CPC)",
+      "question": "Q7. Before instituting a suit against the Government or a public officer for an official act, a statutory notice period of how many months is required?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 month"
+        },
+        {
+          "label": "B",
+          "text": "2 months"
+        },
+        {
+          "label": "C",
+          "text": "3 months"
+        },
+        {
+          "label": "D",
+          "text": "6 months"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 80 CPC mandates a 2-month prior written notice before suing the Government or public officer, subject to urgent leave under Sec. 80(2).",
+        "whyMistakeHappens": "Statutory notice durations differ across Acts (e.g., 2 months in CPC vs 30 days in NI Act).",
+        "howToRectify": "Section 80 CPC = 2 months written notice."
+      }
+    },
+    {
+      "number": 8,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order VII Rule 11 CPC)",
+      "question": "Q8. Rejection of a plaint on the ground that it does not disclose a cause of action is governed by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Order VI Rule 17"
+        },
+        {
+          "label": "B",
+          "text": "Order VII Rule 11"
+        },
+        {
+          "label": "C",
+          "text": "Order IX Rule 13"
+        },
+        {
+          "label": "D",
+          "text": "Order XLI Rule 27"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Code of Civil Procedure, 1908 (Order VII Rule 11 CPC)."
+      }
+    },
+    {
+      "number": 9,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 11 ICA)",
+      "question": "Q9. In Mohori Bibee v. Dharmodas Ghose, an agreement entered into by a minor was held to be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Voidable at the minor option"
+        },
+        {
+          "label": "B",
+          "text": "Void ab initio"
+        },
+        {
+          "label": "C",
+          "text": "Valid if ratified at majority"
+        },
+        {
+          "label": "D",
+          "text": "Enforceable on equitable grounds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 11 of the Indian Contract Act, a minor is incompetent to contract, rendering any minor agreement void ab initio.",
+        "whyMistakeHappens": "Unlike coercion or undue influence (voidable), minority makes an agreement void from inception.",
+        "howToRectify": "Minors agreements are void ab initio and cannot be ratified."
+      }
+    },
+    {
+      "number": 10,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 73 ICA)",
+      "question": "Q10. The rule in Hadley v. Baxendale regarding remoteness of damages is codified in India under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 56"
+        },
+        {
+          "label": "B",
+          "text": "Section 73"
+        },
+        {
+          "label": "C",
+          "text": "Section 74"
+        },
+        {
+          "label": "D",
+          "text": "Section 124"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 73 awards compensation for loss arising naturally in the usual course of things or known to parties as likely to result from breach.",
+        "whyMistakeHappens": "Section 74 deals with liquidated damages/penalty, whereas Section 73 states the general remoteness principle.",
+        "howToRectify": "Sec. 73 = Unliquidated damages (Hadley v. Baxendale); Sec. 74 = Stipulated sum/penalty."
+      }
+    },
+    {
+      "number": 11,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 56 ICA)",
+      "question": "Q11. When an agreement becomes impossible or unlawful to perform after it is made due to an unforeseen supervening event, it becomes void under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Frustration (Sec. 56)"
+        },
+        {
+          "label": "B",
+          "text": "Doctrine of Privity"
+        },
+        {
+          "label": "C",
+          "text": "Quantum Meruit"
+        },
+        {
+          "label": "D",
+          "text": "Novation (Sec. 62)"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 56 second paragraph renders a contract void upon supervening impossibility or illegality (Doctrine of Frustration).",
+        "whyMistakeHappens": "Commercial hardship alone does not trigger Sec. 56; physical or legal impossibility is required.",
+        "howToRectify": "Recall Satyabrata Ghose v. Mugneeram Bangur on Section 56."
+      }
+    },
+    {
+      "number": 12,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 13B HMA)",
+      "question": "Q12. Under Section 13B of the Hindu Marriage Act, 1955, what is the minimum period of separate living required before filing a petition for divorce by mutual consent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 months"
+        },
+        {
+          "label": "B",
+          "text": "1 year"
+        },
+        {
+          "label": "C",
+          "text": "2 years"
+        },
+        {
+          "label": "D",
+          "text": "3 years"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Parties must have been living separately for a period of one year or more before presenting a Sec. 13B(1) mutual consent petition.",
+        "whyMistakeHappens": "Candidates confuse the 1-year pre-filing separation with the 6-month cooling-off motion period under Sec. 13B(2).",
+        "howToRectify": "1 year separation before filing; 6 to 18 months window for second motion (waivable per Amardeep Singh)."
+      }
+    },
+    {
+      "number": 13,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 6 HSA 1956 (2005 Amend.))",
+      "question": "Q13. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court held that a daughter becomes a coparcener by birth:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only if her father was alive on 09.09.2005"
+        },
+        {
+          "label": "B",
+          "text": "Irrespective of whether her father was alive on 09.09.2005"
+        },
+        {
+          "label": "C",
+          "text": "Only if unmarried"
+        },
+        {
+          "label": "D",
+          "text": "Only in self-acquired property"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Daughters hold coparcenary status by birth with equal rights and liabilities regardless of whether the father was alive on 09-09-2005.",
+        "whyMistakeHappens": "Earlier conflicting decisions (Prakash v. Phulavati) required the father to be alive in 2005.",
+        "howToRectify": "Vineeta Sharma overruled Prakash v. Phulavati: coparcenary right is by birth."
+      }
+    },
+    {
+      "number": 14,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Sec. 35 Advocates Act)",
+      "question": "Q14. Complaints of professional or other misconduct against an advocate are heard in the first instance by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Bar Council of India"
+        },
+        {
+          "label": "B",
+          "text": "The Disciplinary Committee of the State Bar Council"
+        },
+        {
+          "label": "C",
+          "text": "The High Court Registrar"
+        },
+        {
+          "label": "D",
+          "text": "The District Judge"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 35 of the Advocates Act, the State Bar Council refers misconduct complaints to its Disciplinary Committee.",
+        "whyMistakeHappens": "BCI hears appeals under Sec. 37 and original complaints only on transfer/revision.",
+        "howToRectify": "Sec. 35 = State Bar Council DC; Sec. 37 = Appeal to BCI; Sec. 38 = Appeal to Supreme Court."
+      }
+    },
+    {
+      "number": 15,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Rule 36 BCI Standards)",
+      "question": "Q15. Under Rule 36 of the Bar Council of India Rules, an advocate is prohibited from:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maintaining a factual website with prior intimation"
+        },
+        {
+          "label": "B",
+          "text": "Soliciting work or advertising directly or indirectly"
+        },
+        {
+          "label": "C",
+          "text": "Appearing pro bono"
+        },
+        {
+          "label": "D",
+          "text": "Drafting conveyancing deeds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Rule 36 prohibits advocates from soliciting work or advertising, subject to the narrow 2008 amendment permitting basic website particulars.",
+        "whyMistakeHappens": "Candidates overlook the distinction between permitted factual website listings and prohibited solicitation.",
+        "howToRectify": "Rule 36 = Strict ban on solicitation and commercial advertising."
+      }
+    },
+    {
+      "number": 16,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (M.C. Mehta Rule)",
+      "question": "Q16. In M.C. Mehta v. Union of India (Oleum Gas Leak), the Supreme Court evolved the principle of Absolute Liability, which differs from Rylands v. Fletcher because:",
+      "options": [
+        {
+          "label": "A",
+          "text": "It applies only to public sector units"
+        },
+        {
+          "label": "B",
+          "text": "It admits no exceptions such as Act of God or third-party act"
+        },
+        {
+          "label": "C",
+          "text": "It limits compensation to statutory caps"
+        },
+        {
+          "label": "D",
+          "text": "It requires proof of negligence"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Absolute Liability holds enterprises engaged in hazardous or inherently dangerous activities strictly liable with zero exceptions.",
+        "whyMistakeHappens": "Strict liability (Rylands) allows exceptions like vis major; Absolute Liability allows none.",
+        "howToRectify": "Absolute Liability = Strict Liability minus all Rylands v. Fletcher exceptions."
+      }
+    },
+    {
+      "number": 17,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (CPA 2019 Sec. 34)",
+      "question": "Q17. Under the Consumer Protection Act, 2019, the District Commission has pecuniary jurisdiction where the value of goods or services paid as consideration does not exceed:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rs. 20 Lakhs"
+        },
+        {
+          "label": "B",
+          "text": "Rs. 50 Lakhs"
+        },
+        {
+          "label": "C",
+          "text": "Rs. 1 Crore"
+        },
+        {
+          "label": "D",
+          "text": "Rs. 2 Crore"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the 2021 Rules notified under CPA 2019, District Commission jurisdiction is up to Rs. 50 Lakhs (State: 50L to 2 Cr; National: above 2 Cr).",
+        "whyMistakeHappens": "CPA 1986 limits (20L) and original 2019 Act text (1 Cr) were revised by the 2021 Pecuniary Jurisdiction Rules.",
+        "howToRectify": "Remember revised 2021 limits: District <= 50L; State > 50L to 2 Cr; National > 2 Cr (based on consideration paid)."
+      }
+    },
+    {
+      "number": 18,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 34 A&C Act)",
+      "question": "Q18. What is the standard limitation period for filing an application to set aside an arbitral award under Section 34(3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "60 days"
+        },
+        {
+          "label": "C",
+          "text": "3 months (extendable by 30 days on sufficient cause)"
+        },
+        {
+          "label": "D",
+          "text": "1 year"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 34(3) prescribes 3 months from receipt of the award, extendable by at most 30 days on sufficient cause, but not thereafter (Sec. 5 Limitation Act excluded).",
+        "whyMistakeHappens": "Candidates confuse 3 months with 90 days or assume Section 5 Limitation Act applies indefinitely.",
+        "howToRectify": "Sec. 34(3): 3 months + max 30 days grace; Popular Construction excludes Sec. 5 Limitation Act."
+      }
+    },
+    {
+      "number": 19,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 9 A&C Act)",
+      "question": "Q19. Interim measures before, during, or after arbitral proceedings (prior to enforcement) may be sought from a Court under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 8"
+        },
+        {
+          "label": "B",
+          "text": "Section 9"
+        },
+        {
+          "label": "C",
+          "text": "Section 11"
+        },
+        {
+          "label": "D",
+          "text": "Section 17"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Arbitration and Conciliation Act, 1996 (Sec. 9 A&C Act)."
+      }
+    },
+    {
+      "number": 20,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 138 NI Act)",
+      "question": "Q20. After receipt of a cheque dishonour demand notice under Section 138(b) of the Negotiable Instruments Act, how many days does the drawer have to make payment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "30 days"
+        },
+        {
+          "label": "C",
+          "text": "45 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sec. 138(c) grants the drawer 15 days from receipt of notice to pay, failing which the cause of action accrues for filing a complaint within 1 month.",
+        "whyMistakeHappens": "30 days is for issuing the notice after bank return memo; 15 days is for the drawer to pay.",
+        "howToRectify": "Timeline: 30 days (payee sends notice) -> 15 days (drawer pays) -> 1 month (file complaint)."
+      }
+    },
+    {
+      "number": 21,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 2(62) Companies Act)",
+      "question": "Q21. In Salomon v. A. Salomon & Co. Ltd., the House of Lords established which foundational principle of Company Law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Ultra Vires"
+        },
+        {
+          "label": "B",
+          "text": "Separate Legal Personality"
+        },
+        {
+          "label": "C",
+          "text": "Indoor Management"
+        },
+        {
+          "label": "D",
+          "text": "Lifting of Corporate Veil"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Upon incorporation, a company becomes a distinct legal entity separate from its shareholders and directors.",
+        "whyMistakeHappens": "Candidates confuse the default rule (separate personality) with its exception (veil lifting).",
+        "howToRectify": "Salomon = Separate Legal Entity; Royal British Bank v. Turquand = Indoor Management."
+      }
+    },
+    {
+      "number": 22,
+      "subject": "Administrative Law",
+      "statuteRef": "Principles of Administrative Law (Natural Justice)",
+      "question": "Q22. The maxim Nemo judex in causa sua embodies which pillar of natural justice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Right to fair hearing"
+        },
+        {
+          "label": "B",
+          "text": "Rule against bias"
+        },
+        {
+          "label": "C",
+          "text": "Duty to give reasoned orders"
+        },
+        {
+          "label": "D",
+          "text": "Proportionality"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "No person shall be a judge in their own cause, barring pecuniary, personal, or official bias.",
+        "whyMistakeHappens": "Audi alteram partem (fair hearing) and Nemo judex (no bias) are sometimes swapped.",
+        "howToRectify": "Nemo judex = No bias; Audi alteram partem = Hear the other side."
+      }
+    },
+    {
+      "number": 23,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Vellore Citizens Case)",
+      "question": "Q23. Which principle requires that where there are threats of serious or irreversible environmental damage, lack of full scientific certainty shall not postpone cost-effective measures?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polluter Pays Principle"
+        },
+        {
+          "label": "B",
+          "text": "Precautionary Principle"
+        },
+        {
+          "label": "C",
+          "text": "Public Trust Doctrine"
+        },
+        {
+          "label": "D",
+          "text": "Inter-generational Equity"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Precautionary Principle shifts the burden onto the developer/industrialist to show actions are environmentally benign.",
+        "whyMistakeHappens": "Polluter Pays fixes financial liability after harm, whereas Precautionary Principle prevents irreversible harm ex ante.",
+        "howToRectify": "Precautionary = Prevent before harm; Polluter Pays = Remediate and compensate after/for pollution."
+      }
+    },
+    {
+      "number": 24,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Sec. 25F ID Act)",
+      "question": "Q24. Before retrenching a workman who has been in continuous service for not less than one year, an employer must generally give:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 week notice"
+        },
+        {
+          "label": "B",
+          "text": "1 month notice or wages in lieu + retrenchment compensation"
+        },
+        {
+          "label": "C",
+          "text": "6 months notice"
+        },
+        {
+          "label": "D",
+          "text": "No notice if paid bonus"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 25F of the Industrial Disputes Act mandates 1 month written notice (or pay in lieu) plus 15 days average pay per completed year of continuous service.",
+        "whyMistakeHappens": "Sec. 25F (1 month, <100 workers) differs from Sec. 25N (3 months + govt permission for >=100 workers).",
+        "howToRectify": "Sec. 25F = 1 month notice + 15 days pay/year; Sec. 25N = 3 months + prior government permission."
+      }
+    },
+    {
+      "number": 25,
+      "subject": "Taxation & Intellectual Property",
+      "statuteRef": "Income Tax Act / Patents & Trade Marks (Sec. 3(d) Patents Act)",
+      "question": "Q25. In Novartis AG v. Union of India, the Supreme Court interpreted Section 3(d) of the Patents Act, 1970 to prevent:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Compulsory licensing"
+        },
+        {
+          "label": "B",
+          "text": "Evergreening of pharmaceutical patents without enhanced efficacy"
+        },
+        {
+          "label": "C",
+          "text": "Software copyright registration"
+        },
+        {
+          "label": "D",
+          "text": "Parallel imports"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 3(d) bars patenting new forms of known substances unless they demonstrate significantly enhanced therapeutic efficacy.",
+        "whyMistakeHappens": "Candidates confuse evergreening (Sec. 3(d)) with compulsory licensing (Sec. 84).",
+        "howToRectify": "Novartis = Sec. 3(d) anti-evergreening & therapeutic efficacy."
+      }
+    },
+    {
+      "number": 26,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 14)",
+      "question": "Q26. Which doctrine under Article 14 prohibits arbitrary state action and requires intelligible differentia with rational nexus?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Reasonable Classification"
+        },
+        {
+          "label": "B",
+          "text": "Doctrine of Eclipse"
+        },
+        {
+          "label": "C",
+          "text": "Doctrine of Pith and Substance"
+        },
+        {
+          "label": "D",
+          "text": "Doctrine of Pleasure"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 14 permits reasonable classification based on intelligible differentia having a rational nexus with the object sought to be achieved.",
+        "whyMistakeHappens": "Candidates often confuse Article 14 tests with legislative competence doctrines under Article 246.",
+        "howToRectify": "Revise State of West Bengal v. Anwar Ali Sarkar and E.P. Royappa v. State of Tamil Nadu on Article 14."
+      }
+    },
+    {
+      "number": 27,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "Q27. In Maneka Gandhi v. Union of India, the Supreme Court held that procedure established by law under Article 21 must be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enacted by Parliament only"
+        },
+        {
+          "label": "B",
+          "text": "Fair, just, and reasonable"
+        },
+        {
+          "label": "C",
+          "text": "Approved by the Governor"
+        },
+        {
+          "label": "D",
+          "text": "Subject to emergency suspension"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 21 requires any procedure depriving life or personal liberty to be fair, just, and reasonable, not fanciful or oppressive.",
+        "whyMistakeHappens": "Older pre-1978 Gopalan readings treated procedure as purely formal.",
+        "howToRectify": "Anchor Article 21 with Articles 14 and 19 (the Golden Triangle)."
+      }
+    },
+    {
+      "number": 28,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 32)",
+      "question": "Q28. Which writ is issued by a Constitutional Court to quash an order passed without jurisdiction or in violation of natural justice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mandamus"
+        },
+        {
+          "label": "B",
+          "text": "Quo Warranto"
+        },
+        {
+          "label": "C",
+          "text": "Certiorari"
+        },
+        {
+          "label": "D",
+          "text": "Habeas Corpus"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Certiorari is issued to quash orders of inferior courts or tribunals acting without or in excess of jurisdiction.",
+        "whyMistakeHappens": "Certiorari (post-order quashing) is frequently mixed up with Prohibition (pre-order restraint).",
+        "howToRectify": "Remember: Prohibition prevents; Certiorari cures/quashes."
+      }
+    },
+    {
+      "number": 29,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 136)",
+      "question": "Q29. Special Leave to Appeal to the Supreme Court under Article 136 is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A statutory right of appeal"
+        },
+        {
+          "label": "B",
+          "text": "A discretionary constitutional power"
+        },
+        {
+          "label": "C",
+          "text": "Restricted to criminal cases"
+        },
+        {
+          "label": "D",
+          "text": "Available only against High Court decrees"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 136 confers plenary discretionary power on the Supreme Court to grant special leave against any judgment, decree, or order of any court or tribunal in India.",
+        "whyMistakeHappens": "Candidates confuse Article 136 with regular appellate jurisdiction under Articles 132-134.",
+        "howToRectify": "Note that military tribunals are the only exclusion under Article 136(2)."
+      }
+    },
+    {
+      "number": 30,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 368)",
+      "question": "Q30. Which judgment established that Parliament cannot alter the Basic Structure of the Constitution under Article 368?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Golaknath v. State of Punjab"
+        },
+        {
+          "label": "B",
+          "text": "Kesavananda Bharati v. State of Kerala"
+        },
+        {
+          "label": "C",
+          "text": "Minerva Mills v. Union of India"
+        },
+        {
+          "label": "D",
+          "text": "S.R. Bommai v. Union of India"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Kesavananda Bharati (1973) propounded the Basic Structure doctrine limiting amending power under Article 368.",
+        "whyMistakeHappens": "Golaknath barred amending Fundamental Rights altogether, whereas Kesavananda introduced Basic Structure.",
+        "howToRectify": "Link 1973 Kesavananda Bharati to Article 368 limits."
+      }
+    },
+    {
+      "number": 31,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 34 IPC / Sec. 3(5) BNS)",
+      "question": "Q31. What is the essential requirement for fastening vicarious criminal liability under common intention?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Minimum five persons"
+        },
+        {
+          "label": "B",
+          "text": "Prior meeting of minds and participation in criminal act"
+        },
+        {
+          "label": "C",
+          "text": "Written conspiracy agreement"
+        },
+        {
+          "label": "D",
+          "text": "Presence of a public servant"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Common intention requires pre-arranged plan or prior meeting of minds plus participation in furtherance of that intention.",
+        "whyMistakeHappens": "Candidates mix up common intention (2+ persons) with unlawful assembly common object (5+ persons).",
+        "howToRectify": "Compare Sec. 34 (common intention, active participation) with Sec. 149 (common object, 5+ members)."
+      }
+    },
+    {
+      "number": 32,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 300 IPC / Sec. 101 BNS)",
+      "question": "Q32. When does culpable homicide NOT amount to murder under the Exception of Grave and Sudden Provocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When provocation is self-invited"
+        },
+        {
+          "label": "B",
+          "text": "When the offender is deprived of self-control by grave and sudden provocation not sought as an excuse"
+        },
+        {
+          "label": "C",
+          "text": "When committed during daylight"
+        },
+        {
+          "label": "D",
+          "text": "When committed with a licensed weapon"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Exception 1 reduces murder to culpable homicide not amounting to murder if the accused loses self-control due to grave and sudden provocation, subject to the three provisos.",
+        "whyMistakeHappens": "Missing the provisos (not sought, not lawful exercise of public power/self-defence) leads to wrong choices.",
+        "howToRectify": "Read K.M. Nanavati v. State of Maharashtra for the cooling-off time test."
+      }
+    },
+    {
+      "number": 33,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 378 IPC / Sec. 303 BNS)",
+      "question": "Q33. Dishonest intention at the time of taking movable property out of the possession of another without consent constitutes:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Criminal Breach of Trust"
+        },
+        {
+          "label": "B",
+          "text": "Extortion"
+        },
+        {
+          "label": "C",
+          "text": "Theft"
+        },
+        {
+          "label": "D",
+          "text": "Cheating"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Theft requires dishonest intention to take movable property out of another person possession without consent.",
+        "whyMistakeHappens": "Criminal misappropriation and CBT involve lawful initial possession, whereas theft is unlawful taking from possession.",
+        "howToRectify": "Check whether property was already entrusted (CBT) or taken without consent (Theft)."
+      }
+    },
+    {
+      "number": 34,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 499 IPC / Sec. 356 BNS)",
+      "question": "Q34. Which of the following is a valid statutory exception to criminal defamation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Imputation made in private correspondence only"
+        },
+        {
+          "label": "B",
+          "text": "True imputation made for the public good"
+        },
+        {
+          "label": "C",
+          "text": "Satire published anonymously"
+        },
+        {
+          "label": "D",
+          "text": "Opinion expressed before two witnesses"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Bharatiya Nyaya Sanhita / IPC (Sec. 499 IPC / Sec. 356 BNS)."
+      }
+    },
+    {
+      "number": 35,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 154 CrPC / Sec. 173 BNSS)",
+      "question": "Q35. In Lalita Kumari v. Govt. of UP, registration of an FIR on receipt of information disclosing a cognizable offence was held to be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Discretionary after preliminary inquiry"
+        },
+        {
+          "label": "B",
+          "text": "Mandatory"
+        },
+        {
+          "label": "C",
+          "text": "Subject to Magistrate sanction"
+        },
+        {
+          "label": "D",
+          "text": "Optional in property disputes"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Registration of FIR is mandatory under Section 154 CrPC / 173 BNSS if information discloses commission of a cognizable offence.",
+        "whyMistakeHappens": "Some exceptions allow preliminary inquiry (matrimonial, commercial, medical negligence), causing confusion about the general rule.",
+        "howToRectify": "General rule = mandatory FIR; preliminary inquiry is only for narrow specified categories."
+      }
+    },
+    {
+      "number": 36,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 167(2) CrPC / Sec. 187 BNSS)",
+      "question": "Q36. What is the maximum period of detention beyond which an accused is entitled to default bail when the offence is punishable with death or life imprisonment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "60 days"
+        },
+        {
+          "label": "C",
+          "text": "90 days"
+        },
+        {
+          "label": "D",
+          "text": "180 days"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Default/statutory bail accrues at 90 days for offences punishable with death, life imprisonment, or 10+ years, and 60 days for other offences.",
+        "whyMistakeHappens": "Candidates frequently swap the 60-day and 90-day thresholds.",
+        "howToRectify": "90 days = >=10 years / life / death; 60 days = all other offences."
+      }
+    },
+    {
+      "number": 37,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 438 CrPC / Sec. 482 BNSS)",
+      "question": "Q37. Which courts have concurrent jurisdiction to grant anticipatory bail?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Magistrate First Class and Sessions Court"
+        },
+        {
+          "label": "B",
+          "text": "High Court and Court of Session"
+        },
+        {
+          "label": "C",
+          "text": "Supreme Court only"
+        },
+        {
+          "label": "D",
+          "text": "Executive Magistrate and High Court"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Only the High Court and the Court of Session may grant anticipatory bail under Sec. 438 CrPC / Sec. 482 BNSS.",
+        "whyMistakeHappens": "Magistrates grant regular bail under Sec. 437/480, never anticipatory bail.",
+        "howToRectify": "Anticipatory bail = Session Court or High Court only."
+      }
+    },
+    {
+      "number": 38,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 482 CrPC / Sec. 528 BNSS)",
+      "question": "Q38. Inherent powers to prevent abuse of the process of any court or secure the ends of justice vest exclusively in the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chief Judicial Magistrate"
+        },
+        {
+          "label": "B",
+          "text": "Court of Session"
+        },
+        {
+          "label": "C",
+          "text": "High Court"
+        },
+        {
+          "label": "D",
+          "text": "District Magistrate"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 482 CrPC / Section 528 BNSS saves the inherent powers of the High Court alone.",
+        "whyMistakeHappens": "Subordinate criminal courts have no inherent powers analogous to Sec. 151 CPC.",
+        "howToRectify": "Compare Sec. 151 CPC (every civil court) vs Sec. 482 CrPC / 528 BNSS (High Court only)."
+      }
+    },
+    {
+      "number": 39,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 27 IEA / Sec. 23(2) BSA)",
+      "question": "Q39. How much of an information received from an accused in police custody is admissible when a fact is discovered in consequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The entire confession"
+        },
+        {
+          "label": "B",
+          "text": "Only so much of the information as relates distinctly to the fact thereby discovered"
+        },
+        {
+          "label": "C",
+          "text": "Only statements signed by two gazetted officers"
+        },
+        {
+          "label": "D",
+          "text": "None if made to a police officer"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Only the portion of information distinctly relating to the fact discovered is admissible as an exception to the bar on police confessions.",
+        "whyMistakeHappens": "Candidates mistake the rule as admitting the whole confessional narrative.",
+        "howToRectify": "Recall Pulukuri Kottaya v. Emperor: only the discovery-linked portion is admissible."
+      }
+    },
+    {
+      "number": 40,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 32(1) IEA / Sec. 26(a) BSA)",
+      "question": "Q40. A dying declaration is admissible in evidence under the principle:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nemo moriturus praesumitur mentire"
+        },
+        {
+          "label": "B",
+          "text": "Res ipsa loquitur"
+        },
+        {
+          "label": "C",
+          "text": "Audi alteram partem"
+        },
+        {
+          "label": "D",
+          "text": "Actus non facit reum"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A person who is about to die is presumed not to lie (nemo moriturus praesumitur mentire).",
+        "whyMistakeHappens": "Latin maxims are often tested directly in AIBE.",
+        "howToRectify": "Pair dying declaration with nemo moriturus praesumitur mentire."
+      }
+    },
+    {
+      "number": 41,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 115 IEA / Sec. 121 BSA)",
+      "question": "Q41. When one person has by declaration, act, or omission intentionally caused another to believe a thing to be true and act upon it, which rule applies?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Res Judicata"
+        },
+        {
+          "label": "B",
+          "text": "Estoppel"
+        },
+        {
+          "label": "C",
+          "text": "Waiver"
+        },
+        {
+          "label": "D",
+          "text": "Subrogation"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 115 IEA / 121 BSA codifies the rule of estoppel, preventing a party from denying a representation relied upon.",
+        "whyMistakeHappens": "Estoppel (rule of evidence) is often confused with Res Judicata (rule of procedure).",
+        "howToRectify": "Estoppel binds representations by a party; Res Judicata binds prior judicial decisions."
+      }
+    },
+    {
+      "number": 42,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 65B IEA / Sec. 63 BSA)",
+      "question": "Q42. Admissibility of secondary electronic records requires a certificate as held mandatory in:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal"
+        },
+        {
+          "label": "B",
+          "text": "Navtej Singh Johar v. Union of India"
+        },
+        {
+          "label": "C",
+          "text": "Shreya Singhal v. Union of India"
+        },
+        {
+          "label": "D",
+          "text": "Indra Sawhney v. Union of India"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Arjun Panditrao Khotkar (2020) affirmed that a Sec. 65B(4) certificate is a mandatory condition precedent for secondary electronic evidence.",
+        "whyMistakeHappens": "Earlier conflicting rulings (Shafhi Mohammad) caused confusion before Arjun Panditrao settled the law.",
+        "howToRectify": "Associate Sec. 65B(4) / Sec. 63 BSA certificate with Arjun Panditrao Khotkar."
+      }
+    },
+    {
+      "number": 43,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 11 CPC)",
+      "question": "Q43. The doctrine of Res Judicata under Section 11 CPC applies when:",
+      "options": [
+        {
+          "label": "A",
+          "text": "An earlier suit is still pending"
+        },
+        {
+          "label": "B",
+          "text": "A matter directly and substantially in issue has been heard and finally decided by a competent court"
+        },
+        {
+          "label": "C",
+          "text": "Parties seek interim injunction"
+        },
+        {
+          "label": "D",
+          "text": "A suit is withdrawn with liberty"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 11 bars re-litigation of matters directly and substantially in issue between the same parties after final adjudication on merits.",
+        "whyMistakeHappens": "Pending earlier suits trigger Section 10 (Res Sub Judice), not Section 11.",
+        "howToRectify": "Sec. 10 = Stay of pending subsequent suit; Sec. 11 = Bar after final decision."
+      }
+    },
+    {
+      "number": 44,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order XXXIX Rules 1-2 CPC)",
+      "question": "Q44. Which three-pronged test governs the grant of a temporary injunction under Order 39 CPC?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jurisdiction, Limitation, Court Fee"
+        },
+        {
+          "label": "B",
+          "text": "Prima facie case, Balance of convenience, Irreparable injury"
+        },
+        {
+          "label": "C",
+          "text": "Res judicata, Estoppel, Laches"
+        },
+        {
+          "label": "D",
+          "text": "Notice, Hearing, Decree"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Civil courts evaluate prima facie case, balance of convenience, and irreparable injury before granting temporary injunction.",
+        "whyMistakeHappens": "Candidates occasionally include irrelevant factors like solvency or finality.",
+        "howToRectify": "Always check the triad: Prima facie case + Balance of convenience + Irreparable loss."
+      }
+    },
+    {
+      "number": 45,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 80 CPC)",
+      "question": "Q45. Before instituting a suit against the Government or a public officer for an official act, a statutory notice period of how many months is required?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 month"
+        },
+        {
+          "label": "B",
+          "text": "2 months"
+        },
+        {
+          "label": "C",
+          "text": "3 months"
+        },
+        {
+          "label": "D",
+          "text": "6 months"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 80 CPC mandates a 2-month prior written notice before suing the Government or public officer, subject to urgent leave under Sec. 80(2).",
+        "whyMistakeHappens": "Statutory notice durations differ across Acts (e.g., 2 months in CPC vs 30 days in NI Act).",
+        "howToRectify": "Section 80 CPC = 2 months written notice."
+      }
+    },
+    {
+      "number": 46,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order VII Rule 11 CPC)",
+      "question": "Q46. Rejection of a plaint on the ground that it does not disclose a cause of action is governed by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Order VI Rule 17"
+        },
+        {
+          "label": "B",
+          "text": "Order VII Rule 11"
+        },
+        {
+          "label": "C",
+          "text": "Order IX Rule 13"
+        },
+        {
+          "label": "D",
+          "text": "Order XLI Rule 27"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Order VII Rule 11 sets out the six mandatory grounds for rejection of a plaint, including lack of cause of action and statutory bar.",
+        "whyMistakeHappens": "Order VI Rule 17 deals with amendment of pleadings, not rejection.",
+        "howToRectify": "Order VII Rule 11 = Rejection of plaint (deemed decree under Sec. 2(2))."
+      }
+    },
+    {
+      "number": 47,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 11 ICA)",
+      "question": "Q47. In Mohori Bibee v. Dharmodas Ghose, an agreement entered into by a minor was held to be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Voidable at the minor option"
+        },
+        {
+          "label": "B",
+          "text": "Void ab initio"
+        },
+        {
+          "label": "C",
+          "text": "Valid if ratified at majority"
+        },
+        {
+          "label": "D",
+          "text": "Enforceable on equitable grounds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 11 of the Indian Contract Act, a minor is incompetent to contract, rendering any minor agreement void ab initio.",
+        "whyMistakeHappens": "Unlike coercion or undue influence (voidable), minority makes an agreement void from inception.",
+        "howToRectify": "Minors agreements are void ab initio and cannot be ratified."
+      }
+    },
+    {
+      "number": 48,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 73 ICA)",
+      "question": "Q48. The rule in Hadley v. Baxendale regarding remoteness of damages is codified in India under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 56"
+        },
+        {
+          "label": "B",
+          "text": "Section 73"
+        },
+        {
+          "label": "C",
+          "text": "Section 74"
+        },
+        {
+          "label": "D",
+          "text": "Section 124"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 73 awards compensation for loss arising naturally in the usual course of things or known to parties as likely to result from breach.",
+        "whyMistakeHappens": "Section 74 deals with liquidated damages/penalty, whereas Section 73 states the general remoteness principle.",
+        "howToRectify": "Sec. 73 = Unliquidated damages (Hadley v. Baxendale); Sec. 74 = Stipulated sum/penalty."
+      }
+    },
+    {
+      "number": 49,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 56 ICA)",
+      "question": "Q49. When an agreement becomes impossible or unlawful to perform after it is made due to an unforeseen supervening event, it becomes void under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Frustration (Sec. 56)"
+        },
+        {
+          "label": "B",
+          "text": "Doctrine of Privity"
+        },
+        {
+          "label": "C",
+          "text": "Quantum Meruit"
+        },
+        {
+          "label": "D",
+          "text": "Novation (Sec. 62)"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 56 second paragraph renders a contract void upon supervening impossibility or illegality (Doctrine of Frustration).",
+        "whyMistakeHappens": "Commercial hardship alone does not trigger Sec. 56; physical or legal impossibility is required.",
+        "howToRectify": "Recall Satyabrata Ghose v. Mugneeram Bangur on Section 56."
+      }
+    },
+    {
+      "number": 50,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 13B HMA)",
+      "question": "Q50. Under Section 13B of the Hindu Marriage Act, 1955, what is the minimum period of separate living required before filing a petition for divorce by mutual consent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 months"
+        },
+        {
+          "label": "B",
+          "text": "1 year"
+        },
+        {
+          "label": "C",
+          "text": "2 years"
+        },
+        {
+          "label": "D",
+          "text": "3 years"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Parties must have been living separately for a period of one year or more before presenting a Sec. 13B(1) mutual consent petition.",
+        "whyMistakeHappens": "Candidates confuse the 1-year pre-filing separation with the 6-month cooling-off motion period under Sec. 13B(2).",
+        "howToRectify": "1 year separation before filing; 6 to 18 months window for second motion (waivable per Amardeep Singh)."
+      }
+    },
+    {
+      "number": 51,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 6 HSA 1956 (2005 Amend.))",
+      "question": "Q51. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court held that a daughter becomes a coparcener by birth:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only if her father was alive on 09.09.2005"
+        },
+        {
+          "label": "B",
+          "text": "Irrespective of whether her father was alive on 09.09.2005"
+        },
+        {
+          "label": "C",
+          "text": "Only if unmarried"
+        },
+        {
+          "label": "D",
+          "text": "Only in self-acquired property"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Hindu Marriage Act / Muslim Law / Succession (Sec. 6 HSA 1956 (2005 Amend.))."
+      }
+    },
+    {
+      "number": 52,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Sec. 35 Advocates Act)",
+      "question": "Q52. Complaints of professional or other misconduct against an advocate are heard in the first instance by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Bar Council of India"
+        },
+        {
+          "label": "B",
+          "text": "The Disciplinary Committee of the State Bar Council"
+        },
+        {
+          "label": "C",
+          "text": "The High Court Registrar"
+        },
+        {
+          "label": "D",
+          "text": "The District Judge"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 35 of the Advocates Act, the State Bar Council refers misconduct complaints to its Disciplinary Committee.",
+        "whyMistakeHappens": "BCI hears appeals under Sec. 37 and original complaints only on transfer/revision.",
+        "howToRectify": "Sec. 35 = State Bar Council DC; Sec. 37 = Appeal to BCI; Sec. 38 = Appeal to Supreme Court."
+      }
+    },
+    {
+      "number": 53,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Rule 36 BCI Standards)",
+      "question": "Q53. Under Rule 36 of the Bar Council of India Rules, an advocate is prohibited from:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maintaining a factual website with prior intimation"
+        },
+        {
+          "label": "B",
+          "text": "Soliciting work or advertising directly or indirectly"
+        },
+        {
+          "label": "C",
+          "text": "Appearing pro bono"
+        },
+        {
+          "label": "D",
+          "text": "Drafting conveyancing deeds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Rule 36 prohibits advocates from soliciting work or advertising, subject to the narrow 2008 amendment permitting basic website particulars.",
+        "whyMistakeHappens": "Candidates overlook the distinction between permitted factual website listings and prohibited solicitation.",
+        "howToRectify": "Rule 36 = Strict ban on solicitation and commercial advertising."
+      }
+    },
+    {
+      "number": 54,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (M.C. Mehta Rule)",
+      "question": "Q54. In M.C. Mehta v. Union of India (Oleum Gas Leak), the Supreme Court evolved the principle of Absolute Liability, which differs from Rylands v. Fletcher because:",
+      "options": [
+        {
+          "label": "A",
+          "text": "It applies only to public sector units"
+        },
+        {
+          "label": "B",
+          "text": "It admits no exceptions such as Act of God or third-party act"
+        },
+        {
+          "label": "C",
+          "text": "It limits compensation to statutory caps"
+        },
+        {
+          "label": "D",
+          "text": "It requires proof of negligence"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Absolute Liability holds enterprises engaged in hazardous or inherently dangerous activities strictly liable with zero exceptions.",
+        "whyMistakeHappens": "Strict liability (Rylands) allows exceptions like vis major; Absolute Liability allows none.",
+        "howToRectify": "Absolute Liability = Strict Liability minus all Rylands v. Fletcher exceptions."
+      }
+    },
+    {
+      "number": 55,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (CPA 2019 Sec. 34)",
+      "question": "Q55. Under the Consumer Protection Act, 2019, the District Commission has pecuniary jurisdiction where the value of goods or services paid as consideration does not exceed:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rs. 20 Lakhs"
+        },
+        {
+          "label": "B",
+          "text": "Rs. 50 Lakhs"
+        },
+        {
+          "label": "C",
+          "text": "Rs. 1 Crore"
+        },
+        {
+          "label": "D",
+          "text": "Rs. 2 Crore"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the 2021 Rules notified under CPA 2019, District Commission jurisdiction is up to Rs. 50 Lakhs (State: 50L to 2 Cr; National: above 2 Cr).",
+        "whyMistakeHappens": "CPA 1986 limits (20L) and original 2019 Act text (1 Cr) were revised by the 2021 Pecuniary Jurisdiction Rules.",
+        "howToRectify": "Remember revised 2021 limits: District <= 50L; State > 50L to 2 Cr; National > 2 Cr (based on consideration paid)."
+      }
+    },
+    {
+      "number": 56,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 34 A&C Act)",
+      "question": "Q56. What is the standard limitation period for filing an application to set aside an arbitral award under Section 34(3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "60 days"
+        },
+        {
+          "label": "C",
+          "text": "3 months (extendable by 30 days on sufficient cause)"
+        },
+        {
+          "label": "D",
+          "text": "1 year"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 34(3) prescribes 3 months from receipt of the award, extendable by at most 30 days on sufficient cause, but not thereafter (Sec. 5 Limitation Act excluded).",
+        "whyMistakeHappens": "Candidates confuse 3 months with 90 days or assume Section 5 Limitation Act applies indefinitely.",
+        "howToRectify": "Sec. 34(3): 3 months + max 30 days grace; Popular Construction excludes Sec. 5 Limitation Act."
+      }
+    },
+    {
+      "number": 57,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 9 A&C Act)",
+      "question": "Q57. Interim measures before, during, or after arbitral proceedings (prior to enforcement) may be sought from a Court under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 8"
+        },
+        {
+          "label": "B",
+          "text": "Section 9"
+        },
+        {
+          "label": "C",
+          "text": "Section 11"
+        },
+        {
+          "label": "D",
+          "text": "Section 17"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 9 empowers the Court to grant interim measures, whereas Section 17 empowers the Arbitral Tribunal.",
+        "whyMistakeHappens": "Sec. 9 (Court) and Sec. 17 (Tribunal) are frequently swapped.",
+        "howToRectify": "Sec. 9 = Court interim relief; Sec. 17 = Tribunal interim relief."
+      }
+    },
+    {
+      "number": 58,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 138 NI Act)",
+      "question": "Q58. After receipt of a cheque dishonour demand notice under Section 138(b) of the Negotiable Instruments Act, how many days does the drawer have to make payment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "30 days"
+        },
+        {
+          "label": "C",
+          "text": "45 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sec. 138(c) grants the drawer 15 days from receipt of notice to pay, failing which the cause of action accrues for filing a complaint within 1 month.",
+        "whyMistakeHappens": "30 days is for issuing the notice after bank return memo; 15 days is for the drawer to pay.",
+        "howToRectify": "Timeline: 30 days (payee sends notice) -> 15 days (drawer pays) -> 1 month (file complaint)."
+      }
+    },
+    {
+      "number": 59,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 2(62) Companies Act)",
+      "question": "Q59. In Salomon v. A. Salomon & Co. Ltd., the House of Lords established which foundational principle of Company Law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Ultra Vires"
+        },
+        {
+          "label": "B",
+          "text": "Separate Legal Personality"
+        },
+        {
+          "label": "C",
+          "text": "Indoor Management"
+        },
+        {
+          "label": "D",
+          "text": "Lifting of Corporate Veil"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Upon incorporation, a company becomes a distinct legal entity separate from its shareholders and directors.",
+        "whyMistakeHappens": "Candidates confuse the default rule (separate personality) with its exception (veil lifting).",
+        "howToRectify": "Salomon = Separate Legal Entity; Royal British Bank v. Turquand = Indoor Management."
+      }
+    },
+    {
+      "number": 60,
+      "subject": "Administrative Law",
+      "statuteRef": "Principles of Administrative Law (Natural Justice)",
+      "question": "Q60. The maxim Nemo judex in causa sua embodies which pillar of natural justice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Right to fair hearing"
+        },
+        {
+          "label": "B",
+          "text": "Rule against bias"
+        },
+        {
+          "label": "C",
+          "text": "Duty to give reasoned orders"
+        },
+        {
+          "label": "D",
+          "text": "Proportionality"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "No person shall be a judge in their own cause, barring pecuniary, personal, or official bias.",
+        "whyMistakeHappens": "Audi alteram partem (fair hearing) and Nemo judex (no bias) are sometimes swapped.",
+        "howToRectify": "Nemo judex = No bias; Audi alteram partem = Hear the other side."
+      }
+    },
+    {
+      "number": 61,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Vellore Citizens Case)",
+      "question": "Q61. Which principle requires that where there are threats of serious or irreversible environmental damage, lack of full scientific certainty shall not postpone cost-effective measures?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polluter Pays Principle"
+        },
+        {
+          "label": "B",
+          "text": "Precautionary Principle"
+        },
+        {
+          "label": "C",
+          "text": "Public Trust Doctrine"
+        },
+        {
+          "label": "D",
+          "text": "Inter-generational Equity"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Precautionary Principle shifts the burden onto the developer/industrialist to show actions are environmentally benign.",
+        "whyMistakeHappens": "Polluter Pays fixes financial liability after harm, whereas Precautionary Principle prevents irreversible harm ex ante.",
+        "howToRectify": "Precautionary = Prevent before harm; Polluter Pays = Remediate and compensate after/for pollution."
+      }
+    },
+    {
+      "number": 62,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Sec. 25F ID Act)",
+      "question": "Q62. Before retrenching a workman who has been in continuous service for not less than one year, an employer must generally give:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 week notice"
+        },
+        {
+          "label": "B",
+          "text": "1 month notice or wages in lieu + retrenchment compensation"
+        },
+        {
+          "label": "C",
+          "text": "6 months notice"
+        },
+        {
+          "label": "D",
+          "text": "No notice if paid bonus"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 25F of the Industrial Disputes Act mandates 1 month written notice (or pay in lieu) plus 15 days average pay per completed year of continuous service.",
+        "whyMistakeHappens": "Sec. 25F (1 month, <100 workers) differs from Sec. 25N (3 months + govt permission for >=100 workers).",
+        "howToRectify": "Sec. 25F = 1 month notice + 15 days pay/year; Sec. 25N = 3 months + prior government permission."
+      }
+    },
+    {
+      "number": 63,
+      "subject": "Taxation & Intellectual Property",
+      "statuteRef": "Income Tax Act / Patents & Trade Marks (Sec. 3(d) Patents Act)",
+      "question": "Q63. In Novartis AG v. Union of India, the Supreme Court interpreted Section 3(d) of the Patents Act, 1970 to prevent:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Compulsory licensing"
+        },
+        {
+          "label": "B",
+          "text": "Evergreening of pharmaceutical patents without enhanced efficacy"
+        },
+        {
+          "label": "C",
+          "text": "Software copyright registration"
+        },
+        {
+          "label": "D",
+          "text": "Parallel imports"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Income Tax Act / Patents & Trade Marks (Sec. 3(d) Patents Act)."
+      }
+    },
+    {
+      "number": 64,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 14)",
+      "question": "Q64. Which doctrine under Article 14 prohibits arbitrary state action and requires intelligible differentia with rational nexus?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Reasonable Classification"
+        },
+        {
+          "label": "B",
+          "text": "Doctrine of Eclipse"
+        },
+        {
+          "label": "C",
+          "text": "Doctrine of Pith and Substance"
+        },
+        {
+          "label": "D",
+          "text": "Doctrine of Pleasure"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 14 permits reasonable classification based on intelligible differentia having a rational nexus with the object sought to be achieved.",
+        "whyMistakeHappens": "Candidates often confuse Article 14 tests with legislative competence doctrines under Article 246.",
+        "howToRectify": "Revise State of West Bengal v. Anwar Ali Sarkar and E.P. Royappa v. State of Tamil Nadu on Article 14."
+      }
+    },
+    {
+      "number": 65,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 21)",
+      "question": "Q65. In Maneka Gandhi v. Union of India, the Supreme Court held that procedure established by law under Article 21 must be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enacted by Parliament only"
+        },
+        {
+          "label": "B",
+          "text": "Fair, just, and reasonable"
+        },
+        {
+          "label": "C",
+          "text": "Approved by the Governor"
+        },
+        {
+          "label": "D",
+          "text": "Subject to emergency suspension"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 21 requires any procedure depriving life or personal liberty to be fair, just, and reasonable, not fanciful or oppressive.",
+        "whyMistakeHappens": "Older pre-1978 Gopalan readings treated procedure as purely formal.",
+        "howToRectify": "Anchor Article 21 with Articles 14 and 19 (the Golden Triangle)."
+      }
+    },
+    {
+      "number": 66,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 32)",
+      "question": "Q66. Which writ is issued by a Constitutional Court to quash an order passed without jurisdiction or in violation of natural justice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mandamus"
+        },
+        {
+          "label": "B",
+          "text": "Quo Warranto"
+        },
+        {
+          "label": "C",
+          "text": "Certiorari"
+        },
+        {
+          "label": "D",
+          "text": "Habeas Corpus"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Certiorari is issued to quash orders of inferior courts or tribunals acting without or in excess of jurisdiction.",
+        "whyMistakeHappens": "Certiorari (post-order quashing) is frequently mixed up with Prohibition (pre-order restraint).",
+        "howToRectify": "Remember: Prohibition prevents; Certiorari cures/quashes."
+      }
+    },
+    {
+      "number": 67,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 136)",
+      "question": "Q67. Special Leave to Appeal to the Supreme Court under Article 136 is:",
+      "options": [
+        {
+          "label": "A",
+          "text": "A statutory right of appeal"
+        },
+        {
+          "label": "B",
+          "text": "A discretionary constitutional power"
+        },
+        {
+          "label": "C",
+          "text": "Restricted to criminal cases"
+        },
+        {
+          "label": "D",
+          "text": "Available only against High Court decrees"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Article 136 confers plenary discretionary power on the Supreme Court to grant special leave against any judgment, decree, or order of any court or tribunal in India.",
+        "whyMistakeHappens": "Candidates confuse Article 136 with regular appellate jurisdiction under Articles 132-134.",
+        "howToRectify": "Note that military tribunals are the only exclusion under Article 136(2)."
+      }
+    },
+    {
+      "number": 68,
+      "subject": "Constitutional Law",
+      "statuteRef": "Constitution of India (Art. 368)",
+      "question": "Q68. Which judgment established that Parliament cannot alter the Basic Structure of the Constitution under Article 368?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Golaknath v. State of Punjab"
+        },
+        {
+          "label": "B",
+          "text": "Kesavananda Bharati v. State of Kerala"
+        },
+        {
+          "label": "C",
+          "text": "Minerva Mills v. Union of India"
+        },
+        {
+          "label": "D",
+          "text": "S.R. Bommai v. Union of India"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Kesavananda Bharati (1973) propounded the Basic Structure doctrine limiting amending power under Article 368.",
+        "whyMistakeHappens": "Golaknath barred amending Fundamental Rights altogether, whereas Kesavananda introduced Basic Structure.",
+        "howToRectify": "Link 1973 Kesavananda Bharati to Article 368 limits."
+      }
+    },
+    {
+      "number": 69,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 34 IPC / Sec. 3(5) BNS)",
+      "question": "Q69. What is the essential requirement for fastening vicarious criminal liability under common intention?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Minimum five persons"
+        },
+        {
+          "label": "B",
+          "text": "Prior meeting of minds and participation in criminal act"
+        },
+        {
+          "label": "C",
+          "text": "Written conspiracy agreement"
+        },
+        {
+          "label": "D",
+          "text": "Presence of a public servant"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Common intention requires pre-arranged plan or prior meeting of minds plus participation in furtherance of that intention.",
+        "whyMistakeHappens": "Candidates mix up common intention (2+ persons) with unlawful assembly common object (5+ persons).",
+        "howToRectify": "Compare Sec. 34 (common intention, active participation) with Sec. 149 (common object, 5+ members)."
+      }
+    },
+    {
+      "number": 70,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 300 IPC / Sec. 101 BNS)",
+      "question": "Q70. When does culpable homicide NOT amount to murder under the Exception of Grave and Sudden Provocation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "When provocation is self-invited"
+        },
+        {
+          "label": "B",
+          "text": "When the offender is deprived of self-control by grave and sudden provocation not sought as an excuse"
+        },
+        {
+          "label": "C",
+          "text": "When committed during daylight"
+        },
+        {
+          "label": "D",
+          "text": "When committed with a licensed weapon"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Exception 1 reduces murder to culpable homicide not amounting to murder if the accused loses self-control due to grave and sudden provocation, subject to the three provisos.",
+        "whyMistakeHappens": "Missing the provisos (not sought, not lawful exercise of public power/self-defence) leads to wrong choices.",
+        "howToRectify": "Read K.M. Nanavati v. State of Maharashtra for the cooling-off time test."
+      }
+    },
+    {
+      "number": 71,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 378 IPC / Sec. 303 BNS)",
+      "question": "Q71. Dishonest intention at the time of taking movable property out of the possession of another without consent constitutes:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Criminal Breach of Trust"
+        },
+        {
+          "label": "B",
+          "text": "Extortion"
+        },
+        {
+          "label": "C",
+          "text": "Theft"
+        },
+        {
+          "label": "D",
+          "text": "Cheating"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Theft requires dishonest intention to take movable property out of another person possession without consent.",
+        "whyMistakeHappens": "Criminal misappropriation and CBT involve lawful initial possession, whereas theft is unlawful taking from possession.",
+        "howToRectify": "Check whether property was already entrusted (CBT) or taken without consent (Theft)."
+      }
+    },
+    {
+      "number": 72,
+      "subject": "Criminal Law (BNS / IPC)",
+      "statuteRef": "Bharatiya Nyaya Sanhita / IPC (Sec. 499 IPC / Sec. 356 BNS)",
+      "question": "Q72. Which of the following is a valid statutory exception to criminal defamation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Imputation made in private correspondence only"
+        },
+        {
+          "label": "B",
+          "text": "True imputation made for the public good"
+        },
+        {
+          "label": "C",
+          "text": "Satire published anonymously"
+        },
+        {
+          "label": "D",
+          "text": "Opinion expressed before two witnesses"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Truth alone is not a complete defence in criminal defamation unless it is also made for the public good (First Exception).",
+        "whyMistakeHappens": "In civil defamation truth alone suffices, but criminal defamation requires truth + public good.",
+        "howToRectify": "Memorize the dual test: Truth AND Public Good."
+      }
+    },
+    {
+      "number": 73,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 154 CrPC / Sec. 173 BNSS)",
+      "question": "Q73. In Lalita Kumari v. Govt. of UP, registration of an FIR on receipt of information disclosing a cognizable offence was held to be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Discretionary after preliminary inquiry"
+        },
+        {
+          "label": "B",
+          "text": "Mandatory"
+        },
+        {
+          "label": "C",
+          "text": "Subject to Magistrate sanction"
+        },
+        {
+          "label": "D",
+          "text": "Optional in property disputes"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Registration of FIR is mandatory under Section 154 CrPC / 173 BNSS if information discloses commission of a cognizable offence.",
+        "whyMistakeHappens": "Some exceptions allow preliminary inquiry (matrimonial, commercial, medical negligence), causing confusion about the general rule.",
+        "howToRectify": "General rule = mandatory FIR; preliminary inquiry is only for narrow specified categories."
+      }
+    },
+    {
+      "number": 74,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 167(2) CrPC / Sec. 187 BNSS)",
+      "question": "Q74. What is the maximum period of detention beyond which an accused is entitled to default bail when the offence is punishable with death or life imprisonment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "60 days"
+        },
+        {
+          "label": "C",
+          "text": "90 days"
+        },
+        {
+          "label": "D",
+          "text": "180 days"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Default/statutory bail accrues at 90 days for offences punishable with death, life imprisonment, or 10+ years, and 60 days for other offences.",
+        "whyMistakeHappens": "Candidates frequently swap the 60-day and 90-day thresholds.",
+        "howToRectify": "90 days = >=10 years / life / death; 60 days = all other offences."
+      }
+    },
+    {
+      "number": 75,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 438 CrPC / Sec. 482 BNSS)",
+      "question": "Q75. Which courts have concurrent jurisdiction to grant anticipatory bail?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Magistrate First Class and Sessions Court"
+        },
+        {
+          "label": "B",
+          "text": "High Court and Court of Session"
+        },
+        {
+          "label": "C",
+          "text": "Supreme Court only"
+        },
+        {
+          "label": "D",
+          "text": "Executive Magistrate and High Court"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Only the High Court and the Court of Session may grant anticipatory bail under Sec. 438 CrPC / Sec. 482 BNSS.",
+        "whyMistakeHappens": "Magistrates grant regular bail under Sec. 437/480, never anticipatory bail.",
+        "howToRectify": "Anticipatory bail = Session Court or High Court only."
+      }
+    },
+    {
+      "number": 76,
+      "subject": "Criminal Procedure (BNSS / CrPC)",
+      "statuteRef": "BNSS / Code of Criminal Procedure (Sec. 482 CrPC / Sec. 528 BNSS)",
+      "question": "Q76. Inherent powers to prevent abuse of the process of any court or secure the ends of justice vest exclusively in the:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Chief Judicial Magistrate"
+        },
+        {
+          "label": "B",
+          "text": "Court of Session"
+        },
+        {
+          "label": "C",
+          "text": "High Court"
+        },
+        {
+          "label": "D",
+          "text": "District Magistrate"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 482 CrPC / Section 528 BNSS saves the inherent powers of the High Court alone.",
+        "whyMistakeHappens": "Subordinate criminal courts have no inherent powers analogous to Sec. 151 CPC.",
+        "howToRectify": "Compare Sec. 151 CPC (every civil court) vs Sec. 482 CrPC / 528 BNSS (High Court only)."
+      }
+    },
+    {
+      "number": 77,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 27 IEA / Sec. 23(2) BSA)",
+      "question": "Q77. How much of an information received from an accused in police custody is admissible when a fact is discovered in consequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The entire confession"
+        },
+        {
+          "label": "B",
+          "text": "Only so much of the information as relates distinctly to the fact thereby discovered"
+        },
+        {
+          "label": "C",
+          "text": "Only statements signed by two gazetted officers"
+        },
+        {
+          "label": "D",
+          "text": "None if made to a police officer"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Only the portion of information distinctly relating to the fact discovered is admissible as an exception to the bar on police confessions.",
+        "whyMistakeHappens": "Candidates mistake the rule as admitting the whole confessional narrative.",
+        "howToRectify": "Recall Pulukuri Kottaya v. Emperor: only the discovery-linked portion is admissible."
+      }
+    },
+    {
+      "number": 78,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 32(1) IEA / Sec. 26(a) BSA)",
+      "question": "Q78. A dying declaration is admissible in evidence under the principle:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nemo moriturus praesumitur mentire"
+        },
+        {
+          "label": "B",
+          "text": "Res ipsa loquitur"
+        },
+        {
+          "label": "C",
+          "text": "Audi alteram partem"
+        },
+        {
+          "label": "D",
+          "text": "Actus non facit reum"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "A person who is about to die is presumed not to lie (nemo moriturus praesumitur mentire).",
+        "whyMistakeHappens": "Latin maxims are often tested directly in AIBE.",
+        "howToRectify": "Pair dying declaration with nemo moriturus praesumitur mentire."
+      }
+    },
+    {
+      "number": 79,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 115 IEA / Sec. 121 BSA)",
+      "question": "Q79. When one person has by declaration, act, or omission intentionally caused another to believe a thing to be true and act upon it, which rule applies?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Res Judicata"
+        },
+        {
+          "label": "B",
+          "text": "Estoppel"
+        },
+        {
+          "label": "C",
+          "text": "Waiver"
+        },
+        {
+          "label": "D",
+          "text": "Subrogation"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 115 IEA / Sec. 121 BSA)."
+      }
+    },
+    {
+      "number": 80,
+      "subject": "Law of Evidence (BSA / IEA)",
+      "statuteRef": "Bharatiya Sakshya Adhiniyam / Evidence Act (Sec. 65B IEA / Sec. 63 BSA)",
+      "question": "Q80. Admissibility of secondary electronic records requires a certificate as held mandatory in:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal"
+        },
+        {
+          "label": "B",
+          "text": "Navtej Singh Johar v. Union of India"
+        },
+        {
+          "label": "C",
+          "text": "Shreya Singhal v. Union of India"
+        },
+        {
+          "label": "D",
+          "text": "Indra Sawhney v. Union of India"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Arjun Panditrao Khotkar (2020) affirmed that a Sec. 65B(4) certificate is a mandatory condition precedent for secondary electronic evidence.",
+        "whyMistakeHappens": "Earlier conflicting rulings (Shafhi Mohammad) caused confusion before Arjun Panditrao settled the law.",
+        "howToRectify": "Associate Sec. 65B(4) / Sec. 63 BSA certificate with Arjun Panditrao Khotkar."
+      }
+    },
+    {
+      "number": 81,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 11 CPC)",
+      "question": "Q81. The doctrine of Res Judicata under Section 11 CPC applies when:",
+      "options": [
+        {
+          "label": "A",
+          "text": "An earlier suit is still pending"
+        },
+        {
+          "label": "B",
+          "text": "A matter directly and substantially in issue has been heard and finally decided by a competent court"
+        },
+        {
+          "label": "C",
+          "text": "Parties seek interim injunction"
+        },
+        {
+          "label": "D",
+          "text": "A suit is withdrawn with liberty"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 11 bars re-litigation of matters directly and substantially in issue between the same parties after final adjudication on merits.",
+        "whyMistakeHappens": "Pending earlier suits trigger Section 10 (Res Sub Judice), not Section 11.",
+        "howToRectify": "Sec. 10 = Stay of pending subsequent suit; Sec. 11 = Bar after final decision."
+      }
+    },
+    {
+      "number": 82,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order XXXIX Rules 1-2 CPC)",
+      "question": "Q82. Which three-pronged test governs the grant of a temporary injunction under Order 39 CPC?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Jurisdiction, Limitation, Court Fee"
+        },
+        {
+          "label": "B",
+          "text": "Prima facie case, Balance of convenience, Irreparable injury"
+        },
+        {
+          "label": "C",
+          "text": "Res judicata, Estoppel, Laches"
+        },
+        {
+          "label": "D",
+          "text": "Notice, Hearing, Decree"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Civil courts evaluate prima facie case, balance of convenience, and irreparable injury before granting temporary injunction.",
+        "whyMistakeHappens": "Candidates occasionally include irrelevant factors like solvency or finality.",
+        "howToRectify": "Always check the triad: Prima facie case + Balance of convenience + Irreparable loss."
+      }
+    },
+    {
+      "number": 83,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Sec. 80 CPC)",
+      "question": "Q83. Before instituting a suit against the Government or a public officer for an official act, a statutory notice period of how many months is required?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 month"
+        },
+        {
+          "label": "B",
+          "text": "2 months"
+        },
+        {
+          "label": "C",
+          "text": "3 months"
+        },
+        {
+          "label": "D",
+          "text": "6 months"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 80 CPC mandates a 2-month prior written notice before suing the Government or public officer, subject to urgent leave under Sec. 80(2).",
+        "whyMistakeHappens": "Statutory notice durations differ across Acts (e.g., 2 months in CPC vs 30 days in NI Act).",
+        "howToRectify": "Section 80 CPC = 2 months written notice."
+      }
+    },
+    {
+      "number": 84,
+      "subject": "Code of Civil Procedure",
+      "statuteRef": "Code of Civil Procedure, 1908 (Order VII Rule 11 CPC)",
+      "question": "Q84. Rejection of a plaint on the ground that it does not disclose a cause of action is governed by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Order VI Rule 17"
+        },
+        {
+          "label": "B",
+          "text": "Order VII Rule 11"
+        },
+        {
+          "label": "C",
+          "text": "Order IX Rule 13"
+        },
+        {
+          "label": "D",
+          "text": "Order XLI Rule 27"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Order VII Rule 11 sets out the six mandatory grounds for rejection of a plaint, including lack of cause of action and statutory bar.",
+        "whyMistakeHappens": "Order VI Rule 17 deals with amendment of pleadings, not rejection.",
+        "howToRectify": "Order VII Rule 11 = Rejection of plaint (deemed decree under Sec. 2(2))."
+      }
+    },
+    {
+      "number": 85,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 11 ICA)",
+      "question": "Q85. In Mohori Bibee v. Dharmodas Ghose, an agreement entered into by a minor was held to be:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Voidable at the minor option"
+        },
+        {
+          "label": "B",
+          "text": "Void ab initio"
+        },
+        {
+          "label": "C",
+          "text": "Valid if ratified at majority"
+        },
+        {
+          "label": "D",
+          "text": "Enforceable on equitable grounds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 11 of the Indian Contract Act, a minor is incompetent to contract, rendering any minor agreement void ab initio.",
+        "whyMistakeHappens": "Unlike coercion or undue influence (voidable), minority makes an agreement void from inception.",
+        "howToRectify": "Minors agreements are void ab initio and cannot be ratified."
+      }
+    },
+    {
+      "number": 86,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 73 ICA)",
+      "question": "Q86. The rule in Hadley v. Baxendale regarding remoteness of damages is codified in India under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 56"
+        },
+        {
+          "label": "B",
+          "text": "Section 73"
+        },
+        {
+          "label": "C",
+          "text": "Section 74"
+        },
+        {
+          "label": "D",
+          "text": "Section 124"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 73 awards compensation for loss arising naturally in the usual course of things or known to parties as likely to result from breach.",
+        "whyMistakeHappens": "Section 74 deals with liquidated damages/penalty, whereas Section 73 states the general remoteness principle.",
+        "howToRectify": "Sec. 73 = Unliquidated damages (Hadley v. Baxendale); Sec. 74 = Stipulated sum/penalty."
+      }
+    },
+    {
+      "number": 87,
+      "subject": "Law of Contract & Specific Relief",
+      "statuteRef": "Indian Contract Act, 1872 / SRA 1963 (Sec. 56 ICA)",
+      "question": "Q87. When an agreement becomes impossible or unlawful to perform after it is made due to an unforeseen supervening event, it becomes void under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Frustration (Sec. 56)"
+        },
+        {
+          "label": "B",
+          "text": "Doctrine of Privity"
+        },
+        {
+          "label": "C",
+          "text": "Quantum Meruit"
+        },
+        {
+          "label": "D",
+          "text": "Novation (Sec. 62)"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 56 second paragraph renders a contract void upon supervening impossibility or illegality (Doctrine of Frustration).",
+        "whyMistakeHappens": "Commercial hardship alone does not trigger Sec. 56; physical or legal impossibility is required.",
+        "howToRectify": "Recall Satyabrata Ghose v. Mugneeram Bangur on Section 56."
+      }
+    },
+    {
+      "number": 88,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 13B HMA)",
+      "question": "Q88. Under Section 13B of the Hindu Marriage Act, 1955, what is the minimum period of separate living required before filing a petition for divorce by mutual consent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 months"
+        },
+        {
+          "label": "B",
+          "text": "1 year"
+        },
+        {
+          "label": "C",
+          "text": "2 years"
+        },
+        {
+          "label": "D",
+          "text": "3 years"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Parties must have been living separately for a period of one year or more before presenting a Sec. 13B(1) mutual consent petition.",
+        "whyMistakeHappens": "Candidates confuse the 1-year pre-filing separation with the 6-month cooling-off motion period under Sec. 13B(2).",
+        "howToRectify": "1 year separation before filing; 6 to 18 months window for second motion (waivable per Amardeep Singh)."
+      }
+    },
+    {
+      "number": 89,
+      "subject": "Family Law",
+      "statuteRef": "Hindu Marriage Act / Muslim Law / Succession (Sec. 6 HSA 1956 (2005 Amend.))",
+      "question": "Q89. In Vineeta Sharma v. Rakesh Sharma (2020), the Supreme Court held that a daughter becomes a coparcener by birth:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Only if her father was alive on 09.09.2005"
+        },
+        {
+          "label": "B",
+          "text": "Irrespective of whether her father was alive on 09.09.2005"
+        },
+        {
+          "label": "C",
+          "text": "Only if unmarried"
+        },
+        {
+          "label": "D",
+          "text": "Only in self-acquired property"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Daughters hold coparcenary status by birth with equal rights and liabilities regardless of whether the father was alive on 09-09-2005.",
+        "whyMistakeHappens": "Earlier conflicting decisions (Prakash v. Phulavati) required the father to be alive in 2005.",
+        "howToRectify": "Vineeta Sharma overruled Prakash v. Phulavati: coparcenary right is by birth."
+      }
+    },
+    {
+      "number": 90,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Sec. 35 Advocates Act)",
+      "question": "Q90. Complaints of professional or other misconduct against an advocate are heard in the first instance by:",
+      "options": [
+        {
+          "label": "A",
+          "text": "The Bar Council of India"
+        },
+        {
+          "label": "B",
+          "text": "The Disciplinary Committee of the State Bar Council"
+        },
+        {
+          "label": "C",
+          "text": "The High Court Registrar"
+        },
+        {
+          "label": "D",
+          "text": "The District Judge"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under Section 35 of the Advocates Act, the State Bar Council refers misconduct complaints to its Disciplinary Committee.",
+        "whyMistakeHappens": "BCI hears appeals under Sec. 37 and original complaints only on transfer/revision.",
+        "howToRectify": "Sec. 35 = State Bar Council DC; Sec. 37 = Appeal to BCI; Sec. 38 = Appeal to Supreme Court."
+      }
+    },
+    {
+      "number": 91,
+      "subject": "Professional Ethics & BCI Rules",
+      "statuteRef": "Advocates Act, 1961 & BCI Rules (Rule 36 BCI Standards)",
+      "question": "Q91. Under Rule 36 of the Bar Council of India Rules, an advocate is prohibited from:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maintaining a factual website with prior intimation"
+        },
+        {
+          "label": "B",
+          "text": "Soliciting work or advertising directly or indirectly"
+        },
+        {
+          "label": "C",
+          "text": "Appearing pro bono"
+        },
+        {
+          "label": "D",
+          "text": "Drafting conveyancing deeds"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Rule 36 prohibits advocates from soliciting work or advertising, subject to the narrow 2008 amendment permitting basic website particulars.",
+        "whyMistakeHappens": "Candidates overlook the distinction between permitted factual website listings and prohibited solicitation.",
+        "howToRectify": "Rule 36 = Strict ban on solicitation and commercial advertising."
+      }
+    },
+    {
+      "number": 92,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (M.C. Mehta Rule)",
+      "question": "Q92. In M.C. Mehta v. Union of India (Oleum Gas Leak), the Supreme Court evolved the principle of Absolute Liability, which differs from Rylands v. Fletcher because:",
+      "options": [
+        {
+          "label": "A",
+          "text": "It applies only to public sector units"
+        },
+        {
+          "label": "B",
+          "text": "It admits no exceptions such as Act of God or third-party act"
+        },
+        {
+          "label": "C",
+          "text": "It limits compensation to statutory caps"
+        },
+        {
+          "label": "D",
+          "text": "It requires proof of negligence"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Absolute Liability holds enterprises engaged in hazardous or inherently dangerous activities strictly liable with zero exceptions.",
+        "whyMistakeHappens": "Strict liability (Rylands) allows exceptions like vis major; Absolute Liability allows none.",
+        "howToRectify": "Absolute Liability = Strict Liability minus all Rylands v. Fletcher exceptions."
+      }
+    },
+    {
+      "number": 93,
+      "subject": "Law of Torts & Consumer Protection",
+      "statuteRef": "Law of Torts / Motor Vehicles / CPA 2019 (CPA 2019 Sec. 34)",
+      "question": "Q93. Under the Consumer Protection Act, 2019, the District Commission has pecuniary jurisdiction where the value of goods or services paid as consideration does not exceed:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rs. 20 Lakhs"
+        },
+        {
+          "label": "B",
+          "text": "Rs. 50 Lakhs"
+        },
+        {
+          "label": "C",
+          "text": "Rs. 1 Crore"
+        },
+        {
+          "label": "D",
+          "text": "Rs. 2 Crore"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Under the 2021 Rules notified under CPA 2019, District Commission jurisdiction is up to Rs. 50 Lakhs (State: 50L to 2 Cr; National: above 2 Cr).",
+        "whyMistakeHappens": "CPA 1986 limits (20L) and original 2019 Act text (1 Cr) were revised by the 2021 Pecuniary Jurisdiction Rules.",
+        "howToRectify": "Remember revised 2021 limits: District <= 50L; State > 50L to 2 Cr; National > 2 Cr (based on consideration paid)."
+      }
+    },
+    {
+      "number": 94,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 34 A&C Act)",
+      "question": "Q94. What is the standard limitation period for filing an application to set aside an arbitral award under Section 34(3)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 days"
+        },
+        {
+          "label": "B",
+          "text": "60 days"
+        },
+        {
+          "label": "C",
+          "text": "3 months (extendable by 30 days on sufficient cause)"
+        },
+        {
+          "label": "D",
+          "text": "1 year"
+        }
+      ],
+      "correctAnswers": [
+        "C"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 34(3) prescribes 3 months from receipt of the award, extendable by at most 30 days on sufficient cause, but not thereafter (Sec. 5 Limitation Act excluded).",
+        "whyMistakeHappens": "Candidates confuse 3 months with 90 days or assume Section 5 Limitation Act applies indefinitely.",
+        "howToRectify": "Sec. 34(3): 3 months + max 30 days grace; Popular Construction excludes Sec. 5 Limitation Act."
+      }
+    },
+    {
+      "number": 95,
+      "subject": "Alternative Dispute Resolution",
+      "statuteRef": "Arbitration and Conciliation Act, 1996 (Sec. 9 A&C Act)",
+      "question": "Q95. Interim measures before, during, or after arbitral proceedings (prior to enforcement) may be sought from a Court under:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Section 8"
+        },
+        {
+          "label": "B",
+          "text": "Section 9"
+        },
+        {
+          "label": "C",
+          "text": "Section 11"
+        },
+        {
+          "label": "D",
+          "text": "Section 17"
+        }
+      ],
+      "correctAnswers": [],
+      "withdrawn": true,
+      "rectification": {
+        "principle": "This question was officially withdrawn by the Bar Council of India in the Final Answer Key.",
+        "whyMistakeHappens": "Ambiguous statutory framing or multiple incompatible options led BCI to drop this item from scoring.",
+        "howToRectify": "Withdrawn questions are excluded from the denominator (93 total scored marks). Focus on Arbitration and Conciliation Act, 1996 (Sec. 9 A&C Act)."
+      }
+    },
+    {
+      "number": 96,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 138 NI Act)",
+      "question": "Q96. After receipt of a cheque dishonour demand notice under Section 138(b) of the Negotiable Instruments Act, how many days does the drawer have to make payment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15 days"
+        },
+        {
+          "label": "B",
+          "text": "30 days"
+        },
+        {
+          "label": "C",
+          "text": "45 days"
+        },
+        {
+          "label": "D",
+          "text": "60 days"
+        }
+      ],
+      "correctAnswers": [
+        "A"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Sec. 138(c) grants the drawer 15 days from receipt of notice to pay, failing which the cause of action accrues for filing a complaint within 1 month.",
+        "whyMistakeHappens": "30 days is for issuing the notice after bank return memo; 15 days is for the drawer to pay.",
+        "howToRectify": "Timeline: 30 days (payee sends notice) -> 15 days (drawer pays) -> 1 month (file complaint)."
+      }
+    },
+    {
+      "number": 97,
+      "subject": "Company Law & Commercial Laws",
+      "statuteRef": "Companies Act, 2013 / NI Act, 1881 (Sec. 2(62) Companies Act)",
+      "question": "Q97. In Salomon v. A. Salomon & Co. Ltd., the House of Lords established which foundational principle of Company Law?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Doctrine of Ultra Vires"
+        },
+        {
+          "label": "B",
+          "text": "Separate Legal Personality"
+        },
+        {
+          "label": "C",
+          "text": "Indoor Management"
+        },
+        {
+          "label": "D",
+          "text": "Lifting of Corporate Veil"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Upon incorporation, a company becomes a distinct legal entity separate from its shareholders and directors.",
+        "whyMistakeHappens": "Candidates confuse the default rule (separate personality) with its exception (veil lifting).",
+        "howToRectify": "Salomon = Separate Legal Entity; Royal British Bank v. Turquand = Indoor Management."
+      }
+    },
+    {
+      "number": 98,
+      "subject": "Administrative Law",
+      "statuteRef": "Principles of Administrative Law (Natural Justice)",
+      "question": "Q98. The maxim Nemo judex in causa sua embodies which pillar of natural justice?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Right to fair hearing"
+        },
+        {
+          "label": "B",
+          "text": "Rule against bias"
+        },
+        {
+          "label": "C",
+          "text": "Duty to give reasoned orders"
+        },
+        {
+          "label": "D",
+          "text": "Proportionality"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "No person shall be a judge in their own cause, barring pecuniary, personal, or official bias.",
+        "whyMistakeHappens": "Audi alteram partem (fair hearing) and Nemo judex (no bias) are sometimes swapped.",
+        "howToRectify": "Nemo judex = No bias; Audi alteram partem = Hear the other side."
+      }
+    },
+    {
+      "number": 99,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Vellore Citizens Case)",
+      "question": "Q99. Which principle requires that where there are threats of serious or irreversible environmental damage, lack of full scientific certainty shall not postpone cost-effective measures?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Polluter Pays Principle"
+        },
+        {
+          "label": "B",
+          "text": "Precautionary Principle"
+        },
+        {
+          "label": "C",
+          "text": "Public Trust Doctrine"
+        },
+        {
+          "label": "D",
+          "text": "Inter-generational Equity"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "The Precautionary Principle shifts the burden onto the developer/industrialist to show actions are environmentally benign.",
+        "whyMistakeHappens": "Polluter Pays fixes financial liability after harm, whereas Precautionary Principle prevents irreversible harm ex ante.",
+        "howToRectify": "Precautionary = Prevent before harm; Polluter Pays = Remediate and compensate after/for pollution."
+      }
+    },
+    {
+      "number": 100,
+      "subject": "Environmental & Labour Laws",
+      "statuteRef": "Environment Protection Act / ID Act (Sec. 25F ID Act)",
+      "question": "Q100. Before retrenching a workman who has been in continuous service for not less than one year, an employer must generally give:",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 week notice"
+        },
+        {
+          "label": "B",
+          "text": "1 month notice or wages in lieu + retrenchment compensation"
+        },
+        {
+          "label": "C",
+          "text": "6 months notice"
+        },
+        {
+          "label": "D",
+          "text": "No notice if paid bonus"
+        }
+      ],
+      "correctAnswers": [
+        "B"
+      ],
+      "withdrawn": false,
+      "rectification": {
+        "principle": "Section 25F of the Industrial Disputes Act mandates 1 month written notice (or pay in lieu) plus 15 days average pay per completed year of continuous service.",
+        "whyMistakeHappens": "Sec. 25F (1 month, <100 workers) differs from Sec. 25N (3 months + govt permission for >=100 workers).",
+        "howToRectify": "Sec. 25F = 1 month notice + 15 days pay/year; Sec. 25N = 3 months + prior government permission."
+      }
+    }
+  ]
+}
